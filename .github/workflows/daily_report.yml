@@ -1,0 +1,31 @@
+name: Daily AI-OR Paper Report
+
+on:
+  schedule:
+    # 每天 UTC 时间 01:00 运行（北京时间上午 9 点）
+    - cron: '0 1 * * *'
+  workflow_dispatch: # 允许手动点击运行
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install requests openai
+
+      - name: Run Script
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }} # 如果用中转站需要配置
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
+        run: python hf_paper_bot.py
