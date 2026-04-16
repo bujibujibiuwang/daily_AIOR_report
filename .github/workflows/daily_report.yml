@@ -2,9 +2,9 @@ name: Daily AI-OR Paper Report
 
 on:
   schedule:
-    # 每天 UTC 时间 01:00 运行（北京时间上午 9 点）
+    # 北京时间每天早上 9:00 (UTC 1:00)
     - cron: '0 1 * * *'
-  workflow_dispatch: # 允许手动点击运行
+  workflow_dispatch: # 允许手动运行
 
 jobs:
   run-bot:
@@ -25,7 +25,6 @@ jobs:
       - name: Run Script
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }} # 如果用中转站需要配置
-          GMAIL_USER: ${{ secrets.GMAIL_USER }}
-          GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }} # 如果有代理地址则填，没有可不填
+          EMAIL_AUTH_CODE: ${{ secrets.EMAIL_AUTH_CODE }} # 您的网易邮箱授权码
         run: python hf_paper_bot.py
