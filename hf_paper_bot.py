@@ -9,9 +9,9 @@ import openai
 HF_API_URL = "https://huggingface.co/api/daily_papers"
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
-EMAIL_SENDER = 'zoeywang1220@163.com'    # 您的网易发件箱
-EMAIL_RECEIVER = 'zoeywang1220@163.com'  # 您的接收箱
-EMAIL_AUTH_CODE = os.getenv("EMAIL_AUTH_CODE") # 网易邮箱授权码
+EMAIL_SENDER = '1493874419@qq.com'      # 你的 QQ 发件箱
+EMAIL_RECEIVER = '1493874419@qq.com'    # 你的接收箱
+EMAIL_AUTH_CODE = os.getenv("EMAIL_AUTH_CODE") # QQ 邮箱授权码
 
 def get_papers():
     try:
@@ -26,7 +26,7 @@ def analyze_papers(papers):
     
     client = openai.OpenAI(api_key=OPENAI_API_KEY, base_url=OPENAI_BASE_URL)
     
-    # 提取标题和摘要进行分析
+    # 提取标题和摘要
     context = "\n".join([f"- Title: {p['title']}\n  Abstract: {p['paper']['summary'][:400]}..." for p in papers])
     
     prompt = f"""
@@ -35,11 +35,11 @@ def analyze_papers(papers):
     2. 组合优化(Combinatorial Optimization)与深度学习/强化学习的结合。
     3. LLM/Agent 在逻辑推理、数学建模或工业流程中的应用。
 
-    对于每一篇符合条件的论文，请严格按照以下 Markdown 格式输出：
+    对于每一篇符合条件的论文，请严格按照以下格式输出：
     ### [中文标题简译]
     - **原标题**: [Original Title]
-    - **核心技术**: [简述算法或模型创新点，如使用了什么强化学习架构或 Agent 模式]
-    - **OR 应用场景**: [该研究可借鉴到供应链、库存或调度的哪些具体环节]
+    - **核心技术**: [简述算法创新点]
+    - **OR 应用场景**: [该研究可借鉴的具体环节]
 
     如果今日所有论文都与 OR 领域无关，请只回复一行字：“今日无相关 OR 研究”。
 
@@ -65,7 +65,8 @@ def send_email(content):
     msg['To'] = EMAIL_RECEIVER
 
     try:
-        with smtplib.SMTP_SSL("smtp.163.com", 465) as server:
+        # QQ 邮箱的 SMTP 服务器地址为 smtp.qq.com，端口为 465
+        with smtplib.SMTP_SSL("smtp.qq.com", 465) as server:
             server.login(EMAIL_SENDER, EMAIL_AUTH_CODE)
             server.sendmail(EMAIL_SENDER, [EMAIL_RECEIVER], msg.as_string())
         print("邮件发送成功！")
