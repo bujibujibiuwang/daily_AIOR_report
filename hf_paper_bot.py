@@ -40,8 +40,9 @@ def analyze_papers(papers):
     {context}
     """
     
+    # 修改这里
     response = client.chat.completions.create(
-        model="gpt-4o-mini", 
+        model="deepseek-chat",  # 改为服务商支持的模型名称
         messages=[{"role": "system", "content": "你是一个专业的学术助理，擅长运筹优化和AI交叉领域。"},
                   {"role": "user", "content": prompt}]
     )
