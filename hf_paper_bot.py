@@ -20,7 +20,10 @@ def analyze_papers(papers):
     if not papers: return "今日 Hugging Face 无更新。"
     
     client = openai.OpenAI(api_key=OPENAI_API_KEY, base_url=OPENAI_BASE_URL)
-    context = "\n".join([f"- Title: {p['title']}\n  Abstract: {p['paper']['summary'][:400]}..." for p in papers])
+    # 构建包含标题和摘要的上下文，供 LLM 筛选
+    context = ""
+    for p in papers:
+        context += f"\nTitle: {p['title']}\nSummary: {p['paper'].get('summary', 'No summary')}\nID: {p['paper'].get('id', 'N/A')}\n"
     
     prompt = f"""
     你是一名运筹优化(OR)与人工智能交叉领域的资深审稿人。
@@ -38,16 +41,17 @@ def analyze_papers(papers):
     - 纯粹的 LLM 训练技术（如模型对齐、长上下文窗口、纯 Agent 记忆优化等与运筹优化无直接关联的内容）。
     
     【输出格式】
-    请严格按照以下格式，仅输出筛选后的论文，如果无相关论文则输出“今日无匹配研究”：
-    
+    请针对每一篇入选论文，严格输出以下格式：
+    ---
     ### [中文标题]
     - **作者**: [列出主要作者或团队]
-    - **核心贡献**: [用一句话概括：算法上有什么创新？解决了什么难题？]
-    - **实践价值**: [如果是工业界，它能解决什么具体问题？如：降低配送成本、提升库存预测精度等]
-    - **OR 技术关键词**: [如：深度强化学习, 分支定界, VRP, 鲁棒优化]
-    - **论文链接**: [https://huggingface.co/papers/{p['paper']['id']}]
+    - **核心贡献**: [算法创新点及解决的难题]
+    - **实践价值**: [工业应用场景，如降低成本、提升效率等]
+    - **OR 技术关键词**: [如: 深度强化学习, VRP, 鲁棒优化]
+    - **论文链接**: [https://huggingface.co/papers/此处填写对应ID]
 
-    ---
+    (如果今日没有符合上述标准的论文，请直接回复：今日无相关 OR 研究)
+
     待分析论文列表:
     {context}
     """
