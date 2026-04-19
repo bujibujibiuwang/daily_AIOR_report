@@ -5,7 +5,7 @@ from datetime import date
 
 # 1. 配置参数 (从 GitHub Secrets 获取)
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
+OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.deepseek.com")
 HF_API_URL = "https://huggingface.co/api/daily_papers"
 
 def get_papers():
