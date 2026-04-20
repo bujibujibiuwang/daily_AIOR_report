@@ -71,23 +71,50 @@ def update_website(content, new_papers):
         print(content)
         return
 
-    # 写入 docs/index.md
     file_path = "docs/index.md"
     os.makedirs("docs", exist_ok=True)
+
+    # 1. 读取旧内容，并按日期拆分
+    old_content = ""
+    if os.path.exists(file_path):
+        with open(file_path, "r", encoding="utf-8") as f:
+            old_content = f.read()
+
+    # 2. 构建今天的新内容块
+    today_str = str(date.today())
+    new_block = f"\n---\n## 📅 {today_str}\n\n{content}\n"
     
-    with open(file_path, "a", encoding="utf-8") as f:
-        f.write(f"\n---\n## 📅 {date.today()}\n\n{content}\n")
+    # 3. 将新内容拼接到旧内容前面 (保证最新在最前)
+    # 注意：我们这里假设旧内容的格式是按日期块组织的
+    combined_content = new_block + old_content
 
-    # 更新历史记录
+    # 4. 只保留最近 30 天的内容 (通过日期字符串匹配)
+    lines = combined_content.split("---")
+    filtered_blocks = []
+    threshold_date = date.today() - timedelta(days=30)
+    
+    # 这里通过解析 markdown 里的日期标题来过滤
+    for block in lines:
+        if "## 📅" in block:
+            try:
+                date_str = block.split("📅")[1].split()[0].strip()
+                block_date = datetime.strptime(date_str, "%Y-%m-%d").date()
+                if block_date >= threshold_date:
+                    filtered_blocks.append(block)
+            except:
+                continue
+    
+    # 5. 重写文件
+    with open(file_path, "w", encoding="utf-8") as f:
+        f.write("---\nlayout: default\n---" + "\n---\n".join(filtered_blocks))
+
+    # 更新历史记录与提交
     save_history([p['paper']['id'] for p in new_papers])
-
-    # 自动提交并推送
     os.system("git config user.name 'github-actions'")
     os.system("git config user.email 'github-actions@github.com'")
     os.system(f"git add {file_path} {HISTORY_FILE}")
-    os.system("git commit -m 'Update daily report and history'")
+    os.system("git commit -m 'Update report: keep last 30 days'")
     os.system("git push")
-    print("网站更新推送成功！")
 
 if __name__ == "__main__":
     raw_papers = get_papers()
