@@ -68,7 +68,6 @@ def analyze_papers(papers):
     return response.choices[0].message.content, new_papers
 
 def update_website(content, new_papers):
-    def update_website(content, new_papers):
     if "今日无新增" in content or "今日无相关 OR 研究" in content:
         print(content)
         return
