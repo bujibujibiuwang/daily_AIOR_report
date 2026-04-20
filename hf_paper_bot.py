@@ -34,15 +34,27 @@ def analyze_papers(papers):
         context += f"\n标题: {p['title']}\n摘要: {p['paper'].get('summary', '')[:500]}\n链接: https://huggingface.co/papers/{p['paper']['id']}\n---\n"
 
     prompt = f"""
-    你是一名运筹优化(OR)与人工智能交叉领域的资深审稿人。请分析以下论文，筛选出属于 AI+OR 交叉方向的研究。
-    请按以下格式输出（如果论文不符合 OR 方向，请直接跳过，不要输出）：
-
+    你是一名运筹优化(OR)与人工智能交叉领域的资深审稿人。
+    
+    【任务】分析以下论文，筛选出属于“AI + 运筹优化”交叉领域的高质量研究。
+    
+    【强制筛选原则】
+    只要论文标题或摘要中包含以下关键词之一，即视为【高度相关】，必须进入分析列表：
+    - 关键词包括: SUPPLY CHAIN, INVENTORY, FORECAST, OPTIMIZATION, ROUTE, SCHEDULING, PRODUCTION, TSP, VRP, JSP, LOGISTICS, MATHEMATICAL PROGRAMMING, DECISION MAKING。
+    
+    如果论文未出现上述关键词，但其内容本质上涉及算法优化、复杂系统决策或启发式算法改进，也请纳入。
+    
+    【输出格式 (严格遵守)】
+    ---
     ### [中文标题]
     - **作者**: [列出主要作者]
     - **核心贡献**: [一句话算法创新点]
     - **实践价值**: [工业应用场景]
     - **OR 技术关键词**: [如: 强化学习, VRP, 鲁棒优化]
     - **论文链接**: [直接抄写上面提供的链接]
+    ---
+    
+    (如果不属于以上任何范畴，请跳过，不要输出任何内容)
     
     待分析论文列表:
     {context}
