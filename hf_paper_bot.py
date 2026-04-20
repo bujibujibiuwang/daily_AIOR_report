@@ -1,7 +1,7 @@
 import os
 import requests
 import openai
-from datetime import date
+from datetime import date, timedelta, datetime
 
 # 1. 配置
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
