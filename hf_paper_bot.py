@@ -47,6 +47,7 @@ def analyze_papers(papers):
     【输出格式 (严格遵守)】
     ---
     ### [中文标题]
+    - **英文标题**: [填写原论文英文标题]
     - **作者**: [列出主要作者]
     - **核心贡献**: [一句话算法创新点]
     - **实践价值**: [工业应用场景]
@@ -67,6 +68,7 @@ def analyze_papers(papers):
     return response.choices[0].message.content, new_papers
 
 def update_website(content, new_papers):
+    def update_website(content, new_papers):
     if "今日无新增" in content or "今日无相关 OR 研究" in content:
         print(content)
         return
@@ -74,32 +76,31 @@ def update_website(content, new_papers):
     os.makedirs("docs", exist_ok=True)
     header = "---\nlayout: default\n---\n"
     today_str = str(date.today())
-    # 组合新块：包含日期标题和内容
-    new_block = f"{today_str}\n\n{content}\n"
     
-    # 1. 获取旧内容
+    # 按照你的要求：日期前面有📅，且日期显示为 ## 标题
+    # 并且我在内容生成逻辑中加入了一个假设：AI 返回的 content 格式需要包含英文标题
+    new_block = f"\n## 📅 {today_str}\n\n{content}\n"
+    
+    # --- 后续合并与写入逻辑不变 ---
     if os.path.exists(INDEX_FILE):
         with open(INDEX_FILE, "r", encoding="utf-8") as f:
             full_content = f.read().replace(header, "").strip()
     else:
         full_content = ""
 
-    # 2. 合并：新内容 + 旧内容
     combined_content = new_block + ("\n## 📅 " + full_content if full_content else "")
-    
-    # 3. 按日期过滤 (保留30天)
     blocks = combined_content.split("\n## 📅 ")
     valid_blocks = [blocks[0]] 
     threshold_date = date.today() - timedelta(days=30)
     
     for i in range(1, len(blocks)):
         try:
+            # 这里的 blocks[i] 格式处理需要对应日期字符串
             date_str = blocks[i][:10]
             if datetime.strptime(date_str, "%Y-%m-%d").date() >= threshold_date:
                 valid_blocks.append(blocks[i])
         except: continue
             
-    # 4. 重新拼装
     final_content = header + "\n## 📅 ".join(valid_blocks)
     with open(INDEX_FILE, "w", encoding="utf-8") as f:
         f.write(final_content)
