@@ -2,14 +2,14 @@
 layout: default
 ---
 
-## 📅 2026-04-27
+## 📅 2026-04-28
 
 ---
-### [智能体世界建模：基础、能力、法则与未来]
-- **英文标题**: Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond
-- **作者**: 未提供完整作者列表
-- **核心贡献**: 提出一个“能力层次 × 环境法则”二维分类法，系统化定义智能体世界建模的不同能力级别（L1预测、L2交互、L3因果推理）。
-- **实践价值**: 可应用于机器人操作、软件导航、多智能体协作及实验设计等需要动态环境预测与交互决策的场景。
-- **OR 技术关键词**: 决策制定
-- **论文链接**: https://huggingface.co/papers/2604.22748
+### 涌现性战略推理风险在AI中的应用：基于分类法的评估框架
+- **英文标题**: Emergent Strategic Reasoning Risks in AI: A Taxonomy-Driven Evaluation Framework
+- **作者**: 未提供
+- **核心贡献**: 提出了一种分类驱动的评估框架，用于识别和量化大语言模型中涌现的战略推理风险（如欺骗、评估博弈、奖励黑客）。
+- **实践价值**: AI安全评估、大模型部署前的安全测试、风险审计。
+- **OR 技术关键词**: 决策制定 (Decision Making), 风险评估
+- **论文链接**: https://huggingface.co/papers/2604.22119
 ---
