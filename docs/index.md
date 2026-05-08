@@ -2,73 +2,47 @@
 layout: default
 ---
 
-## 📅 2026-05-07
+## 📅 2026-05-08
 
----
-### ESARBench: 一个用于无人机具身搜索与救援的基准测试
-- **英文标题**: ESARBench: A Benchmark for Agentic UAV Embodied Search and Rescue
-- **作者**: 未在摘要中明确列出
-- **核心贡献**: 提出了首个用于具身智能体（Embodied Agent）的无人机搜索与救援（SAR）的统一基准，为复杂决策和路径规划问题提供了评估框架。
-- **实践价值**: 无人机搜索与救援，涉及自主导航、空间推理与路径优化决策场景。
-- **OR 技术关键词**: 路径规划, 决策制定, 无人机路径优化
-- **论文链接**: https://huggingface.co/papers/2605.01371
+好的，作为一名运筹优化与人工智能交叉领域的资深审稿人，我将根据您提供的筛选原则，对上述论文列表进行分析。
+
+经过逐篇审查，以下论文符合筛选条件，被纳入分析列表：
 
 ---
 
-### Healthcare AI GYM for Medical Agents
-- **英文标题**: Healthcare AI GYM for Medical Agents
-- **作者**: 未在摘要中明确列出
-- **核心贡献**: 构建了一个兼容Gymnasium的医疗AI多轮交互强化学习训练环境，覆盖10个临床领域的诊断与治疗决策优化。
-- **实践价值**: 临床诊断流程优化、医疗决策支持系统、治疗方案推荐。
-- **OR 技术关键词**: 强化学习, 决策制定, 调度优化
-- **论文链接**: https://huggingface.co/papers/2605.02943
+### [强化学习驱动的具身决策规划与物理推理基准]
+- **英文标题**: KinDER: A Physical Reasoning Benchmark for Robot Learning and Planning
+- **作者**: 未列出
+- **核心贡献**: 提出了一个专门用于评估机器人学习和规划中物理推理（运动学和动力学约束）能力的标准化基准，为**决策规划**算法提供了测试平台。
+- **实践价值**: 为机器人路径规划、操作规划等**决策系统**的研发和评估提供基准，可用于工业自动化、物流仓储中的机器人任务规划。
+- **OR 技术关键词**: 决策规划, 路径规划, 约束满足, 机器人调度
+- **论文链接**: https://huggingface.co/papers/2604.25788
 
 ---
 
-### A Benchmark for Interactive World Models with a Unified Action Generation Framework
-- **英文标题**: A Benchmark for Interactive World Models with a Unified Action Generation Framework
-- **作者**: 未在摘要中明确列出
-- **核心贡献**: 提出了iWorld-Bench基准，用于评估智能体在物理交互环境中的感知、推理与动作决策能力，包含距离感知与交互规划。
-- **实践价值**: 机器人自主导航、交互式任务规划、复杂系统决策模拟。
-- **OR 技术关键词**: 路径规划, 决策制定, 调度优化
-- **论文链接**: https://huggingface.co/papers/2605.03941
+### [逻辑规则归纳的基础模型：从数据到决策的零样本学习]
+- **英文标题**: A Foundation Model for Zero-Shot Logical Rule Induction
+- **作者**: 未列出
+- **核心贡献**: 提出了一个无需重新训练即可进行零样本逻辑规则归纳的预训练模型，将ILP从转导学习拓展到可泛化的**决策规则**发现。
+- **实践价值**: 可以自动化地从**生产**数据、**供应链**数据或**物流**数据中发现解释性强的规则，用于异常检测、根因分析和流程优化，辅助**决策制定**。
+- **OR 技术关键词**: 归纳逻辑编程, 规则学习, 决策制定, 可解释性
+- **论文链接**: https://huggingface.co/papers/2605.04916
 
 ---
 
-### Reinforcement Learning for LLM-based Multi-Agent Systems through Orchestration Traces
-- **英文标题**: Reinforcement Learning for LLM-based Multi-Agent Systems through Orchestration Traces
-- **作者**: 未在摘要中明确列出
-- **核心贡献**: 将多智能体系统协作过程建模为时序交互图，并通过强化学习优化任务分发、委派与聚合等调度决策。
-- **实践价值**: 大规模分布式AI系统调度、多机器人协同任务规划、企业级工作流自动化。
-- **OR 技术关键词**: 强化学习, 调度优化, 决策制定
-- **论文链接**: https://huggingface.co/papers/2605.02801
+### [非平稳环境下的鲁棒推理对齐：应对概念漂移的约束优化问题]
+- **英文标题**: Turning Drift into Constraint: Robust Reasoning Alignment in Non-Stationary Environments
+- **作者**: 未列出
+- **核心贡献**: 将多源大模型的推理对齐问题形式化为一个**约束满足问题**，并基于概念漂移理论提出了**鲁棒优化**方法，以应对**决策**环境的变化。
+- **实践价值**: 在动态变化的工业场景（如**生产**排程、**供应链**管理）中，确保基于大模型的**决策系统**在面对数据或环境变化时仍能保持稳定和可靠的推理。
+- **OR 技术关键词**: 鲁棒优化, 约束满足, 优化, 决策制定, 概念漂移
+- **论文链接**: https://huggingface.co/papers/2510.04142
 
 ---
 
-### Generate, Filter, Control, Replay: A Comprehensive Survey of Rollout Strategies for LLM Reinforcement Learning
-- **英文标题**: Generate, Filter, Control, Replay: A Comprehensive Survey of Rollout Strategies for LLM Reinforcement Learning
-- **作者**: 未在摘要中明确列出
-- **核心贡献**: 综述了LLM强化学习中的轨迹采样与回放策略，系统分析了优化器视角下的数据生成与再利用机制。
-- **实践价值**: 大规模语言模型后训练优化、复杂推理任务的数据生成与策略迭代。
-- **OR 技术关键词**: 强化学习, 决策制定
-- **论文链接**: https://huggingface.co/papers/2605.02913
-
----
-
-### Skills-Coach: A Self-Evolving Skill Optimizer via Training-Free GRPO
-- **英文标题**: Skills-Coach: A Self-Evolving Skill Optimizer via Training-Free GRPO
-- **作者**: 未在摘要中明确列出
-- **核心贡献**: 提出了无需训练的GRPO优化框架，通过多样性任务生成与技能边界探索实现智能体能力的自主优化。
-- **实践价值**: 智能体技能自动化生成与优化、复杂任务分解与执行规划。
-- **OR 技术关键词**: 优化, 决策制定, 启发式算法
-- **论文链接**: https://huggingface.co/papers/2604.27488
-
----
-
-### How Fast Should a Model Commit to Supervision? Training Reasoning Models on the Tsallis Loss Continuum
-- **英文标题**: How Fast Should a Model Commit to Supervision? Training Reasoning Models on the Tsallis Loss Continuum
-- **作者**: 未在摘要中明确列出
-- **核心贡献**: 提出了Tsallis损失函数族，在强化学习与密度估计之间动态插值，优化模型在低初始成功率下的学习效率。
-- **实践价值**: 推理模型的后训练优化、策略梯度方法的收敛性改进。
-- **OR 技术关键词**: 强化学习, 优化
-- **论文链接**: https://huggingface.co/papers/2604.25907
+### [面向机器人学习和规划的物理推理基准]
+- **作者**: 未列出
+- **核心贡献**: 提出了一个针对机器人**规划**中的物理推理（运动学与动力学约束）的基准测试，为决策优化算法提供了评估平台。
+- **实践价值**: 用于评估和优化工业机器人、服务机器人在复杂环境中的**路径规划**和**任务调度**算法，提升作业效率和安全性。
+- **OR 技术关键词**: 机器人规划, 路径规划, 约束求解, 决策制定
+- **论文链接**: https://huggingface.co/papers/2604.25788
