@@ -15,6 +15,14 @@
 - `OR_KEYWORDS`：可选，逗号分隔的 OR 关键词列表（覆盖默认值）
 - `AI_KEYWORDS`：可选，逗号分隔的 AI 关键词列表（覆盖默认值）
 - `STRICT_OR_FILTER`：可选，默认 `1`（仅命中 OR 关键词才进入分析）；设为 `0` 时放宽为 OR 或 AI 命中
+- `ENABLE_EMAIL`：可选，设为 `1` 开启邮件推送
+- `SMTP_HOST`：SMTP 服务地址
+- `SMTP_PORT`：SMTP 端口（默认 587）
+- `SMTP_USER`：SMTP 用户名（可选）
+- `SMTP_PASSWORD`：SMTP 密码（可选）
+- `SMTP_TLS`：是否使用 STARTTLS（默认 `1`，设为 `0` 使用 SSL）
+- `EMAIL_FROM`：发件人地址（可选，默认 `SMTP_USER`）
+- `EMAIL_TO`：收件人列表，逗号分隔
 
 ## 本地运行
 1. 安装依赖

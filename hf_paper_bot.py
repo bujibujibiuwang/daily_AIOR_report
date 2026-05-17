@@ -1,6 +1,8 @@
 import os
 import requests
 import openai
+import smtplib
+from email.message import EmailMessage
 from datetime import date, datetime, timedelta
 
 # 1. 配置
@@ -197,6 +199,45 @@ def merge_index_content(existing_content, new_block, today):
     combined = "\n## 📅 ".join(valid_blocks)
     return f"{header}\n## 📅 {combined}" if combined else header
 
+
+def build_email_message(subject, content, sender, recipients):
+    message = EmailMessage()
+    message["Subject"] = subject
+    message["From"] = sender
+    message["To"] = ", ".join(recipients)
+    message.set_content(content)
+    return message
+
+
+def send_email_notification(content, today):
+    if os.getenv("ENABLE_EMAIL", "0") != "1":
+        return
+
+    smtp_host = os.getenv("SMTP_HOST")
+    smtp_port = int(os.getenv("SMTP_PORT", "587"))
+    smtp_user = os.getenv("SMTP_USER")
+    smtp_password = os.getenv("SMTP_PASSWORD")
+    sender = os.getenv("EMAIL_FROM") or smtp_user
+    recipients = [addr.strip() for addr in os.getenv("EMAIL_TO", "").split(",") if addr.strip()]
+    if not smtp_host or not sender or not recipients:
+        raise RuntimeError("缺少 SMTP_HOST / EMAIL_FROM / EMAIL_TO 配置")
+
+    subject = f"AI+OR 每日报告 {today}"
+    message = build_email_message(subject, content, sender, recipients)
+
+    use_tls = os.getenv("SMTP_TLS", "1") == "1"
+    if use_tls:
+        with smtplib.SMTP(smtp_host, smtp_port) as server:
+            server.starttls()
+            if smtp_user and smtp_password:
+                server.login(smtp_user, smtp_password)
+            server.send_message(message)
+    else:
+        with smtplib.SMTP_SSL(smtp_host, smtp_port) as server:
+            if smtp_user and smtp_password:
+                server.login(smtp_user, smtp_password)
+            server.send_message(message)
+
 def update_website(content, new_papers):
     if NO_NEW_MARKER in content:
         print(content)
@@ -216,6 +257,8 @@ def update_website(content, new_papers):
     final_content = merge_index_content(existing, new_block, today)
     with open(INDEX_FILE, "w", encoding="utf-8") as f:
         f.write(final_content)
+
+    send_email_notification(content, today)
 
     # 5. 更新历史记录与推送
     if new_papers:

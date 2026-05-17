@@ -4,6 +4,7 @@ from hf_paper_bot import merge_index_content
 from hf_paper_bot import filter_relevant_papers
 from hf_paper_bot import normalize_paper
 from hf_paper_bot import NO_NEW_MARKER
+from hf_paper_bot import build_email_message
 
 
 def test_merge_keeps_recent_blocks():
@@ -42,3 +43,15 @@ def test_merge_with_no_new_marker():
     merged = merge_index_content("", new_block, date(2026, 5, 17))
     assert "2026-05-17" in merged
     assert NO_NEW_MARKER in merged
+
+
+def test_build_email_message():
+    message = build_email_message(
+        "subject",
+        "content",
+        "sender@example.com",
+        ["to1@example.com", "to2@example.com"],
+    )
+    assert message["Subject"] == "subject"
+    assert message["From"] == "sender@example.com"
+    assert "to1@example.com" in message["To"]
