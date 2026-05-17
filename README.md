@@ -2,7 +2,11 @@
 
 每日自动抓取多源论文，由 LLM 精选"AI + 运筹优化（OR）"交叉领域前沿研究，生成结构化中文报告，推送到网站 + 邮件。
 
-🌐 **在线网站**: [bujibujibiuwang.github.io/daily_AIOR_report](https://bujibujibiuwang.github.io/daily_AIOR_report/)
+🌐 **Next.js 网站 (Vercel)**: [daily-aior-report.vercel.app](https://daily-aior-report.vercel.app)
+
+📄 **GitHub Pages 报告**: [bujibujibiuwang.github.io/daily_AIOR_report](https://bujibujibiuwang.github.io/daily_AIOR_report/)
+
+> ⚠️ GitHub Pages 偶尔因部署失败而无法显示，建议两个地址均尝试访问，Vercel 版本更稳定。
 
 ---
 
