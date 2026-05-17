@@ -3,6 +3,7 @@ from datetime import date
 from hf_paper_bot import merge_index_content
 from hf_paper_bot import filter_relevant_papers
 from hf_paper_bot import normalize_paper
+from hf_paper_bot import NO_NEW_MARKER
 
 
 def test_merge_keeps_recent_blocks():
@@ -34,3 +35,10 @@ def test_filter_relevant_papers_strict_or(monkeypatch):
     filtered = filter_relevant_papers(papers)
     assert len(filtered) == 1
     assert filtered[0]["id"] == "1"
+
+
+def test_merge_with_no_new_marker():
+    new_block = f"2026-05-17\n\n{NO_NEW_MARKER}\n"
+    merged = merge_index_content("", new_block, date(2026, 5, 17))
+    assert "2026-05-17" in merged
+    assert NO_NEW_MARKER in merged

@@ -200,7 +200,7 @@ def merge_index_content(existing_content, new_block, today):
 def update_website(content, new_papers):
     if NO_NEW_MARKER in content:
         print(content)
-        return
+        content = NO_NEW_MARKER
 
     os.makedirs("docs", exist_ok=True)
     today = date.today()
@@ -218,9 +218,10 @@ def update_website(content, new_papers):
         f.write(final_content)
 
     # 5. 更新历史记录与推送
-    with open(HISTORY_FILE, "a", encoding="utf-8") as f:
-        for p in new_papers:
-            f.write(f"{p['id']}\n")
+    if new_papers:
+        with open(HISTORY_FILE, "a", encoding="utf-8") as f:
+            for p in new_papers:
+                f.write(f"{p['id']}\n")
 
     os.system("git config user.name 'github-actions'")
     os.system("git config user.email 'github-actions@github.com'")
