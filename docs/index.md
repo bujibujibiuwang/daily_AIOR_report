@@ -1,7 +1,86 @@
 ---
 layout: default
 ---
-2026-05-18
+2026-05-19
+
+
+### Auditing Agent Harness Safety
+- **英文标题**: Auditing Agent Harness Safety
+- **来源**: 🤗 HuggingFace  ⭐ 5/10
+- **作者**: Chengzhi Liu, Yichen Guo, Yepeng Liu
+- **论文链接**: https://huggingface.co/papers/2605.14271
+---
+
+### MetaAgent-X : Breaking the Ceiling of Automatic Multi-Agent Systems via End-to-End Reinforcement Learning
+- **英文标题**: MetaAgent-X : Breaking the Ceiling of Automatic Multi-Agent Systems via End-to-End Reinforcement Learning
+- **来源**: 🤗 HuggingFace  ⭐ 5/10
+- **作者**: Yaolun Zhang, Yujie Zhao, Nan Wang
+- **论文链接**: https://huggingface.co/papers/2605.14212
+---
+
+### CM-EVS: Sparse Panoramic RGB-D-Pose Data for Complete Scene Coverage
+- **英文标题**: CM-EVS: Sparse Panoramic RGB-D-Pose Data for Complete Scene Coverage
+- **来源**: 🤗 HuggingFace  ⭐ 5/10
+- **作者**: Jiale Liu, Jungang Li, Jieming Yu
+- **论文链接**: https://huggingface.co/papers/2605.15597
+---
+
+### PhysBrain 1.0 Technical Report
+- **英文标题**: PhysBrain 1.0 Technical Report
+- **来源**: 🤗 HuggingFace  ⭐ 5/10
+- **作者**: Shijie Lian, Bin Yu, Xiaopeng Lin
+- **论文链接**: https://huggingface.co/papers/2605.15298
+---
+
+### From Plans to Pixels: Learning to Plan and Orchestrate for Open-Ended Image Editing
+- **英文标题**: From Plans to Pixels: Learning to Plan and Orchestrate for Open-Ended Image Editing
+- **来源**: 🤗 HuggingFace  ⭐ 5/10
+- **作者**: Anirudh Sundara Rajan, Krishna Kumar Singh, Yong Jae Lee
+- **论文链接**: https://huggingface.co/papers/2605.15181
+---
+
+### Learning from Failures: Correction-Oriented Policy Optimization with Verifiable Rewards
+- **英文标题**: Learning from Failures: Correction-Oriented Policy Optimization with Verifiable Rewards
+- **来源**: 🤗 HuggingFace  ⭐ 5/10
+- **作者**: Mengjie Ren, Jie Lou, Boxi Cao
+- **论文链接**: https://huggingface.co/papers/2605.14539
+---
+
+### Nudging Beyond the Comfort Zone: Efficient Strategy-Guided Exploration for RLVR
+- **英文标题**: Nudging Beyond the Comfort Zone: Efficient Strategy-Guided Exploration for RLVR
+- **来源**: 🤗 HuggingFace  ⭐ 5/10
+- **作者**: Chanuk Lee, Sangwoo Park, Minki Kang
+- **论文链接**: https://huggingface.co/papers/2605.15726
+---
+
+### MMSkills: Towards Multimodal Skills for General Visual Agents
+- **英文标题**: MMSkills: Towards Multimodal Skills for General Visual Agents
+- **来源**: 🤗 HuggingFace  ⭐ 5/10
+- **作者**: Kangning Zhang, Shuai Shao, Qingyao Li
+- **论文链接**: https://huggingface.co/papers/2605.13527
+---
+
+### FFAvatar: Few-Shot, Feed-Forward, and Generalizable Avatar Reconstruction
+- **英文标题**: FFAvatar: Few-Shot, Feed-Forward, and Generalizable Avatar Reconstruction
+- **来源**: 🤗 HuggingFace  ⭐ 5/10
+- **作者**: Thuan Hoang Nguyen, Jiahao Luo, Yinyu Nie
+- **论文链接**: https://huggingface.co/papers/2605.15320
+---
+
+### Flash-GRPO: Efficient Alignment for Video Diffusion via One-Step Policy Optimization
+- **英文标题**: Flash-GRPO: Efficient Alignment for Video Diffusion via One-Step Policy Optimization
+- **来源**: 🤗 HuggingFace  ⭐ 5/10
+- **作者**: Xiaoxuan He, Siming Fu, Zeyue Xue
+- **论文链接**: https://huggingface.co/papers/2605.15980
+---
+
+### HodgeCover: Higher-Order Topological Coverage Drives Compression of Sparse Mixture-of-Experts
+- **英文标题**: HodgeCover: Higher-Order Topological Coverage Drives Compression of Sparse Mixture-of-Experts
+- **来源**: 🤗 HuggingFace  ⭐ 5/10
+- **作者**: Tao Zhong, Dongzhe Zheng, Christine Allen-Blanchette
+- **论文链接**: https://huggingface.co/papers/2605.13997
+---
+## 📅 2026-05-18
 
 今日无新增 OR 相关研究
 ## 📅 2026-05-17
