@@ -1,7 +1,79 @@
 ---
 layout: default
 ---
-2026-05-19
+2026-05-20
+
+
+### WavFlow: Audio Generation in Waveform Space
+- **英文标题**: WavFlow: Audio Generation in Waveform Space
+- **来源**: 🤗 HuggingFace  ⭐ 5/10
+- **作者**: Feiyan Zhou, Luyuan Wang, Shoufa Chen
+- **论文链接**: https://huggingface.co/papers/2605.18749
+---
+
+### Symmetry-Compatible Principle for Optimizer Design: Embeddings, LM Heads, SwiGLU MLPs, and MoE Routers
+- **英文标题**: Symmetry-Compatible Principle for Optimizer Design: Embeddings, LM Heads, SwiGLU MLPs, and MoE Routers
+- **来源**: 🤗 HuggingFace  ⭐ 5/10
+- **作者**: Tim Tsz-Kit Lau, Weijie Su
+- **论文链接**: https://huggingface.co/papers/2605.18106
+---
+
+### DexHoldem: Playing Texas Hold'em with Dexterous Embodied System
+- **英文标题**: DexHoldem: Playing Texas Hold'em with Dexterous Embodied System
+- **来源**: 🤗 HuggingFace  ⭐ 5/10
+- **作者**: Feng Chen, Tianzhe Chu, Li Sun
+- **论文链接**: https://huggingface.co/papers/2605.18727
+---
+
+### TopoPrimer: The Missing Topological Context in Forecasting Models
+- **英文标题**: TopoPrimer: The Missing Topological Context in Forecasting Models
+- **来源**: 🤗 HuggingFace  ⭐ 5/10
+- **作者**: Zara Zetlin, Kayhan Moharreri, Maria Safi
+- **论文链接**: https://huggingface.co/papers/2605.15035
+---
+
+### SafeDiffusion-R1: Online Reward Steering for Safe Diffusion Post-Training
+- **英文标题**: SafeDiffusion-R1: Online Reward Steering for Safe Diffusion Post-Training
+- **来源**: 🤗 HuggingFace  ⭐ 5/10
+- **作者**: Komal Kumar, Ankan Deria, Abhishek Basu
+- **论文链接**: https://huggingface.co/papers/2605.18719
+---
+
+### AgentKernelArena: Generalization-Aware Benchmarking of GPU Kernel Optimization Agents
+- **英文标题**: AgentKernelArena: Generalization-Aware Benchmarking of GPU Kernel Optimization Agents
+- **来源**: 🤗 HuggingFace  ⭐ 5/10
+- **作者**: Sharareh Younesian, Wenwen Ouyang, Sina Rafati
+- **论文链接**: https://huggingface.co/papers/2605.16819
+---
+
+### AtlasVA: Self-Evolving Visual Skill Memory for Teacher-Free VLM Agents
+- **英文标题**: AtlasVA: Self-Evolving Visual Skill Memory for Teacher-Free VLM Agents
+- **来源**: 🤗 HuggingFace  ⭐ 5/10
+- **作者**: Pan Wang, Yihao Hu, Xiujin Liu
+- **论文链接**: https://huggingface.co/papers/2605.17933
+---
+
+### Code as Agent Harness
+- **英文标题**: Code as Agent Harness
+- **来源**: 🤗 HuggingFace  ⭐ 5/10
+- **作者**: Xuying Ning, Katherine Tieu, Dongqi Fu
+- **论文链接**: https://huggingface.co/papers/2605.18747
+---
+
+### Lance: Unified Multimodal Modeling by Multi-Task Synergy
+- **英文标题**: Lance: Unified Multimodal Modeling by Multi-Task Synergy
+- **来源**: 🤗 HuggingFace  ⭐ 5/10
+- **作者**: Fengyi Fu, Mengqi Huang, Shaojin Wu
+- **论文链接**: https://huggingface.co/papers/2605.18678
+---
+
+### KVPO: ODE-Native GRPO for Autoregressive Video Alignment via KV Semantic Exploration
+- **英文标题**: KVPO: ODE-Native GRPO for Autoregressive Video Alignment via KV Semantic Exploration
+- **来源**: 🤗 HuggingFace  ⭐ 5/10
+- **作者**: Ruicheng Zhang, Kaixi Cong, Jun Zhou
+- **论文链接**: https://huggingface.co/papers/2605.14278
+---
+## 📅 2026-05-19
 
 
 ### Auditing Agent Harness Safety
