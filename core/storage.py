@@ -35,18 +35,24 @@ def load_papers_json() -> list[dict]:
 def save_papers_json(new_papers: list[dict]) -> None:
     os.makedirs(os.path.dirname(PAPERS_JSON), exist_ok=True)
     existing = load_papers_json()
-    existing_ids = {p["id"] for p in existing}
+    existing_map = {p["id"]: p for p in existing}
+
     for p in new_papers:
-        if p["id"] not in existing_ids:
-            existing.insert(0, p)
-            existing_ids.add(p["id"])
+        old = existing_map.get(p["id"])
+        # 覆盖条件：新条目或旧条目是 fallback（contribution_zh 为空）
+        if old is None or not old.get("contribution_zh"):
+            existing_map[p["id"]] = p
+
+    merged = list(existing_map.values())
+    # 按日期降序排列
+    merged.sort(key=lambda x: x.get("date", ""), reverse=True)
 
     threshold = (date.today() - timedelta(days=RETENTION_DAYS)).isoformat()
-    existing = [p for p in existing if (p.get("date") or "9999") >= threshold]
+    merged = [p for p in merged if (p.get("date") or "9999") >= threshold]
 
     with open(PAPERS_JSON, "w", encoding="utf-8") as f:
         json.dump(
-            {"updated": str(date.today()), "papers": existing},
+            {"updated": str(date.today()), "papers": merged},
             f,
             ensure_ascii=False,
             indent=2,
