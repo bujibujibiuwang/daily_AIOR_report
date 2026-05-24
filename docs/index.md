@@ -3,6 +3,58 @@ layout: default
 ---
 2026-05-24
 
+
+### 迭代约束编程方法解决预抢占性任务调度问题
+- **英文标题**: An iterative Constraint Programming approach to integrate maximum workload constraints in preemptive jobshop scheduling
+- **来源**: 📄 arXiv  ⭐ 10/10
+- **作者**: Tanguy Terrien, Cyrille Briand
+- **核心贡献**: 提出迭代约束编程方法
+- **实践价值**: 应用于预抢占性任务调度
+- **OR 技术关键词**: 迭代约束编程, 任务调度, 预抢占
+- **论文链接**: https://arxiv.org/abs/2605.20387v1
+---
+
+### 多智能体框架学习和导航路由问题搜索空间
+- **英文标题**: COAgents: Multi-Agent Framework to Learn and Navigate Routing Problems Search Space
+- **来源**: 📄 arXiv  ⭐ 9/10
+- **作者**: Oleksandr Yakovenko, Mahdi Mostajabdaveh, Cheikh Ahmed
+- **核心贡献**: 引入COAgents框架解决VRP
+- **实践价值**: 应用于车辆路由问题
+- **OR 技术关键词**: 多智能体, 路由问题, VRP
+- **论文链接**: https://arxiv.org/abs/2605.20618v1
+---
+
+### 增强神经路由政策的多节点预测
+- **英文标题**: Learning with Foresight: Enhancing Neural Routing Policy via Multi-Node Lookahead Prediction
+- **来源**: 📄 arXiv  ⭐ 9/10
+- **作者**: Xia Jiang, Yaoxin Wu, Yew-Soon Ong
+- **核心贡献**: 提出多节点预测方法
+- **实践价值**: 应用于车辆路由问题
+- **OR 技术关键词**: 神经路由, 多节点预测, 车辆路由
+- **论文链接**: https://arxiv.org/abs/2605.19975v1
+---
+
+### 层次优化平行机调度问题的启发式方法
+- **英文标题**: Heuristic approaches for solving a bilevel optimistic scheduling problem on parallel machines
+- **来源**: 📄 arXiv  ⭐ 8/10
+- **作者**: Quentin Schau, Federico Della Croce, Olivier Ploton
+- **核心贡献**: 提出启发式方法解决层次优化问题
+- **实践价值**: 应用于平行机调度
+- **OR 技术关键词**: 层次优化, 启发式方法, 平行机调度
+- **论文链接**: https://arxiv.org/abs/2605.19760v1
+---
+
+### 组合优化下蒸馏保证的算法对齐
+- **英文标题**: Towards Distillation Guarantees under Algorithmic Alignment for Combinatorial Optimization
+- **来源**: 📄 arXiv  ⭐ 7/10
+- **作者**: Thien Le, Melanie Weber
+- **核心贡献**: 提出组合优化下的蒸馏保证
+- **实践价值**: 应用于结构预测
+- **OR 技术关键词**: 组合优化, 蒸馏, 算法对齐
+- **论文链接**: https://arxiv.org/abs/2605.20074v1
+---
+## 📅 2026-05-24
+
 今日无新增 OR 相关研究
 ## 📅 2026-05-24
 
