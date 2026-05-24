@@ -2,6 +2,62 @@
   "updated": "2026-05-24",
   "papers": [
     {
+      "id": "2605.21470v1",
+      "title": "Agent JIT Compilation for Latency-Optimizing Web Agent Planning and Scheduling",
+      "summary": "Computer-use agents (CUA) automate tasks specified with natural language such as \"order the cheapest item from Taco Bell\" by generating sequences of calls to tools such as click, type, and scroll on a browser. Current implementations follow a sequential fetch-screenshot-execute loop where each iteration requires an LLM call, resulting in high latency and frequent errors from incorrect tool use. We present agent just-in-time (JIT) compilation, an alternative that compiles task descriptions directly into executable code that is free to include LLM calls, tool calls, and parallelization. Our approach comprises three components: (1) JIT-Planner, which generates multiple code plans, validates each against tool specifications, and selects the minimum-cost candidate; (2) JIT-Scheduler, which explores parallelization strategies via Monte Carlo cost estimation from learned latency distributions; and (3) an invariant-enforcing tool protocol specifying precondition and postcondition state require",
+      "authors": [
+        "Caleb Winston",
+        "Ron Yifeng Wang",
+        "Azalia Mirhoseini",
+        "Christos Kozyrakis"
+      ],
+      "link": "https://arxiv.org/abs/2605.21470v1",
+      "source": "arxiv",
+      "date": "2026-05-24",
+      "title_zh": "Agent JIT Compilation for Latency-Optimizing Web Agent Planning and Scheduling",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
+    {
+      "id": "2605.21648v1",
+      "title": "Dropout Universality: Scaling Laws and Optimal Scheduling at the Edge-of-Chaos",
+      "summary": "We develop a mean-field theory of dropout as a perturbation of critical signal propagation at the edge of chaos. Dropout shifts the perfect-alignment fixed point, making the depth scale for information propagation finite even at critical initialization. We derive critical and crossover scaling laws for correlation decay and establish that smooth activations and kinked, ReLU-like activations constitute distinct universality classes, with different critical exponents and a universal two-parameter scaling collapse in detuning and dropout strength. The distinction traces to the analytic structure of the correlation map: smooth activations admit a Taylor expansion near perfect alignment, while kinked activations develop a branch point with universal non-analyticity. As a corollary, the framework yields saturated dropout profiles under fixed budget; a rank-flow tie-breaker then selects front-loaded schedules, substantially reducing held-out test loss at no extra computational cost, with accu",
+      "authors": [
+        "Lucas Fernandez Sarmiento"
+      ],
+      "link": "https://arxiv.org/abs/2605.21648v1",
+      "source": "arxiv",
+      "date": "2026-05-24",
+      "title_zh": "Dropout Universality: Scaling Laws and Optimal Scheduling at the Edge-of-Chaos",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
+    {
+      "id": "2605.21665v1",
+      "title": "Planning, Scheduling, and Behavior in EV Charging Systems: A Critical Survey and Trilemma Framework",
+      "summary": "The rapid growth of electric vehicles is shifting the main constraint on transport electrification from vehicle adoption to the deployment and operation of charging infrastructure. Charging-network design requires decisions across three interdependent layers: Planning, which determines where and how much infrastructure to build; Scheduling, which governs charging dispatch, pricing, and grid interaction; and Behavior, which captures how users choose stations, charging times, and charging durations. Existing studies have advanced each layer substantially, but the literature remains fragmented, and cross-layer interactions are often treated through simplifying assumptions. This survey develops a three-layer Planning-Scheduling-Behavior (PSB) framework to organize EV charging research according to decision horizon, actor objective, and coupling structure. We further identify a fidelity-tractability tradeoff, termed the PSB trilemma: each layer is computationally difficult in isolation, and",
+      "authors": [
+        "Peiyan Xiao",
+        "Yuheng Li",
+        "Ayan Mukhopadhyay",
+        "Sai Krishna Ghanta",
+        "Sabur Baidya",
+        "Yanhai Xiong"
+      ],
+      "link": "https://arxiv.org/abs/2605.21665v1",
+      "source": "arxiv",
+      "date": "2026-05-24",
+      "title_zh": "Planning, Scheduling, and Behavior in EV Charging Systems: A Critical Survey and Trilemma Framework",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
+    {
       "id": "2605.22642",
       "title": "Spreadsheet-RL: Advancing Large Language Model Agents on Realistic Spreadsheet Tasks via Reinforcement Learning",
       "summary": "Spreadsheet systems (e.g., Microsoft Excel, Google Sheets) play a central role in modern data-centric workflows. As AI agents grow increasingly capable of automating complex tasks, such as controlling computers and generating presentations, building an AI-driven spreadsheet agent has emerged as a promising research direction. Most existing spreadsheet agents rely on specialized prompting over general-purpose LLMs; while this design has potentials on simple spreadsheet operations, it struggles to manage the complex, multi-step workflows typical of real-world applications.\n  We introduce Spreadsheet-RL, a reinforcement learning (RL) fine-tuning framework designed to train specialized spreadsheet agents within a realistic Microsoft Excel environment. Spreadsheet-RL features an automated pipeline for scalable collection of paired start-goal spreadsheets from online forums, as well as domain-specific evaluation tasks in areas such as finance and supply chain management, which we compile int",
