@@ -23,6 +23,7 @@ def fetch() -> list[dict]:
                             for a in (base.get("authors") or [])],
                 "link": f"https://huggingface.co/papers/{paper_id}",
                 "source": "huggingface",
+                "date": (base.get("publishedAt") or p.get("publishedAt") or "")[:10],
             })
         return papers
     except Exception:

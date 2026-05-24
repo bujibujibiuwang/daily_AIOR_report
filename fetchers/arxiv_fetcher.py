@@ -43,6 +43,8 @@ def fetch(max_results: int = 50) -> list[dict]:
                 for a in entry.findall("atom:author", ns)
                 if a.find("atom:name", ns) is not None
             ]
+            published_elem = entry.find("atom:published", ns)
+            published = (published_elem.text or "")[:10] if published_elem is not None else ""
             papers.append({
                 "id": arxiv_id,
                 "title": title,
@@ -50,6 +52,7 @@ def fetch(max_results: int = 50) -> list[dict]:
                 "authors": authors,
                 "link": f"https://arxiv.org/abs/{arxiv_id}",
                 "source": "arxiv",
+                "date": published,
             })
         return papers
     except Exception:

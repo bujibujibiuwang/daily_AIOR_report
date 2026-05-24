@@ -2,6 +2,7 @@ import os
 import json
 import re
 import time
+from datetime import date, timedelta
 import openai
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -9,17 +10,15 @@ OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.deepseek.com")
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "deepseek-chat")
 
 _OR_KEYWORDS = [
-    # 核心 OR 问题
-    "SUPPLY CHAIN", "INVENTORY MANAGEMENT", "INVENTORY OPTIMIZATION",
-    "VEHICLE ROUTING", "VRP", "TSP", "TRAVELING SALESMAN",
-    "JOB SHOP", "FLOW SHOP", "OPEN SHOP", "JSP", "SCHEDULING PROBLEM",
-    "PRODUCTION PLANNING", "PRODUCTION SCHEDULING",
+    # 经典 OR 问题
+    "SUPPLY CHAIN", "INVENTORY", "VEHICLE ROUTING", "VRP", "TSP",
+    "TRAVELING SALESMAN", "JOB SHOP", "JOBSHOP", "JOB-SHOP",
+    "FLOW SHOP", "SCHEDULING", "PRODUCTION PLANNING",
     "OPERATIONS RESEARCH", "OPERATIONAL RESEARCH",
     "MATHEMATICAL PROGRAMMING", "LINEAR PROGRAMMING", "INTEGER PROGRAMMING",
     "MIXED INTEGER", "STOCHASTIC PROGRAMMING", "ROBUST OPTIMIZATION",
-    "COMBINATORIAL OPTIMIZATION", "NETWORK FLOW", "NETWORK OPTIMIZATION",
-    "FACILITY LOCATION", "WAREHOUSE", "ORDER PICKING",
-    "RESOURCE ALLOCATION", "RESOURCE SCHEDULING",
+    "COMBINATORIAL OPTIMIZATION", "NETWORK FLOW", "FACILITY LOCATION",
+    "WAREHOUSE", "ORDER PICKING", "RESOURCE ALLOCATION",
     "METAHEURISTIC", "GENETIC ALGORITHM", "SIMULATED ANNEALING",
     "TABU SEARCH", "ANT COLONY", "PARTICLE SWARM",
     "COLUMN GENERATION", "BRANCH AND BOUND", "BRANCH AND PRICE",
@@ -27,23 +26,77 @@ _OR_KEYWORDS = [
     "DEMAND FORECASTING", "DELIVERY ROUTING", "LAST MILE",
     "MULTI-OBJECTIVE OPTIMIZATION", "PARETO",
     "CAPACITATED", "BIN PACKING", "KNAPSACK",
+    "ROUTING PROBLEM", "CONSTRAINT PROGRAMMING", "LOCAL SEARCH",
+    "BILEVEL OPTIMIZATION", "PARALLEL MACHINE", "LOGISTICS",
+    "DISPATCH", "ASSIGNMENT PROBLEM", "SET COVERING", "SET PACKING",
+]
+
+_AI_KEYWORDS = [
+    # 深度学习 / 强化学习
+    "REINFORCEMENT LEARNING", "DEEP LEARNING", "NEURAL NETWORK",
+    "TRANSFORMER", "ATTENTION MECHANISM", "GRAPH NEURAL",
+    "LARGE LANGUAGE MODEL", "LLM", "FOUNDATION MODEL",
+    "GENERATIVE", "DIFFUSION MODEL",
+    # ML 方法
+    "MACHINE LEARNING", "SUPERVISED LEARNING", "UNSUPERVISED",
+    "IMITATION LEARNING", "CONTRASTIVE LEARNING",
+    # AI for Optimization 专用词
+    "NEURAL COMBINATORIAL", "LEARNING TO OPTIMIZE", "LEARNING-BASED",
+    "POINTER NETWORK", "ATTENTION-BASED", "END-TO-END",
+    "POLICY GRADIENT", "PROXIMAL POLICY", "Q-LEARNING",
+    "MONTE CARLO TREE", "AUTOREGRESSIVE",
 ]
 
 
-def filter_relevant(papers: list[dict]) -> list[dict]:
-    """严格关键词过滤：要求标题或摘要中出现 OR 核心关键词"""
+def filter_relevant(papers: list[dict], days: int = 30) -> list[dict]:
+    """
+    双维度评分过滤 + 时间过滤：
+    - 时间：只保留最近 days 天内发表的论文（依赖 paper['date'] 字段）
+    - OR 维度：命中 OR 关键词的数量
+    - AI 维度：命中 AI/ML 关键词的数量
+    保留策略：
+      1. 标题命中 OR 关键词 → 直接保留（核心 OR 论文）
+      2. OR 分 >= 2 且 AI 分 >= 1 → 保留（AI+OR 交叉）
+      3. 仅 OR 分 >= 3 → 保留（纯 OR 但高度相关）
+    """
+    cutoff = date.today() - timedelta(days=days)
     result = []
+    skipped_old = 0
+
     for p in papers:
+        # 时间过滤
+        raw_date = p.get("date", "")
+        if raw_date:
+            try:
+                paper_date = date.fromisoformat(str(raw_date)[:10])
+                if paper_date < cutoff:
+                    skipped_old += 1
+                    continue
+            except ValueError:
+                pass  # 日期格式异常则不过滤
+
         title = p.get("title", "").upper()
         summary = p.get("summary", "").upper()
-        # 标题命中权重更高：标题命中即保留
-        if any(kw in title for kw in _OR_KEYWORDS):
+        text = title + " " + summary
+
+        or_title_hits = sum(1 for kw in _OR_KEYWORDS if kw in title)
+        or_hits = sum(1 for kw in _OR_KEYWORDS if kw in text)
+        ai_hits = sum(1 for kw in _AI_KEYWORDS if kw in text)
+
+        # 规则 1：标题直接命中 OR 关键词
+        if or_title_hits >= 1:
             result.append(p)
             continue
-        # 摘要需要命中至少 2 个关键词才保留（避免偶然提及）
-        hits = sum(1 for kw in _OR_KEYWORDS if kw in summary)
-        if hits >= 2:
+        # 规则 2：AI+OR 双维度交叉（摘要中均有命中）
+        if or_hits >= 2 and ai_hits >= 1:
             result.append(p)
+            continue
+        # 规则 3：摘要高度 OR 相关（纯 OR 论文，无需 AI 词）
+        if or_hits >= 3:
+            result.append(p)
+
+    if skipped_old:
+        print(f"  [filter] skipped {skipped_old} papers older than {days} days")
     return result
 
 
