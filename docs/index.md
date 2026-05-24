@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-05-23
+2026-05-24
+
+今日无新增 OR 相关研究
+## 📅 2026-05-23
 
 
 ### AutoRubric-T2I: Robust Rule-Based Reward Model for Text-to-Image Alignment
