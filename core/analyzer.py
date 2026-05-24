@@ -8,19 +8,40 @@ OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.deepseek.com")
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "deepseek-chat")
 
 _OR_KEYWORDS = [
-    "SUPPLY CHAIN", "INVENTORY", "FORECAST", "OPTIMIZATION", "ROUTE",
-    "SCHEDULING", "PRODUCTION", "TSP", "VRP", "JSP", "LOGISTICS",
-    "MATHEMATICAL PROGRAMMING", "DECISION MAKING", "ASSIGNMENT", "PLANNING",
-    "OPERATIONS RESEARCH", "NETWORK FLOW", "INTEGER PROGRAMMING",
-    "COMBINATORIAL", "HEURISTIC", "METAHEURISTIC", "DISPATCH",
+    # 核心 OR 问题
+    "SUPPLY CHAIN", "INVENTORY MANAGEMENT", "INVENTORY OPTIMIZATION",
+    "VEHICLE ROUTING", "VRP", "TSP", "TRAVELING SALESMAN",
+    "JOB SHOP", "FLOW SHOP", "OPEN SHOP", "JSP", "SCHEDULING PROBLEM",
+    "PRODUCTION PLANNING", "PRODUCTION SCHEDULING",
+    "OPERATIONS RESEARCH", "OPERATIONAL RESEARCH",
+    "MATHEMATICAL PROGRAMMING", "LINEAR PROGRAMMING", "INTEGER PROGRAMMING",
+    "MIXED INTEGER", "STOCHASTIC PROGRAMMING", "ROBUST OPTIMIZATION",
+    "COMBINATORIAL OPTIMIZATION", "NETWORK FLOW", "NETWORK OPTIMIZATION",
+    "FACILITY LOCATION", "WAREHOUSE", "ORDER PICKING",
+    "RESOURCE ALLOCATION", "RESOURCE SCHEDULING",
+    "METAHEURISTIC", "GENETIC ALGORITHM", "SIMULATED ANNEALING",
+    "TABU SEARCH", "ANT COLONY", "PARTICLE SWARM",
+    "COLUMN GENERATION", "BRANCH AND BOUND", "BRANCH AND PRICE",
+    "LAGRANGIAN RELAXATION", "BENDERS DECOMPOSITION",
+    "DEMAND FORECASTING", "DELIVERY ROUTING", "LAST MILE",
+    "MULTI-OBJECTIVE OPTIMIZATION", "PARETO",
+    "CAPACITATED", "BIN PACKING", "KNAPSACK",
 ]
 
 
 def filter_relevant(papers: list[dict]) -> list[dict]:
+    """严格关键词过滤：要求标题或摘要中出现 OR 核心关键词"""
     result = []
     for p in papers:
-        text = f"{p.get('title', '')} {p.get('summary', '')}".upper()
-        if any(kw in text for kw in _OR_KEYWORDS):
+        title = p.get("title", "").upper()
+        summary = p.get("summary", "").upper()
+        # 标题命中权重更高：标题命中即保留
+        if any(kw in title for kw in _OR_KEYWORDS):
+            result.append(p)
+            continue
+        # 摘要需要命中至少 2 个关键词才保留（避免偶然提及）
+        hits = sum(1 for kw in _OR_KEYWORDS if kw in summary)
+        if hits >= 2:
             result.append(p)
     return result
 
@@ -48,7 +69,7 @@ def analyze_batch(papers: list[dict]) -> list[dict]:
 
 输出一个JSON对象，包含 "papers" 数组，每个元素格式：
 {{
-  "id": "原样复制论文ID",
+  "id": "原样复制论文ID，不得修改",
   "title_zh": "中文标题（简洁准确）",
   "contribution_zh": "核心算法创新（一句话，不超过50字）",
   "value_zh": "工业应用场景（一句话，不超过50字）",
@@ -56,8 +77,13 @@ def analyze_batch(papers: list[dict]) -> list[dict]:
   "score": 与AI+OR交叉的相关性评分0-10（整数）
 }}
 
-评分标准：10=直接研究OR核心问题；7-9=AI方法用于OR场景；4-6=间接相关；0-3=基本无关。
-如果完全无关请将score设为0。只输出JSON，不要有其他内容。
+评分标准：
+- 9-10分：直接研究OR核心问题（调度、路径规划、供应链优化等）
+- 7-8分：AI/ML方法明确用于解决OR经典问题
+- 4-6分：间接相关（通用优化方法，可能适用于OR）
+- 0-3分：与OR无关（纯CV、NLP、视频生成等）
+
+只输出JSON，不要有其他内容。每篇论文的id必须与输入完全一致。
 
 论文列表：
 {context}"""
@@ -72,7 +98,15 @@ def analyze_batch(papers: list[dict]) -> list[dict]:
             match = re.search(r"\{.*\}", raw, re.DOTALL)
             if match:
                 data = json.loads(match.group())
-                results.extend(data.get("papers", []))
+                batch_results = data.get("papers", [])
+                # 验证 id 匹配，打印不匹配的情况便于调试
+                batch_ids = {p["id"] for p in batch}
+                for r in batch_results:
+                    if r.get("id") not in batch_ids:
+                        print(f"  [analyzer] WARNING: LLM returned unknown id: {r.get('id')!r}")
+                results.extend(batch_results)
+            else:
+                print(f"  [analyzer] WARNING: no JSON found in response: {raw[:200]}")
         except Exception as e:
             print(f"  [analyzer] batch error: {e}")
 

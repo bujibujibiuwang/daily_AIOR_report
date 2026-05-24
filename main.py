@@ -77,8 +77,8 @@ def main() -> None:
     enriched: list[dict] = []
     for p in relevant:
         a = analysis_map.get(p["id"], {})
-        score = a.get("score", 5)
-        if score < 3:
+        score = a.get("score", 0)
+        if score < 6:
             continue
         enriched.append({
             **p,
