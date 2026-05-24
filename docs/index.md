@@ -3,6 +3,43 @@ layout: default
 ---
 2026-05-24
 
+
+### Deep Reinforcement Learning for Flexible Job Shop Scheduling with Random Job Arrivals
+- **英文标题**: Deep Reinforcement Learning for Flexible Job Shop Scheduling with Random Job Arrivals
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Yu Tang, Muhammad Zakwan, Efe Balta
+- **论文链接**: https://arxiv.org/abs/2605.22773v1
+---
+
+### Planning, Scheduling, and Behavior in EV Charging Systems: A Critical Survey and Trilemma Framework
+- **英文标题**: Planning, Scheduling, and Behavior in EV Charging Systems: A Critical Survey and Trilemma Framework
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Peiyan Xiao, Yuheng Li, Ayan Mukhopadhyay
+- **论文链接**: https://arxiv.org/abs/2605.21665v1
+---
+
+### Dropout Universality: Scaling Laws and Optimal Scheduling at the Edge-of-Chaos
+- **英文标题**: Dropout Universality: Scaling Laws and Optimal Scheduling at the Edge-of-Chaos
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Lucas Fernandez Sarmiento
+- **论文链接**: https://arxiv.org/abs/2605.21648v1
+---
+
+### Agent JIT Compilation for Latency-Optimizing Web Agent Planning and Scheduling
+- **英文标题**: Agent JIT Compilation for Latency-Optimizing Web Agent Planning and Scheduling
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Caleb Winston, Ron Yifeng Wang, Azalia Mirhoseini
+- **论文链接**: https://arxiv.org/abs/2605.21470v1
+---
+
+### Large Language Models for Operations Research: A Comprehensive Survey
+- **英文标题**: Large Language Models for Operations Research: A Comprehensive Survey
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Xianchao Xiu, Jianhao Li, Jun Fan
+- **论文链接**: https://arxiv.org/abs/2605.20849v1
+---
+## 📅 2026-05-24
+
 今日无新增 OR 相关研究
 ## 📅 2026-05-24
 
