@@ -1,6 +1,7 @@
 import os
 import json
 import re
+import time
 import openai
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -89,10 +90,24 @@ def analyze_batch(papers: list[dict]) -> list[dict]:
 {context}"""
 
         try:
-            resp = client.chat.completions.create(
-                model=OPENAI_MODEL,
-                messages=[{"role": "user", "content": prompt}],
-            )
+            # 最多重试 3 次，间隔 10/20/30 秒
+            last_err = None
+            for attempt in range(3):
+                try:
+                    resp = client.chat.completions.create(
+                        model=OPENAI_MODEL,
+                        messages=[{"role": "user", "content": prompt}],
+                        timeout=60,
+                    )
+                    break
+                except Exception as e:
+                    last_err = e
+                    wait = (attempt + 1) * 10
+                    print(f"  [analyzer] attempt {attempt+1} failed: {e}, retrying in {wait}s...")
+                    time.sleep(wait)
+            else:
+                raise last_err
+
             raw = resp.choices[0].message.content.strip()
             # Extract JSON object
             match = re.search(r"\{.*\}", raw, re.DOTALL)
@@ -108,6 +123,17 @@ def analyze_batch(papers: list[dict]) -> list[dict]:
             else:
                 print(f"  [analyzer] WARNING: no JSON found in response: {raw[:200]}")
         except Exception as e:
-            print(f"  [analyzer] batch error: {e}")
+            print(f"  [analyzer] batch error (all retries failed): {e}")
+            # 兜底：将本批论文以默认分数 6 加入结果，确保不丢失
+            for p in batch:
+                results.append({
+                    "id": p["id"],
+                    "title_zh": p["title"],
+                    "contribution_zh": "",
+                    "value_zh": "",
+                    "keywords": [],
+                    "score": 6,
+                })
+            print(f"  [analyzer] fallback: added {len(batch)} papers with default score=6")
 
     return results
