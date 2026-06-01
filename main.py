@@ -32,7 +32,7 @@ def build_email_body(papers: list[dict], today_str: str) -> str:
 def main() -> None:
     today = date.today()
     today_str = str(today)
-    print(f"=== AI+OR Daily Report {today_str} ===")
+    print(f"=== AI+Supply Chain Daily Report {today_str} ===")
 
     # 1. Multi-source fetch
     print("Fetching: HuggingFace...")
@@ -95,7 +95,9 @@ def main() -> None:
     # 7. Persist
     storage.save_papers_json(enriched)
     storage.save_index_md(enriched, today_str)
-    storage.save_history([p["id"] for p in relevant])  # mark ALL relevant as seen
+    # Mark ALL fetched new papers as seen (not just relevant ones),
+    # otherwise non-OR papers recur forever and create an infinite loop.
+    storage.save_history([p["id"] for p in new_papers])
 
     # 8. Email
     email_body = build_email_body(enriched, today_str)

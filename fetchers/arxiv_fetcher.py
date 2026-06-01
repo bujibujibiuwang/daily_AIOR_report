@@ -1,22 +1,36 @@
 import requests
 import xml.etree.ElementTree as ET
+from datetime import date, timedelta
 
 
 ARXIV_BASE = "http://export.arxiv.org/api/query"
 
-_QUERY = (
-    '(ti:"supply chain" OR ti:"vehicle routing" OR ti:"VRP" OR ti:"TSP" '
-    'OR ti:"scheduling" OR ti:"logistics" OR ti:"inventory" '
-    'OR ti:"operations research" OR ti:"combinatorial optimization" '
-    'OR abs:"vehicle routing" OR abs:"operations research" '
-    'OR abs:"combinatorial optimization" OR abs:"integer programming") '
-    'AND (cat:cs.AI OR cat:math.OC OR cat:cs.LG OR cat:econ.GN)'
+_QUERY_TEMPLATE = (
+    # 供应链核心问题词（标题或摘要命中）
+    '(ti:"supply chain" OR ti:"demand forecast" OR ti:"demand prediction" '
+    'OR ti:"inventory" OR ti:"safety stock" OR ti:"replenishment" '
+    'OR ti:"inventory control" OR ti:"inventory management" '
+    'OR ti:"inventory optimization" OR ti:"demand planning" '
+    'OR ti:"supply chain risk" OR ti:"supply chain disruption" '
+    'OR abs:"demand forecasting" OR abs:"inventory optimization" '
+    'OR abs:"safety stock" OR abs:"replenishment policy" '
+    'OR abs:"supply chain management" OR abs:"newsvendor") '
+    # 交集：要求论文在 AI/ML 相关类别下
+    'AND (cat:cs.LG OR cat:cs.AI OR cat:stat.ML OR cat:math.OC OR cat:econ.GN)'
+    ' AND submittedDate:[{start} TO {end}]'
 )
 
 
-def fetch(max_results: int = 50) -> list[dict]:
+def fetch(max_results: int = 100) -> list[dict]:
+    # 抓取最近 7 天提交的 OR 相关论文，确保每天都有新内容
+    end_date = date.today()
+    start_date = end_date - timedelta(days=7)
+    query = _QUERY_TEMPLATE.format(
+        start=start_date.strftime("%Y%m%d") + "0000",
+        end=end_date.strftime("%Y%m%d") + "2359",
+    )
     params = {
-        "search_query": _QUERY,
+        "search_query": query,
         "start": 0,
         "max_results": max_results,
         "sortBy": "submittedDate",

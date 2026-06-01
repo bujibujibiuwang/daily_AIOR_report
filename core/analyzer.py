@@ -9,49 +9,64 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.deepseek.com")
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "deepseek-chat")
 
-_OR_KEYWORDS = [
-    # 经典 OR 问题
-    "SUPPLY CHAIN", "INVENTORY", "VEHICLE ROUTING", "VRP", "TSP",
-    "TRAVELING SALESMAN", "JOB SHOP", "JOBSHOP", "JOB-SHOP",
-    "FLOW SHOP", "SCHEDULING", "PRODUCTION PLANNING",
-    "OPERATIONS RESEARCH", "OPERATIONAL RESEARCH",
-    "MATHEMATICAL PROGRAMMING", "LINEAR PROGRAMMING", "INTEGER PROGRAMMING",
-    "MIXED INTEGER", "STOCHASTIC PROGRAMMING", "ROBUST OPTIMIZATION",
-    "COMBINATORIAL OPTIMIZATION", "NETWORK FLOW", "FACILITY LOCATION",
-    "WAREHOUSE", "ORDER PICKING", "RESOURCE ALLOCATION",
-    "METAHEURISTIC", "GENETIC ALGORITHM", "SIMULATED ANNEALING",
-    "TABU SEARCH", "ANT COLONY", "PARTICLE SWARM",
-    "COLUMN GENERATION", "BRANCH AND BOUND", "BRANCH AND PRICE",
-    "LAGRANGIAN RELAXATION", "BENDERS DECOMPOSITION",
-    "DEMAND FORECASTING", "DELIVERY ROUTING", "LAST MILE",
-    "MULTI-OBJECTIVE OPTIMIZATION", "PARETO",
-    "CAPACITATED", "BIN PACKING", "KNAPSACK",
-    "ROUTING PROBLEM", "CONSTRAINT PROGRAMMING", "LOCAL SEARCH",
-    "BILEVEL OPTIMIZATION", "PARALLEL MACHINE", "LOGISTICS",
-    "DISPATCH", "ASSIGNMENT PROBLEM", "SET COVERING", "SET PACKING",
+_SC_KEYWORDS = [
+    # 供应链核心概念
+    "SUPPLY CHAIN", "SUPPLY-CHAIN",
+    # 需求预测
+    "DEMAND FORECAST", "DEMAND PREDICTION", "DEMAND SENSING",
+    "SALES FORECAST", "SALES PREDICTION",
+    "DEMAND PLANNING", "DEMAND ESTIMATION",
+    # 库存管理
+    "INVENTORY", "INVENTORY CONTROL", "INVENTORY MANAGEMENT",
+    "INVENTORY OPTIMIZATION", "INVENTORY POLICY",
+    "SAFETY STOCK", "REORDER POINT", "STOCK-OUT", "STOCKOUT",
+    "REPLENISHMENT", "ORDER QUANTITY", "EOQ", "NEWSVENDOR",
+    "MULTI-ECHELON", "MULTI ECHELON",
+    # 供应链计划与优化
+    "PROCUREMENT", "SOURCING", "SUPPLIER SELECTION",
+    "PRODUCTION PLANNING", "MASTER PRODUCTION",
+    "CAPACITY PLANNING", "S&OP", "SALES AND OPERATIONS",
+    "WAREHOUSE", "DISTRIBUTION CENTER", "ORDER FULFILLMENT",
+    "LEAD TIME", "SERVICE LEVEL",
+    # 物流与配送（和供应链直接相关的）
+    "LAST MILE", "DELIVERY ROUTING", "LOGISTICS NETWORK",
+    "TRANSPORTATION PLANNING",
+    # 风险与扰动
+    "SUPPLY CHAIN DISRUPTION", "SUPPLY CHAIN RISK",
+    "BULLWHIP", "DEMAND UNCERTAINTY", "SUPPLY UNCERTAINTY",
 ]
 
 _AI_KEYWORDS = [
-    # 深度学习 / 强化学习
-    "REINFORCEMENT LEARNING", "DEEP LEARNING", "NEURAL NETWORK",
-    "TRANSFORMER", "ATTENTION MECHANISM", "GRAPH NEURAL",
+    # 深度学习
+    "DEEP LEARNING", "NEURAL NETWORK", "CONVOLUTIONAL", "RECURRENT",
+    "LSTM", "GRU", "TEMPORAL CONVOLUTIONAL",
+    # Transformer / 序列模型
+    "TRANSFORMER", "ATTENTION MECHANISM", "SELF-ATTENTION",
     "LARGE LANGUAGE MODEL", "LLM", "FOUNDATION MODEL",
-    "GENERATIVE", "DIFFUSION MODEL",
-    # ML 方法
-    "MACHINE LEARNING", "SUPERVISED LEARNING", "UNSUPERVISED",
-    "IMITATION LEARNING", "CONTRASTIVE LEARNING",
-    # AI for Optimization 专用词
-    "NEURAL COMBINATORIAL", "LEARNING TO OPTIMIZE", "LEARNING-BASED",
-    "POINTER NETWORK", "ATTENTION-BASED", "END-TO-END",
-    "POLICY GRADIENT", "PROXIMAL POLICY", "Q-LEARNING",
-    "MONTE CARLO TREE", "AUTOREGRESSIVE",
+    "TIME SERIES", "SEQUENCE MODEL", "TEMPORAL MODEL",
+    # 生成/概率模型
+    "GENERATIVE", "DIFFUSION MODEL", "NORMALIZING FLOW",
+    "PROBABILISTIC FORECAST", "CONFORMAL PREDICTION",
+    "QUANTILE REGRESSION", "UNCERTAINTY QUANTIFICATION",
+    # 强化学习
+    "REINFORCEMENT LEARNING", "POLICY GRADIENT", "Q-LEARNING",
+    "PROXIMAL POLICY", "DEEP RL", "MULTI-AGENT",
+    # 经典 ML
+    "MACHINE LEARNING", "GRADIENT BOOSTING", "XGBOOST", "LIGHTGBM",
+    "RANDOM FOREST", "SUPERVISED LEARNING", "TRANSFER LEARNING",
+    "GRAPH NEURAL", "GNN",
+    # AI for SC 专用
+    "LEARNING-BASED", "DATA-DRIVEN", "END-TO-END",
+    "AUTOREGRESSIVE", "FORECAST MODEL",
 ]
 
 
-def filter_relevant(papers: list[dict], days: int = 30) -> list[dict]:
+def filter_relevant(papers: list[dict], days: int = 90) -> list[dict]:
     """
     双维度评分过滤 + 时间过滤：
     - 时间：只保留最近 days 天内发表的论文（依赖 paper['date'] 字段）
+      注意：HF 的 publishedAt 是 arXiv 原始发布日期，可能数月前，
+      因此窗口放宽为 90 天，避免误杀 HF 精选的经典新论文。
     - OR 维度：命中 OR 关键词的数量
     - AI 维度：命中 AI/ML 关键词的数量
     保留策略：
@@ -62,6 +77,7 @@ def filter_relevant(papers: list[dict], days: int = 30) -> list[dict]:
     cutoff = date.today() - timedelta(days=days)
     result = []
     skipped_old = 0
+    no_date = 0
 
     for p in papers:
         # 时间过滤
@@ -74,29 +90,35 @@ def filter_relevant(papers: list[dict], days: int = 30) -> list[dict]:
                     continue
             except ValueError:
                 pass  # 日期格式异常则不过滤
+        else:
+            no_date += 1
 
         title = p.get("title", "").upper()
         summary = p.get("summary", "").upper()
         text = title + " " + summary
 
-        or_title_hits = sum(1 for kw in _OR_KEYWORDS if kw in title)
-        or_hits = sum(1 for kw in _OR_KEYWORDS if kw in text)
+        sc_title_hits = sum(1 for kw in _SC_KEYWORDS if kw in title)
+        sc_hits = sum(1 for kw in _SC_KEYWORDS if kw in text)
         ai_hits = sum(1 for kw in _AI_KEYWORDS if kw in text)
 
-        # 规则 1：标题直接命中 OR 关键词
-        if or_title_hits >= 1:
+        # 规则 1：标题直接命中供应链关键词 + 任意 AI 词 → 直接保留
+        if sc_title_hits >= 1 and ai_hits >= 1:
             result.append(p)
             continue
-        # 规则 2：AI+OR 双维度交叉（摘要中均有命中）
-        if or_hits >= 2 and ai_hits >= 1:
+        # 规则 2：标题命中供应链关键词（即使暂无 AI 词，也保留待 LLM 判断）
+        if sc_title_hits >= 1:
             result.append(p)
             continue
-        # 规则 3：摘要高度 OR 相关（纯 OR 论文，无需 AI 词）
-        if or_hits >= 3:
+        # 规则 3：摘要中供应链 + AI 双维度交叉
+        if sc_hits >= 2 and ai_hits >= 1:
             result.append(p)
+            continue
 
     if skipped_old:
         print(f"  [filter] skipped {skipped_old} papers older than {days} days")
+    if no_date:
+        print(f"  [filter] {no_date} papers had no date (kept)")
+    print(f"  [filter] {len(result)} / {len(papers)} papers passed SC+AI keyword filter")
     return result
 
 
@@ -119,23 +141,27 @@ def analyze_batch(papers: list[dict]) -> list[dict]:
                 f"摘要: {p.get('summary', '')[:400]}\n---\n"
             )
 
-        prompt = f"""你是AI+运筹优化(OR)领域的资深研究员。请分析以下论文，返回严格的JSON格式。
+        prompt = f"""你是供应链 AI 领域的资深研究员，专注于将机器学习/深度学习技术应用于供应链管理问题。请分析以下论文，返回严格的JSON格式。
 
 输出一个JSON对象，包含 "papers" 数组，每个元素格式：
 {{
   "id": "原样复制论文ID，不得修改",
   "title_zh": "中文标题（简洁准确）",
   "contribution_zh": "核心算法创新（一句话，不超过50字）",
-  "value_zh": "工业应用场景（一句话，不超过50字）",
+  "value_zh": "供应链应用场景（一句话，不超过50字）",
   "keywords": ["关键词1","关键词2","关键词3"],
-  "score": 与AI+OR交叉的相关性评分0-10（整数）
+  "score": 与AI+供应链交叉的相关性评分0-10（整数）
 }}
 
-评分标准：
-- 9-10分：直接研究OR核心问题（调度、路径规划、供应链优化等）
-- 7-8分：AI/ML方法明确用于解决OR经典问题
-- 4-6分：间接相关（通用优化方法，可能适用于OR）
-- 0-3分：与OR无关（纯CV、NLP、视频生成等）
+评分标准（聚焦 AI × 供应链）：
+- 9-10分：AI/ML 方法直接用于供应链核心问题
+          例：需求预测、库存控制/优化、安全库存计算、补货策略、
+              供应链风险预测、采购优化、S&OP 计划
+- 7-8分：时间序列/概率预测方法，明确在零售/供应链场景验证
+          或强化学习用于库存/补货决策
+- 4-6分：通用时间序列预测方法（未明确供应链场景），
+          或供应链问题但未使用 AI 技术
+- 0-3分：与供应链无关（纯路径规划、调度、CV、NLP、视频生成等）
 
 只输出JSON，不要有其他内容。每篇论文的id必须与输入完全一致。
 
