@@ -1,6 +1,27 @@
 {
-  "updated": "2026-06-05",
+  "updated": "2026-06-06",
   "papers": [
+    {
+      "id": "2606.06201v1",
+      "title": "Learning to replenish: A hybrid deep reinforcement learning for dynamic inventory management in the pharmaceutical supply chains",
+      "summary": "Pharmaceutical supply chains (PSCs) struggle with inventory management (IM) due to unpredictable demand patterns and variable lead times associated with restocking. This complexity is further compounded by the finite shelf lives of pharmaceutical products, which necessitate a delicate balance between adequate stock and minimal waste. These intertwined factors create a complex optimization problem that requires sophisticated inventory strategies to ensure both product availability and PSC efficiency. This study aims to develop an optimal inventory replenishment policy for pharmaceutical products that can handle the stochasticity arising from uncertain demand and variable PSC conditions. The objective is to maximize the profitability of the PSC while maintaining a high patient service level. We formulate the problem as a Markov decision process and propose a deep reinforcement learning (DRL) approach, specifically, a hybrid asynchronous advantage actor critic distributed proximal policy ",
+      "authors": [
+        "Amandeep Kaur",
+        "Gyan Prakash"
+      ],
+      "link": "https://arxiv.org/abs/2606.06201v1",
+      "source": "arxiv",
+      "date": "2026-06-06",
+      "title_zh": "学习补货：药品供应链 动态库存管理混合深度强化学习",
+      "contribution_zh": "提出混合深度强化学习用于动态库存管理",
+      "value_zh": "优化药品供应链库存，平衡库存和减少浪费",
+      "keywords": [
+        "强化学习",
+        "库存管理",
+        "药品供应链"
+      ],
+      "score": 10
+    },
     {
       "id": "2605.22773v1",
       "title": "Deep Reinforcement Learning for Flexible Job Shop Scheduling with Random Job Arrivals",

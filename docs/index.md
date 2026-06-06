@@ -1,7 +1,19 @@
 ---
 layout: default
 ---
-2026-06-05
+2026-06-06
+
+
+### 学习补货：药品供应链 动态库存管理混合深度强化学习
+- **英文标题**: Learning to replenish: A hybrid deep reinforcement learning for dynamic inventory management in the pharmaceutical supply chains
+- **来源**: 📄 arXiv  ⭐ 10/10
+- **作者**: Amandeep Kaur, Gyan Prakash
+- **核心贡献**: 提出混合深度强化学习用于动态库存管理
+- **实践价值**: 优化药品供应链库存，平衡库存和减少浪费
+- **OR 技术关键词**: 强化学习, 库存管理, 药品供应链
+- **论文链接**: https://arxiv.org/abs/2606.06201v1
+---
+## 📅 2026-06-05
 
 今日无新增 OR 相关研究
 ## 📅 2026-06-04
