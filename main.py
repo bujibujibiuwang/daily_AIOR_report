@@ -5,7 +5,7 @@ Multi-source fetch → LLM analysis → papers.json + index.md + email
 import os
 from datetime import date
 
-from fetchers import hf_fetcher, arxiv_fetcher, pwc_fetcher
+from fetchers import hf_fetcher, arxiv_fetcher, pwc_fetcher, or_journals_fetcher
 from core import storage, notifier
 from core.analyzer import filter_relevant, analyze_batch
 
@@ -43,14 +43,14 @@ def main() -> None:
     arxiv = arxiv_fetcher.fetch()
     print(f"  arXiv: {len(arxiv)} papers")
 
-    print("Fetching: PapersWithCode...")
-    pwc = pwc_fetcher.fetch()
-    print(f"  PWC: {len(pwc)} papers")
+    print("Fetching: OR Journals (Crossref)...")
+    oj = or_journals_fetcher.fetch(days_back=30, per_journal=100)
+    print(f"  OR-Journal: {len(oj)} papers")
 
     # 2. Deduplicate
     seen: set[str] = set()
     all_papers: list[dict] = []
-    for p in raw + arxiv + pwc:
+    for p in raw + arxiv + oj:
         if p["id"] not in seen:
             seen.add(p["id"])
             all_papers.append(p)

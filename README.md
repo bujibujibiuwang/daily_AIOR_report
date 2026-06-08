@@ -21,7 +21,7 @@ GitHub Actions (每天 09:00 北京时间)
         ├─ 1. 多源抓取
         │   ├── fetchers/hf_fetcher.py      → HuggingFace Daily Papers
         │   ├── fetchers/arxiv_fetcher.py   → arXiv (cs.AI + math.OC)
-        │   └── fetchers/pwc_fetcher.py     → PapersWithCode
+        │   └── fetchers/or_journals_fetcher.py     → OR期刊(Crossref: OR/MS)
         │
         ├─ 2. 去重 + 历史过滤
         │   └── core/storage.py → 读取 history.txt，过滤已处理论文
@@ -70,10 +70,10 @@ web/app/page.tsx  (服务端读取 JSON，传给客户端)
 ## 🔄 一次完整运行的数据流
 
 ```
-HF + arXiv + PWC
+HF + arXiv + OR-Journal
     → 去重(~100篇)
     → 历史过滤(只留今日新论文)
-    → 关键词过滤(只留OR相关)
+    → 关键词过滤(只留Supply Chain + AI相关)
     → LLM打分(0-10，过滤<3分)
     → 写入 papers.json / index.md / history.txt
     → 发邮件
