@@ -1,6 +1,29 @@
 {
-  "updated": "2026-06-07",
+  "updated": "2026-06-08",
   "papers": [
+    {
+      "id": "2606.07044v1",
+      "title": "Hierarchical Forecast Reconciliation for Urban Rail Transit Demand Prediction under Operational Disruptions",
+      "summary": "Accurate and coherent passenger demand forecasting is essential for Urban Rail Transit (URT) operations. Passenger demand has a hierarchical structure in which origin-destination (OD) flows aggregate to station-level inflows and outflows through conservation constraints. In practice, station-level and OD-level forecasts are often generated independently, producing incoherent predictions that violate these constraints and introduce inconsistencies into operational decision-making. Such issues become more severe during disruptions, when forecasting reliability is most critical. This paper presents the first hierarchical forecast reconciliation framework for joint station-level and OD-level URT demand prediction. A neural Fully Connected Reconciler (FCR) learns a non-linear mapping from incoherent base forecasts to coherent hierarchical predictions while guaranteeing exact structural consistency by construction. The method is benchmarked against OLS, WLS, and Minimum Trace (MinT) variants",
+      "authors": [
+        "Dang Viet Anh Nguyen",
+        "Alma Fazlagic",
+        "Kristine Pryds Loft",
+        "Filipe Rodrigues"
+      ],
+      "link": "https://arxiv.org/abs/2606.07044v1",
+      "source": "arxiv",
+      "date": "2026-06-08",
+      "title_zh": "城市轨道交通需求预测中的分层预测协调",
+      "contribution_zh": "提出分层预测协调方法",
+      "value_zh": "应用于城市轨道交通需求预测",
+      "keywords": [
+        "城市轨道交通",
+        "需求预测",
+        "分层预测"
+      ],
+      "score": 8
+    },
     {
       "id": "2606.06201v1",
       "title": "Learning to replenish: A hybrid deep reinforcement learning for dynamic inventory management in the pharmaceutical supply chains",

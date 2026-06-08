@@ -1,7 +1,19 @@
 ---
 layout: default
 ---
-2026-06-07
+2026-06-08
+
+
+### 城市轨道交通需求预测中的分层预测协调
+- **英文标题**: Hierarchical Forecast Reconciliation for Urban Rail Transit Demand Prediction under Operational Disruptions
+- **来源**: 📄 arXiv  ⭐ 8/10
+- **作者**: Dang Viet Anh Nguyen, Alma Fazlagic, Kristine Pryds Loft
+- **核心贡献**: 提出分层预测协调方法
+- **实践价值**: 应用于城市轨道交通需求预测
+- **OR 技术关键词**: 城市轨道交通, 需求预测, 分层预测
+- **论文链接**: https://arxiv.org/abs/2606.07044v1
+---
+## 📅 2026-06-07
 
 今日无新增 OR 相关研究
 ## 📅 2026-06-06
