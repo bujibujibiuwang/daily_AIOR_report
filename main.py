@@ -17,13 +17,13 @@ def build_email_body(papers: list[dict], today_str: str) -> str:
     for p in papers:
         lines += [
             "",
-            f"📄 {p.get('title_zh') or p['title']}",
-            f"   {p['title']}",
+            f"📄 {p.get('title_zh') or p.get('title', 'N/A')}",
+            f"   {p.get('title', 'N/A')}",
             f"📌 核心贡献: {p.get('contribution_zh', '')}",
             f"💼 实践价值: {p.get('value_zh', '')}",
             f"🏷️  关键词: {', '.join(p.get('keywords', []))}",
             f"⭐ 相关性: {p.get('score', 0)}/10  |  来源: {p.get('source', '')}",
-            f"🔗 {p['link']}",
+            f"🔗 {p.get('link', p.get('url', 'N/A'))}",
             "-" * 40,
         ]
     return "\n".join(lines)
