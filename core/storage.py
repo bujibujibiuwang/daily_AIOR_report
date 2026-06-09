@@ -83,7 +83,7 @@ def save_index_md(papers: list[dict], today_str: str) -> None:
                 lines.append(f"- **实践价值**: {p['value_zh']}")
             if p.get("keywords"):
                 lines.append(f"- **OR 技术关键词**: {', '.join(p['keywords'])}")
-            lines.append(f"- **论文链接**: {p['link']}")
+            lines.append(f"- **论文链接**: {p.get('link', p.get('url', 'N/A'))}")
             lines.append("---")
         block_body = "\n".join(lines) + "\n"
 
