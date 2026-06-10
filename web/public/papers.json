@@ -1,6 +1,26 @@
 {
-  "updated": "2026-06-09",
+  "updated": "2026-06-10",
   "papers": [
+    {
+      "id": "2606.10359v1",
+      "title": "ReflectiChain: Epistemic Grounding in LLM-Driven World Models for Supply Chain Resilience",
+      "summary": "AI agents in supply chains face a fundamental epistemic gap: large language models (LLMs) interpret policies but lack physical grounding, while reinforcement learning (RL) optimizes flows but is semantically blind to unstructured constraints. We introduce REFLECTICHAIN, bridging this gap through a Generative Supply Chain World Model (SC-WM) - encoding heterogeneous supply networks into a 6-dim graph-latent space with physical conservation - and Double-Loop Learning that separates epistemic uncertainty (KL-trust-region-bounded policy adaptation) from aleatoric uncertainty (stochastic latent rollouts). On Semi-Sim, a 10-node semiconductor benchmark with SIR risk propagation, 6 perturbation types, and 10 policy constraint templates, REFLECTICHAIN improves Rationale Consistency Score by 33.0% (p < 0.0001, d = 2.78), maintains 82.3% operability under adversarial shocks, and exhibits anti-fragile behavior (+40.2% gain under moderate pressure). We identify three operational epistemic mechanisms - uncertainty separation, knowledge-boundary detection, and empirical Bayesian policy updating - and discuss five limitation categories.",
+      "authors": [
+        "Jia Luo"
+      ],
+      "link": "https://arxiv.org/abs/2606.10359v1",
+      "source": "arxiv",
+      "date": "2026-06-10",
+      "title_zh": "ReflectiChain：供应链世界模型中的认知基础",
+      "contribution_zh": "引入生成式供应链世界模型",
+      "value_zh": "供应链抗风险能力",
+      "keywords": [
+        "大语言模型",
+        "强化学习",
+        "供应链世界模型"
+      ],
+      "score": 9
+    },
     {
       "id": "2606.08314v1",
       "title": "Integrating Deep Learning Demand Forecasting with Multi-Objective Optimization for Circular Coffee Supply Chains: A Data-Driven Framework for Cost, Emissions, and Freshness Management",

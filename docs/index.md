@@ -1,7 +1,19 @@
 ---
 layout: default
 ---
-2026-06-09
+2026-06-10
+
+
+### ReflectiChain：供应链世界模型中的认知基础
+- **英文标题**: ReflectiChain: Epistemic Grounding in LLM-Driven World Models for Supply Chain Resilience
+- **来源**: 📄 arXiv  ⭐ 9/10
+- **作者**: Jia Luo
+- **核心贡献**: 引入生成式供应链世界模型
+- **实践价值**: 供应链抗风险能力
+- **OR 技术关键词**: 大语言模型, 强化学习, 供应链世界模型
+- **论文链接**: https://arxiv.org/abs/2606.10359v1
+---
+## 📅 2026-06-09
 
 
 ### 集成深度学习需求预测与多目标优化的循环咖啡供应链
