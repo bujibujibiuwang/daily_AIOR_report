@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-15",
+  "updated": "2026-06-16",
   "papers": [
     {
       "id": "2606.10359v1",
@@ -2531,83 +2531,6 @@
       "value_zh": "",
       "keywords": [],
       "score": 5
-    },
-    {
-      "id": "2605.07637",
-      "title": "Learning to Communicate Locally for Large-Scale Multi-Agent Pathfinding",
-      "title_zh": "大规模多智能体路径规划中的局部通信学习",
-      "summary": "We propose a scalable decentralized multi-agent pathfinding solver based on local communication learning.",
-      "authors": [],
-      "link": "https://huggingface.co/papers/2605.07637",
-      "source": "huggingface",
-      "date": "2026-05-16",
-      "score": 8,
-      "contribution_zh": "提出基于局部通信的可扩展去中心化多智能体路径规划求解器",
-      "value_zh": "适用于物流仓储多机器人协同、大规模实时调度场景",
-      "keywords": [
-        "多智能体路径规划",
-        "强化学习",
-        "路径规划",
-        "调度"
-      ]
-    },
-    {
-      "id": "2605.14389",
-      "title": "Nexus: An Agentic Framework for Time Series Forecasting",
-      "title_zh": "Nexus：面向时间序列预测的智能体框架",
-      "summary": "A multi-agent framework fusing time series foundation models and LLMs for cross-domain forecasting.",
-      "authors": [],
-      "link": "https://huggingface.co/papers/2605.14389",
-      "source": "huggingface",
-      "date": "2026-05-16",
-      "score": 9,
-      "contribution_zh": "融合时间序列基础模型与LLM的多智能体预测框架，解决跨领域上下文信号问题",
-      "value_zh": "直接应用于销售预测、库存管理、供应链风险预测等决策场景",
-      "keywords": [
-        "预测",
-        "供应链",
-        "库存",
-        "决策制定",
-        "多智能体"
-      ]
-    },
-    {
-      "id": "2605.14323",
-      "title": "Dynamic Latent Routing",
-      "title_zh": "动态潜路由",
-      "summary": "We propose generalized Dijkstra search (GDS) and dynamic latent routing (DLR) for complex decision problems.",
-      "authors": [],
-      "link": "https://huggingface.co/papers/2605.14323",
-      "source": "huggingface",
-      "date": "2026-05-16",
-      "score": 7,
-      "contribution_zh": "提出广义Dijkstra搜索与动态潜路由方法，将MDP最优策略分解为子策略",
-      "value_zh": "适用于物流网络动态路由与调度问题",
-      "keywords": [
-        "路径规划",
-        "调度",
-        "马尔可夫决策过程",
-        "决策制定"
-      ]
-    },
-    {
-      "id": "2605.14051",
-      "title": "SPIN: Structural LLM Planning via Iterative Navigation for Industrial Tasks",
-      "title_zh": "SPIN：面向工业任务的结构化LLM规划与迭代导航",
-      "summary": "SPIN framework combines DAG validation and prefix execution control to ensure valid and length-optimal industrial workflows.",
-      "authors": [],
-      "link": "https://huggingface.co/papers/2605.14051",
-      "source": "huggingface",
-      "date": "2026-05-16",
-      "score": 8,
-      "contribution_zh": "结合DAG验证与前缀式执行控制，确保LLM生成的工业工作流结构有效且长度最优",
-      "value_zh": "适用于生产调度、物流流程编排等工业自动化场景",
-      "keywords": [
-        "规划",
-        "调度",
-        "生产",
-        "图优化"
-      ]
     }
   ]
 }
