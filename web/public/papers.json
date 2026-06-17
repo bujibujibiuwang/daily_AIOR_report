@@ -1,6 +1,31 @@
 {
-  "updated": "2026-06-16",
+  "updated": "2026-06-17",
   "papers": [
+    {
+      "id": "2606.16292v1",
+      "title": "AI Supply Chain Galaxy: 3D Visual Analytics for License Compliance",
+      "summary": "The rapid proliferation of machine learning model reuse has transformed the AI ecosystem into a highly interconnected supply chain. Traditional compliance tools and static reports struggle to navigate these massive, multi-hop dependency networks. To address this, we present AI Supply Chain Galaxy (AISCG), an interactive 3D visual analytics system for model provenance and compliance auditing. AISCG maps models into a 3D spatial layout, integrating explicit structural dependencies with a rule-based compliance engine. It supports multi-scale exploration, from global community detection to localized, path-aware lineage tracing. We demonstrate its efficacy through an ecosystem-scale empirical analysis of 908,449 models from Hugging Face. Our findings reveal a concerning landscape: 55.46% of models exhibit compliance risks or metadata conflicts/omissions. We also identified distinct risk patterns, including a 56.67% license omission rate in adapter derivations and an 8.05% \"license drift\" rate in fine-tuning. Through a case study on the complex Llama model family, we show how AISCG empowers analysts to intuitively trace inherited restrictive terms and identify root causes across deep topological networks, significantly reducing the cognitive load of compliance auditing.",
+      "authors": [
+        "Weiru Han",
+        "Xuetao Shi",
+        "Wenyi He",
+        "Wei Wang",
+        "Rui Zhao",
+        "Moming Duan"
+      ],
+      "link": "https://arxiv.org/abs/2606.16292v1",
+      "source": "arxiv",
+      "date": "2026-06-17",
+      "title_zh": "AI 供应链星系：3D 可视化分析用于许可合规",
+      "contribution_zh": "提出AISCG系统用于模型来源和合规审计",
+      "value_zh": "应用于AI模型许可和供应链依赖性网络分析",
+      "keywords": [
+        "AI供应链",
+        "3D可视化",
+        "许可合规"
+      ],
+      "score": 9
+    },
     {
       "id": "2606.10359v1",
       "title": "ReflectiChain: Epistemic Grounding in LLM-Driven World Models for Supply Chain Resilience",
