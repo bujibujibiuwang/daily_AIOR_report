@@ -1,7 +1,19 @@
 ---
 layout: default
 ---
-2026-06-22
+2026-06-23
+
+
+### 短期电力需求预测
+- **英文标题**: Short-Term Electricity Demand Forecasting for New England Using a Hybrid Transformer-XGBoost Framework with Weather, Calendar, and COVID-19 Indicators
+- **来源**: 📄 arXiv  ⭐ 7/10
+- **作者**: Reza Ghanavati, Behrooz Mosallaei
+- **核心贡献**: Transformer-XGBoost混合框架
+- **实践价值**: 电力系统运营和能源市场规划
+- **OR 技术关键词**: 电力需求预测, Transformer, XGBoost, 时间序列预测
+- **论文链接**: https://arxiv.org/abs/2606.20918v1
+---
+## 📅 2026-06-22
 
 今日无新增 OR 相关研究
 ## 📅 2026-06-21
@@ -550,96 +562,3 @@ layout: default
 ## 📅 2026-05-24
 
 今日无新增 OR 相关研究
-## 📅 2026-05-23
-
-
-### AutoRubric-T2I: Robust Rule-Based Reward Model for Text-to-Image Alignment
-- **英文标题**: AutoRubric-T2I: Robust Rule-Based Reward Model for Text-to-Image Alignment
-- **来源**: 🤗 HuggingFace  ⭐ 5/10
-- **作者**: Kuei-Chun Kao, Daixuan Huo, Yuanhao Ban
-- **论文链接**: https://huggingface.co/papers/2605.17602
----
-
-### Forecasting Scientific Progress with Artificial Intelligence
-- **英文标题**: Forecasting Scientific Progress with Artificial Intelligence
-- **来源**: 🤗 HuggingFace  ⭐ 5/10
-- **作者**: Sean Wu, Pan Lu, Yupeng Chen
-- **论文链接**: https://huggingface.co/papers/2605.22681
----
-
-### Efficient Agentic Reasoning Through Self-Regulated Simulative Planning
-- **英文标题**: Efficient Agentic Reasoning Through Self-Regulated Simulative Planning
-- **来源**: 🤗 HuggingFace  ⭐ 5/10
-- **作者**: Mingkai Deng, Jinyu Hou, Lara Sá Neves
-- **论文链接**: https://huggingface.co/papers/2605.22138
----
-
-### Forecasting Downstream Performance of LLMs With Proxy Metrics
-- **英文标题**: Forecasting Downstream Performance of LLMs With Proxy Metrics
-- **来源**: 🤗 HuggingFace  ⭐ 5/10
-- **作者**: Arkil Patel, Siva Reddy, Marius Mosbach
-- **论文链接**: https://huggingface.co/papers/2605.18607
----
-
-### Lean Refactor: Multi-Objective Controllable Proof Optimization via Agentic Strategy Search
-- **英文标题**: Lean Refactor: Multi-Objective Controllable Proof Optimization via Agentic Strategy Search
-- **来源**: 🤗 HuggingFace  ⭐ 5/10
-- **作者**: Jialin Lu, Soonho Kong, Rodrigo Stehling
-- **论文链接**: https://huggingface.co/papers/2605.20244
----
-
-### TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation
-- **英文标题**: TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation
-- **来源**: 🤗 HuggingFace  ⭐ 5/10
-- **作者**: Hanyu Guo, Jiedong Yang, Chao Chen
-- **论文链接**: https://huggingface.co/papers/2605.22355
----
-
-### Full Attention Strikes Back: Transferring Full Attention into Sparse within Hundred Training Steps
-- **英文标题**: Full Attention Strikes Back: Transferring Full Attention into Sparse within Hundred Training Steps
-- **来源**: 🤗 HuggingFace  ⭐ 5/10
-- **作者**: Yanke Zhou, Yiduo Li, Hanlin Tang
-- **论文链接**: https://huggingface.co/papers/2605.16928
----
-
-### One Sentence, One Drama: Personalized Short-Form Drama Generation via Multi-Agent Systems
-- **英文标题**: One Sentence, One Drama: Personalized Short-Form Drama Generation via Multi-Agent Systems
-- **来源**: 🤗 HuggingFace  ⭐ 5/10
-- **作者**: Yufei Shi, Weilong Yan, Naixuan Huang
-- **论文链接**: https://huggingface.co/papers/2605.22144
----
-
-### DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards
-- **英文标题**: DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards
-- **来源**: 🤗 HuggingFace  ⭐ 5/10
-- **作者**: Kaiyi Zhang, Wei Wu, Yankai Lin
-- **论文链接**: https://huggingface.co/papers/2605.21467
----
-
-### KVServe: Service-Aware KV Cache Compression for Communication-Efficient Disaggregated LLM Serving
-- **英文标题**: KVServe: Service-Aware KV Cache Compression for Communication-Efficient Disaggregated LLM Serving
-- **来源**: 🤗 HuggingFace  ⭐ 5/10
-- **作者**: Zedong Liu, Xinyang Ma, Dejun Luo
-- **论文链接**: https://huggingface.co/papers/2605.13734
----
-
-### From Reasoning Chains to Verifiable Subproblems: Curriculum Reinforcement Learning Enables Credit Assignment for LLM Reasoning
-- **英文标题**: From Reasoning Chains to Verifiable Subproblems: Curriculum Reinforcement Learning Enables Credit Assignment for LLM Reasoning
-- **来源**: 🤗 HuggingFace  ⭐ 5/10
-- **作者**: Xitai Jiang, Zihan Tang, Wenze Lin
-- **论文链接**: https://huggingface.co/papers/2605.22074
----
-
-### Bernini: Latent Semantic Planning for Video Diffusion
-- **英文标题**: Bernini: Latent Semantic Planning for Video Diffusion
-- **来源**: 🤗 HuggingFace  ⭐ 5/10
-- **作者**: Bernini Team, Chenchen Liu, Junyi Chen
-- **论文链接**: https://huggingface.co/papers/2605.22344
----
-
-### Spreadsheet-RL: Advancing Large Language Model Agents on Realistic Spreadsheet Tasks via Reinforcement Learning
-- **英文标题**: Spreadsheet-RL: Advancing Large Language Model Agents on Realistic Spreadsheet Tasks via Reinforcement Learning
-- **来源**: 🤗 HuggingFace  ⭐ 5/10
-- **作者**: Banghao Chi, Yining Xie, Mingyuan Wu
-- **论文链接**: https://huggingface.co/papers/2605.22642
----

@@ -1,6 +1,28 @@
 {
-  "updated": "2026-06-22",
+  "updated": "2026-06-23",
   "papers": [
+    {
+      "id": "2606.20918v1",
+      "title": "Short-Term Electricity Demand Forecasting for New England Using a Hybrid Transformer-XGBoost Framework with Weather, Calendar, and COVID-19 Indicators",
+      "summary": "Accurate short-term electricity demand forecasting is critical for reliable power system operation, energy market planning, and infrastructure optimization. This paper presents a hybrid framework combining a Transformer encoder for temporal feature extraction with gradient-boosted decision trees (XGBoost) for daily electricity demand forecasting across New England. The framework integrates meteorological observations from six cities spanning all six New England states, calendar and holiday effects, autoregressive demand lags, and COVID-19 epidemiological variables. Hyperparameter optimization uses Optuna with a multivariate Tree-structured Parzen Estimator over 500 trials, with a leakage-free 70/15/15 chronological train-validation-test split. The hybrid model achieves a test RMSE of 8,876 MWh, MAPE of 2.05%, and R-squared of 0.906. A tabular-only XGBoost baseline achieves RMSE of 9,304 MWh, MAPE of 2.21%, and R-squared of 0.896. A Diebold-Mariano test (Harvey-Leybourne-Newbold correction) confirms the 427.7 MWh difference is statistically indistinguishable from noise (DM = -1.126, p = 0.262). An ablation study reveals COVID-19 features improved training accuracy but had asymmetric test effects: removal degraded hybrid RMSE by 3.2% while marginally improving XGBoost-only by 1.2%. A SHAP temporal analysis shows 5 of 8 COVID features rank higher on the post-acute test set than during pandemic-active training, indicating the model over-applies learned pandemic patterns. These findings establish temporal validity decay as a central mechanism: behavioral disruptions drove a strong COVID-demand signal during 2020-2021, but adaptation was complete by mid-2022, leaving epidemiological features as noise amplifying overfitting to stale pandemic patterns.",
+      "authors": [
+        "Reza Ghanavati",
+        "Behrooz Mosallaei"
+      ],
+      "link": "https://arxiv.org/abs/2606.20918v1",
+      "source": "arxiv",
+      "date": "2026-06-23",
+      "title_zh": "短期电力需求预测",
+      "contribution_zh": "Transformer-XGBoost混合框架",
+      "value_zh": "电力系统运营和能源市场规划",
+      "keywords": [
+        "电力需求预测",
+        "Transformer",
+        "XGBoost",
+        "时间序列预测"
+      ],
+      "score": 7
+    },
     {
       "id": "2606.16292v1",
       "title": "AI Supply Chain Galaxy: 3D Visual Analytics for License Compliance",
@@ -748,301 +770,6 @@
         "运筹学"
       ],
       "score": 10
-    },
-    {
-      "id": "2605.22642",
-      "title": "Spreadsheet-RL: Advancing Large Language Model Agents on Realistic Spreadsheet Tasks via Reinforcement Learning",
-      "summary": "Spreadsheet systems (e.g., Microsoft Excel, Google Sheets) play a central role in modern data-centric workflows. As AI agents grow increasingly capable of automating complex tasks, such as controlling computers and generating presentations, building an AI-driven spreadsheet agent has emerged as a promising research direction. Most existing spreadsheet agents rely on specialized prompting over general-purpose LLMs; while this design has potentials on simple spreadsheet operations, it struggles to manage the complex, multi-step workflows typical of real-world applications.\n  We introduce Spreadsheet-RL, a reinforcement learning (RL) fine-tuning framework designed to train specialized spreadsheet agents within a realistic Microsoft Excel environment. Spreadsheet-RL features an automated pipeline for scalable collection of paired start-goal spreadsheets from online forums, as well as domain-specific evaluation tasks in areas such as finance and supply chain management, which we compile int",
-      "authors": [
-        "Banghao Chi",
-        "Yining Xie",
-        "Mingyuan Wu",
-        "Jingcheng Yang",
-        "Jize Jiang",
-        "Zhaoheng Li",
-        "Shengyi Qian",
-        "Minjia Zhang",
-        "Klara Nahrstedt",
-        "Rui Hou",
-        "Xiangjun Fan",
-        "Hanchao Yu"
-      ],
-      "link": "https://huggingface.co/papers/2605.22642",
-      "source": "huggingface",
-      "date": "2026-05-23",
-      "title_zh": "Spreadsheet-RL: Advancing Large Language Model Agents on Realistic Spreadsheet Tasks via Reinforcement Learning",
-      "contribution_zh": "",
-      "value_zh": "",
-      "keywords": [],
-      "score": 5
-    },
-    {
-      "id": "2605.22344",
-      "title": "Bernini: Latent Semantic Planning for Video Diffusion",
-      "summary": "Multimodal large language models (MLLMs) and diffusion models have each reached remarkable maturity: MLLMs excel at reasoning over heterogeneous multimodal inputs with strong semantic grounding, while diffusion models synthesize images and videos with photorealistic fidelity. We argue that these two families can be unified through a simple division of labor: MLLMs perform semantic planning, while diffusion models render pixels from high-level semantic guidance and low-level visual features. Building on this idea, we propose Bernini, a unified framework for video generation and editing. An MLLM-based planner predicts the target semantic representation directly in the ViT embedding space, and a DiT-based renderer synthesizes pixels conditioned on this plan, augmented by text features and, for editing, source VAE features for detail preservation. Because semantics serve as the interface, the planner and renderer can be trained separately and only lightly co-trained, preserving the pretrai",
-      "authors": [
-        "Bernini Team",
-        "Chenchen Liu",
-        "Junyi Chen",
-        "Lei Li",
-        "Lu Chi",
-        "Mingzhen Sun",
-        "Zhuoying Li",
-        "Yi Fu",
-        "Ruoyu Guo",
-        "Yiheng Wu",
-        "Ge Bai",
-        "Zehuan Yuan"
-      ],
-      "link": "https://huggingface.co/papers/2605.22344",
-      "source": "huggingface",
-      "date": "2026-05-23",
-      "title_zh": "Bernini: Latent Semantic Planning for Video Diffusion",
-      "contribution_zh": "",
-      "value_zh": "",
-      "keywords": [],
-      "score": 5
-    },
-    {
-      "id": "2605.22074",
-      "title": "From Reasoning Chains to Verifiable Subproblems: Curriculum Reinforcement Learning Enables Credit Assignment for LLM Reasoning",
-      "summary": "Reinforcement learning from verifiable rewards (RLVR) has shown strong promise for LLM reasoning, but outcome-based RLVR remains inefficient on hard problems because correct final-answer rollouts are rare and sample-level credit assignment cannot use partial progress in failed attempts. We introduce SCRL (Subproblem Curriculum Reinforcement Learning), a curriculum RL framework that derives verifiable subproblems from reference reasoning chains and fixes the final subproblem as the original problem. This turns partial progress on hard problems into verifiable learning signals. Algorithmically, SCRL uses subproblem-level normalization, which normalizes rewards independently at each subproblem position and assigns the resulting advantages to the corresponding answer spans, enabling finer-grained credit assignment without external rubrics or reward models. Our analysis shows that subproblem curricula lift hard problems out of gradient dead zones, with larger relative gains as the original ",
-      "authors": [
-        "Xitai Jiang",
-        "Zihan Tang",
-        "Wenze Lin",
-        "Yang Yue",
-        "Shenzhi Wang",
-        "Gao Huang"
-      ],
-      "link": "https://huggingface.co/papers/2605.22074",
-      "source": "huggingface",
-      "date": "2026-05-23",
-      "title_zh": "From Reasoning Chains to Verifiable Subproblems: Curriculum Reinforcement Learning Enables Credit Assignment for LLM Reasoning",
-      "contribution_zh": "",
-      "value_zh": "",
-      "keywords": [],
-      "score": 5
-    },
-    {
-      "id": "2605.13734",
-      "title": "KVServe: Service-Aware KV Cache Compression for Communication-Efficient Disaggregated LLM Serving",
-      "summary": "LLMs are widely adopted in production, pushing inference systems to their limits. Disaggregated LLM serving (e.g., PD separation and KV state disaggregation) improves scalability and cost efficiency, but it also turns KV into an explicit payload crossing network and storage boundaries, making KV a dominant end-to-end bottleneck. Existing KV compression are typically static runtime configurations, despite production service context varies over time in workload mix, bandwidth, and SLO/quality budgets. As a result, a fixed choice can be suboptimal or even increase latency. We present KVServe, the first service-aware and adaptive KV communication compression framework for disaggregated LLM serving: KVServe (1) unifies KV compression into a modular strategy space with new components and cross-method recomposition; (2) introduces Bayesian Profiling Engine that efficiently searches this space and distills a 3D Pareto candidate set, reducing 50times offline search overhead; and (3) deploys a S",
-      "authors": [
-        "Zedong Liu",
-        "Xinyang Ma",
-        "Dejun Luo",
-        "Hairui Zhao",
-        "Bing Lu",
-        "Wenjing Huang",
-        "Yida Gu",
-        "Xingchen Liu",
-        "Zheng Wei",
-        "Jinyang Liu",
-        "Dingwen Tao",
-        "Guangming Tan"
-      ],
-      "link": "https://huggingface.co/papers/2605.13734",
-      "source": "huggingface",
-      "date": "2026-05-23",
-      "title_zh": "KVServe: Service-Aware KV Cache Compression for Communication-Efficient Disaggregated LLM Serving",
-      "contribution_zh": "",
-      "value_zh": "",
-      "keywords": [],
-      "score": 5
-    },
-    {
-      "id": "2605.21467",
-      "title": "DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards",
-      "summary": "Reinforcement learning from verifiable rewards (RLVR) has emerged as a central technique for improving the reasoning capabilities of large language models. Despite its effectiveness, how response-level rewards translate into token-level probability changes remains poorly understood. We introduce a discriminator view of RLVR updates, showing that the policy-gradient update direction implicitly acts as a linear discriminator over token-gradient vectors and thereby determines which token probabilities are increased or decreased during learning. Under standard sequence-level RLVR, this discriminator is constructed from positive- and negative-side centroids formed by advantage-weighted averaging of token-gradient vectors. However, such centroid construction can be dominated by shared high-frequency patterns, such as formatting tokens, diluting sparse yet discriminative directions that better distinguish high-reward responses from low-reward ones. To address this limitation, we propose DelTA",
-      "authors": [
-        "Kaiyi Zhang",
-        "Wei Wu",
-        "Yankai Lin"
-      ],
-      "link": "https://huggingface.co/papers/2605.21467",
-      "source": "huggingface",
-      "date": "2026-05-23",
-      "title_zh": "DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards",
-      "contribution_zh": "",
-      "value_zh": "",
-      "keywords": [],
-      "score": 5
-    },
-    {
-      "id": "2605.22144",
-      "title": "One Sentence, One Drama: Personalized Short-Form Drama Generation via Multi-Agent Systems",
-      "summary": "Existing approaches for digital short-drama production typically rely on one-shot LLM generated scripts and loosely coupled pipelines, which fail to satisfy three key requirements of short-drama generation: (1) narrative pacing, resulting in weak hooks, insufficient escalation, and unattractive endings; (2) spatial consistency, leading to drifting scene layouts and inconsistent character positions across clips; and (3) production-level quality control, requiring extensive manual review and correction across script and visual stages. We present One Sentence, One Drama, a hierarchical multi-agent framework that transforms a user's single-sentence idea into a fully produced short drama through structured intermediate modules and iterative refinement. Our approach is built upon three key components: (1) a multi-agent debate-based story generation module that enforces short-drama pacing and narrative coherence; (2) a 3D-grounded first-frame generation mechanism that establishes a shared spa",
-      "authors": [
-        "Yufei Shi",
-        "Weilong Yan",
-        "Naixuan Huang",
-        "Yucheng Chen",
-        "Chenyu Zhang",
-        "Tao He",
-        "Si Yong Yeo",
-        "Ming Li"
-      ],
-      "link": "https://huggingface.co/papers/2605.22144",
-      "source": "huggingface",
-      "date": "2026-05-23",
-      "title_zh": "One Sentence, One Drama: Personalized Short-Form Drama Generation via Multi-Agent Systems",
-      "contribution_zh": "",
-      "value_zh": "",
-      "keywords": [],
-      "score": 5
-    },
-    {
-      "id": "2605.16928",
-      "title": "Full Attention Strikes Back: Transferring Full Attention into Sparse within Hundred Training Steps",
-      "summary": "Long-context inference in large language models is bottlenecked by the quadratic cost of full attention. Existing efficient alternatives often rely either on native sparse training or on heuristic token eviction, creating an undesirable trade-off among efficiency, training cost, and accuracy. In this work, we show that full-attention LLMs are already intrinsically sparse and can be transformed into highly sparse models with only minimal adaptation. Our approach is built on three observations: (1) only a small subset of attention heads truly requires full long-context processing; (2) long-range retrieval is governed primarily by a low-dimensional subspace, allowing relevant tokens to be retrieved efficiently with a 16-dimensional indexer; and (3) the useful token budget is strongly query-dependent, making dynamic top-p selection more suitable than fixed top-k sparsification. Based on these insights, we propose RTPurbo, which retains the full KV cache only for retrieval heads and introdu",
-      "authors": [
-        "Yanke Zhou",
-        "Yiduo Li",
-        "Hanlin Tang",
-        "Maohua Li",
-        "Kan Liu",
-        "Lan Tao",
-        "Lin Qu",
-        "Yuan Yao",
-        "Xiaoxing Ma"
-      ],
-      "link": "https://huggingface.co/papers/2605.16928",
-      "source": "huggingface",
-      "date": "2026-05-23",
-      "title_zh": "Full Attention Strikes Back: Transferring Full Attention into Sparse within Hundred Training Steps",
-      "contribution_zh": "",
-      "value_zh": "",
-      "keywords": [],
-      "score": 5
-    },
-    {
-      "id": "2605.22355",
-      "title": "TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation",
-      "summary": "Public transit route planning traditionally depends on structured map infrastructure and complex routing engines, and no existing dataset supports training models to bypass this dependency. We present TransitLM, a large-scale dataset of over 13 million transit route planning records from four Chinese cities covering 120,845 stations and 13,666 lines, released as a continual pre-training corpus and benchmark data for three evaluation tasks with complementary metrics. Experiments show that an LLM trained on TransitLM produces structurally valid routes at high accuracy and implicitly grounds arbitrary GPS coordinates to appropriate stations without any explicit mapping. These results demonstrate that transit route planning can be learned entirely from data, enabling end-to-end, map-free route generation directly from origin-destination information. The dataset and benchmark are available at https://huggingface.co/datasets/GD-ML/TransitLM, with evaluation code at https://github.com/HotTric",
-      "authors": [
-        "Hanyu Guo",
-        "Jiedong Yang",
-        "Chao Chen",
-        "Longfei Xu",
-        "Kaikui Liu",
-        "Xiangxiang Chu"
-      ],
-      "link": "https://huggingface.co/papers/2605.22355",
-      "source": "huggingface",
-      "date": "2026-05-23",
-      "title_zh": "TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation",
-      "contribution_zh": "",
-      "value_zh": "",
-      "keywords": [],
-      "score": 5
-    },
-    {
-      "id": "2605.20244",
-      "title": "Lean Refactor: Multi-Objective Controllable Proof Optimization via Agentic Strategy Search",
-      "summary": "We present Lean Refactor, a plug-and-play retrieval-augmented agentic framework for multi-objective, controllable, and version-robust refactoring of Lean proofs. LLM-generated proofs are notoriously correct-but-verbose and brittle across library versions, yet existing refactoring works overlook three practical challenges: 1) Lean refactoring is natively multi-objective (proof length, compilation cost, and version compatibility are often in tension); 2) Lean repositories have fragile compatibility, whereas LLM releases are unaware of Lean/Mathlib versions; 3) Training-based pipelines require repeated fine-tuning with each new LLM release, scaling neither with model churn nor with Lean's release cycle. Lean Refactor steers a frozen agentic LLM with retrievals from a curated database of multi-objective refactoring strategies, each densely annotated with metadata such as supported Lean/Mathlib versions and expected compilation-cost reduction. Experiments show over 70% token-level compressi",
-      "authors": [
-        "Jialin Lu",
-        "Soonho Kong",
-        "Rodrigo Stehling",
-        "Kaiyu Yang",
-        "Zhangyang Wang",
-        "Weiran Sun",
-        "Wuyang Chen"
-      ],
-      "link": "https://huggingface.co/papers/2605.20244",
-      "source": "huggingface",
-      "date": "2026-05-23",
-      "title_zh": "Lean Refactor: Multi-Objective Controllable Proof Optimization via Agentic Strategy Search",
-      "contribution_zh": "",
-      "value_zh": "",
-      "keywords": [],
-      "score": 5
-    },
-    {
-      "id": "2605.18607",
-      "title": "Forecasting Downstream Performance of LLMs With Proxy Metrics",
-      "summary": "Progress in language model development is often driven by comparative decisions: which architecture to adopt, which pretraining corpus to use, or which training recipe to apply. Making these decisions well requires reliable performance forecasts, yet the two commonly used signals are fundamentally limited. Cross-entropy loss is poorly aligned with downstream capabilities, and direct downstream evaluation is expensive, sparse, and often uninformative at early training stages. Instead, we propose to construct proxy metrics by aggregating token-level statistics, such as entropy, top-k accuracy, and expert token rank, from a candidate model's next token distribution over expert-written solutions. Across three settings, our proxies consistently outperform loss- and compute-based baselines: 1) For cross-family model selection, they rank a heterogeneous population of reasoning models with mean Spearman Rho = 0.81 (vs. Rho = 0.36 for cross-entropy loss); 2) For pretraining data selection, they",
-      "authors": [
-        "Arkil Patel",
-        "Siva Reddy",
-        "Marius Mosbach",
-        "Dzmitry Bahdanau"
-      ],
-      "link": "https://huggingface.co/papers/2605.18607",
-      "source": "huggingface",
-      "date": "2026-05-23",
-      "title_zh": "Forecasting Downstream Performance of LLMs With Proxy Metrics",
-      "contribution_zh": "",
-      "value_zh": "",
-      "keywords": [],
-      "score": 5
-    },
-    {
-      "id": "2605.22138",
-      "title": "Efficient Agentic Reasoning Through Self-Regulated Simulative Planning",
-      "summary": "How should an agent decide when and how to plan? A dominant approach builds agents as reactive policies with adaptive computation (e.g., chain-of-thought), trained end-to-end expecting planning to emerge implicitly. Without control over the presence, structure, or horizon of planning, these systems dramatically increase reasoning length, yielding inefficient token use without reliable accuracy gains. We argue efficient agentic reasoning benefits from decomposing decision-making into three systems: simulative reasoning (System II) grounding deliberation in future-state prediction via a world model; self-regulation (System III) deciding when and how deeply to plan via a learned configurator; and reactive execution (System I) handling fine-grained action. Simulative reasoning provides unified planning across diverse tasks without per-domain engineering, while self-regulation ensures the planner is invoked only when needed. To test this, we develop SR^2AM (Self-Regulated Simulative Reasoni",
-      "authors": [
-        "Mingkai Deng",
-        "Jinyu Hou",
-        "Lara Sá Neves",
-        "Varad Pimpalkhute",
-        "Taylor W. Killian",
-        "Zhengzhong Liu",
-        "Eric P. Xing"
-      ],
-      "link": "https://huggingface.co/papers/2605.22138",
-      "source": "huggingface",
-      "date": "2026-05-23",
-      "title_zh": "Efficient Agentic Reasoning Through Self-Regulated Simulative Planning",
-      "contribution_zh": "",
-      "value_zh": "",
-      "keywords": [],
-      "score": 5
-    },
-    {
-      "id": "2605.22681",
-      "title": "Forecasting Scientific Progress with Artificial Intelligence",
-      "summary": "Artificial intelligence (AI) is increasingly embedded in scientific discovery, yet whether it can anticipate scientific progress remains unclear. To study this question, we introduce a temporally grounded evaluation framework for forecasting scientific progress under controlled knowledge constraints. We present CUSP (Cutoff-conditioned Unseen Scientific Progress), a multi-disciplinary and event-level benchmark that evaluates scientific forecasting in AI systems through feasibility assessment, mechanistic reasoning, generative solution design, and temporal prediction. Across 4,760 scientific events, we observe systematic and domain-dependent limitations in current frontier models. While models can identify plausible research directions from competing candidates, they fail to reliably predict whether scientific advances will be realized and systematically misestimate when they will occur. Performance is highly heterogeneous across domains, with the timing of AI progress more predictable ",
-      "authors": [
-        "Sean Wu",
-        "Pan Lu",
-        "Yupeng Chen",
-        "Jonathan Bragg",
-        "Yutaro Yamada",
-        "Peter Clark",
-        "David Clifton",
-        "Philip Torr",
-        "James Zou",
-        "Junchi Yu"
-      ],
-      "link": "https://huggingface.co/papers/2605.22681",
-      "source": "huggingface",
-      "date": "2026-05-23",
-      "title_zh": "Forecasting Scientific Progress with Artificial Intelligence",
-      "contribution_zh": "",
-      "value_zh": "",
-      "keywords": [],
-      "score": 5
-    },
-    {
-      "id": "2605.17602",
-      "title": "AutoRubric-T2I: Robust Rule-Based Reward Model for Text-to-Image Alignment",
-      "summary": "Aligning Text-to-Image (T2I) generation models with human preferences increasingly relies on image reward models that score or rank generated images according to prompt alignment and perceptual quality. Existing reward models are commonly trained as Bradley-Terry (BT) preference models on large-scale human preference corpora, making them costly to train, difficult to adapt, and opaque in their evaluation criteria. Meanwhile, Vision-Language Model (VLM) judges can provide more fine-grained assessments through textual rubrics, but their manually designed or heuristically generated scoring rules may fail to reliably reflect human preferences. In this paper, we propose AutoRubric-T2I, the first rubric learning framework in T2I that automatically synthesizes and selects explicit rubrics for guiding VLM judges. AutoRubric-T2I first synthesizes reasoning traces from preference pairs into candidate rubrics, then uses a VLM judge to score paired images under each rubric, producing pairwise rubr",
-      "authors": [
-        "Kuei-Chun Kao",
-        "Daixuan Huo",
-        "Yuanhao Ban",
-        "Cho-Jui Hsieh"
-      ],
-      "link": "https://huggingface.co/papers/2605.17602",
-      "source": "huggingface",
-      "date": "2026-05-23",
-      "title_zh": "AutoRubric-T2I: Robust Rule-Based Reward Model for Text-to-Image Alignment",
-      "contribution_zh": "",
-      "value_zh": "",
-      "keywords": [],
-      "score": 5
     }
   ]
 }
