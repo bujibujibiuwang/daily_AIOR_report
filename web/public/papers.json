@@ -1,6 +1,80 @@
 {
-  "updated": "2026-06-23",
+  "updated": "2026-06-24",
   "papers": [
+    {
+      "id": "2606.23978v1",
+      "title": "Offline Reinforcement Learning for Warehouse SLAM Throughput Control",
+      "summary": "We present an offline reinforcement learning (RL) framework for optimizing SLAM throughput control in a warehouse fulfillment environment. SLAM (Scan/Label/Apply/Manifest) throughput directly influences system congestion and operational efficiency. Our RL-based control approach dynamically recommends SLAM throughput settings that adaptively balance throughput maximization with downstream stability through intelligent adjustment of throttling behavior. We include a history-informed state representation, action space abstraction for delayed-impact control, and a reward function that captures both upstream and downstream operational metrics. Our approach is algorithm-agnostic, enabling integration of multiple offline RL methods under a unified architecture. We instantiate our framework with three state-of-the-art offline RL algorithms, and trained the models offline using de-identified historical operational logs from a large-scale warehouse. Policy performance is evaluated using a comprehensive multi-method strategy. These include model-free approaches including immediate reward estimation via regression models and long-horizon Fitted Q Evaluation (FQE), as well as model-based Deep Koopman dynamics evaluation. Empirical results reveal that the CQL policy consistently outperforms alternatives, improving system health by 22.97% and reducing average throttling duration by 3.18%. These findings demonstrate the potential of offline RL for safe and scalable warehouse throughput control optimization.",
+      "authors": [
+        "Tina Dongxu Li",
+        "Mouhacine Benosman",
+        "Rajat Kumar",
+        "Kevin Tan",
+        "Ken Meszaros",
+        "Trevor Dardik"
+      ],
+      "link": "https://arxiv.org/abs/2606.23978v1",
+      "source": "arxiv",
+      "date": "2026-06-24",
+      "title_zh": "仓库SLAM吞吐量控制的离线强化学习",
+      "contribution_zh": "使用离线强化学习优化SLAM吞吐量控制",
+      "value_zh": "提高仓库运营效率和降低系统拥堵",
+      "keywords": [
+        "强化学习",
+        "SLAM",
+        "仓库管理"
+      ],
+      "score": 9
+    },
+    {
+      "id": "2606.23977v1",
+      "title": "A Comparative Study of Bayesian Contextual Bandits for Real-Time Warehouse Sorter Optimization",
+      "summary": "Efficient sorter diversion control of automated material handling systems (MHS) is critical for optimizing operational efficiency in large-scale warehouse environments. In this study, we use an inbound receiving sorter at a high-volume e-commerce warehouse as our primary use case, where the sorter diversion system relies on cost functions with static weight configurations that fail to adapt to highly dynamic system contexts, such as volume mode, congestion level, equipment physical status, and upstream/downstream dependencies. To address this real-time sorter diversion optimization challenge, we conducted a comparative study of three candidate hybrid machine learning frameworks: Linear Regression with Gradient Descent Optimization (LR+GDO), XGBoost with Bayesian Optimization (XGB+BO), and Bayesian Contextual Bandits (BCB). Model training and evaluation were enabled by leveraging a high-fidelity physics-aware emulator to overcome the cold-start problem and allow a safe transition from offline to online learning. We performed comprehensive evaluations including reward model predictive accuracy, contextual sensitivity, action distribution, and projected reward uplift. Our results demonstrate that while tree-based reward models offer slightly better predictive power, the BCB framework achieved overall higher performance with 2.03% reward uplift over the heuristic baseline. Furthermore, BCB exhibits several superior characteristics, such as its decisive time-optimal policy backed by Bang-Bang control theory, continuous online learning capability, strategic balance between exploration and exploitation, and significantly shorter inference latency. These results demonstrate the potential of the BCB framework for real-time control optimization in large-scale warehouse environments, motivating further investigation toward operational deployment.",
+      "authors": [
+        "Tina Dongxu Li",
+        "Mouhacine Benosman",
+        "Ken Meszaros",
+        "Trevor Dardik"
+      ],
+      "link": "https://arxiv.org/abs/2606.23977v1",
+      "source": "arxiv",
+      "date": "2026-06-24",
+      "title_zh": "贝叶斯上下文多臂带动机算法在仓库分拣器优化中的比较研究",
+      "contribution_zh": "使用贝叶斯上下文多臂带动机算法优化分拣器控制",
+      "value_zh": "提高仓库分拣器的运营效率",
+      "keywords": [
+        "贝叶斯上下文多臂带动机算法",
+        "仓库分拣器",
+        "优化"
+      ],
+      "score": 8
+    },
+    {
+      "id": "2606.22146v1",
+      "title": "Meta-Reinforcement Learning via Evolution for Multi-Objective Combinatorial Supply Chain Optimisation",
+      "summary": "Meta-reinforcement learning is a promising approach to multi-objective optimisation because it enables rapid policy adaptation across changing environments and preference settings. However, conventional few-shot methods usually fine-tune from a single shared meta-policy, which can reduce solution diversity and limit exploration of the Pareto front, especially in high-dimensional combinatorial problems such as supply chain optimisation. We propose a population-based Meta-reinforcement learning framework that combines decomposition with evolutionary search in scalarisation weight space. The framework maintains a population of weight vectors, each associated with a distinct meta-policy trained through gradient-based meta-learning, and iteratively refines this population through elitist selection, crossover, and mutation guided by hypervolume and entropy contributions. We evaluate the method in a multi-objective supply chain setting with conflicting economic, environmental, and social goals, and further test its generality on standard reinforcement learning problems. The results show that the proposed approach yields more diverse, better distributed Pareto front approximations, improves cross-task adaptation, increases hypervolume by up to 32\\% over Meta-multi-objective reinforcement learning in the complex case, and attains the lowest average Hausdorff distance among all compared methods.",
+      "authors": [
+        "Rifny Rachman",
+        "Bahrul Ilmi Nasution",
+        "Josh Tingey",
+        "Richard Allmendinger",
+        "Pradyumn Shukla",
+        "Wei Pan"
+      ],
+      "link": "https://arxiv.org/abs/2606.22146v1",
+      "source": "arxiv",
+      "date": "2026-06-24",
+      "title_zh": "通过进化的元强化学习用于多目标组合供应链优化",
+      "contribution_zh": "提出元强化学习通过进化解决多目标组合优化问题",
+      "value_zh": "提高供应链多目标优化的效率",
+      "keywords": [
+        "元强化学习",
+        "进化算法",
+        "多目标优化",
+        "供应链"
+      ],
+      "score": 9
+    },
     {
       "id": "2606.20918v1",
       "title": "Short-Term Electricity Demand Forecasting for New England Using a Hybrid Transformer-XGBoost Framework with Weather, Calendar, and COVID-19 Indicators",
@@ -173,601 +247,6 @@
         "强化学习",
         "库存管理",
         "药品供应链"
-      ],
-      "score": 10
-    },
-    {
-      "id": "2605.22773v1",
-      "title": "Deep Reinforcement Learning for Flexible Job Shop Scheduling with Random Job Arrivals",
-      "summary": "The Flexible Job Shop Scheduling Problem (FJSP) is the optimal allocation of a set of jobs to machines. Two primary challenges persist in FJSP: the unpredictable arrival of future jobs and the combinatorial complexity of the problem, rendering it intractable for conventional mixed-integer linear programming solvers. This paper proposes an event-based \\gls{DRL} approach to solve FJSP with random job arrivals. Specifically, we employ the Proximal Policy Optimization algorithm and use lightweight Multi-Layer Perceptrons to train the \\gls{DRL} agent for minimizing the total completion time of all jobs. We design the state representation to be directly accessible from the environment, and limit the learning agent to selecting from among a set of well-established dispatching rules. Simulations show that our \\gls{DRL} approach outperforms any of the individual dispatching rules on datasets with varying heterogeneity and job arrival rates. We benchmark our \\gls{DRL} against an arrival-triggere",
-      "authors": [
-        "Yu Tang",
-        "Muhammad Zakwan",
-        "Efe Balta",
-        "John Lygeros",
-        "Alisa Rupenyan"
-      ],
-      "link": "https://arxiv.org/abs/2605.22773v1",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "深度强化学习在随机作业到达的柔性作业车间调度问题",
-      "contribution_zh": "提出了一种基于事件的深度强化学习方法",
-      "value_zh": "工业制造业调度优化",
-      "keywords": [
-        "深度强化学习",
-        "柔性作业车间调度",
-        "随机作业到达"
-      ],
-      "score": 10
-    },
-    {
-      "id": "2605.21470v1",
-      "title": "Agent JIT Compilation for Latency-Optimizing Web Agent Planning and Scheduling",
-      "summary": "Computer-use agents (CUA) automate tasks specified with natural language such as \"order the cheapest item from Taco Bell\" by generating sequences of calls to tools such as click, type, and scroll on a browser. Current implementations follow a sequential fetch-screenshot-execute loop where each iteration requires an LLM call, resulting in high latency and frequent errors from incorrect tool use. We present agent just-in-time (JIT) compilation, an alternative that compiles task descriptions directly into executable code that is free to include LLM calls, tool calls, and parallelization. Our approach comprises three components: (1) JIT-Planner, which generates multiple code plans, validates each against tool specifications, and selects the minimum-cost candidate; (2) JIT-Scheduler, which explores parallelization strategies via Monte Carlo cost estimation from learned latency distributions; and (3) an invariant-enforcing tool protocol specifying precondition and postcondition state require",
-      "authors": [
-        "Caleb Winston",
-        "Ron Yifeng Wang",
-        "Azalia Mirhoseini",
-        "Christos Kozyrakis"
-      ],
-      "link": "https://arxiv.org/abs/2605.21470v1",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "代理即时编译于基于Web的代理规划和调度",
-      "contribution_zh": "提出了一种代理即时编译方法",
-      "value_zh": "代理计划执行优化",
-      "keywords": [
-        "代理即时编译",
-        "Web代理",
-        "规划和调度"
-      ],
-      "score": 7
-    },
-    {
-      "id": "2605.21648v1",
-      "title": "Dropout Universality: Scaling Laws and Optimal Scheduling at the Edge-of-Chaos",
-      "summary": "We develop a mean-field theory of dropout as a perturbation of critical signal propagation at the edge of chaos. Dropout shifts the perfect-alignment fixed point, making the depth scale for information propagation finite even at critical initialization. We derive critical and crossover scaling laws for correlation decay and establish that smooth activations and kinked, ReLU-like activations constitute distinct universality classes, with different critical exponents and a universal two-parameter scaling collapse in detuning and dropout strength. The distinction traces to the analytic structure of the correlation map: smooth activations admit a Taylor expansion near perfect alignment, while kinked activations develop a branch point with universal non-analyticity. As a corollary, the framework yields saturated dropout profiles under fixed budget; a rank-flow tie-breaker then selects front-loaded schedules, substantially reducing held-out test loss at no extra computational cost, with accu",
-      "authors": [
-        "Lucas Fernandez Sarmiento"
-      ],
-      "link": "https://arxiv.org/abs/2605.21648v1",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "Dropout Universality: Scaling Laws and Optimal Scheduling at the Edge-of-Chaos",
-      "contribution_zh": "",
-      "value_zh": "",
-      "keywords": [],
-      "score": 6
-    },
-    {
-      "id": "2605.21665v1",
-      "title": "Planning, Scheduling, and Behavior in EV Charging Systems: A Critical Survey and Trilemma Framework",
-      "summary": "The rapid growth of electric vehicles is shifting the main constraint on transport electrification from vehicle adoption to the deployment and operation of charging infrastructure. Charging-network design requires decisions across three interdependent layers: Planning, which determines where and how much infrastructure to build; Scheduling, which governs charging dispatch, pricing, and grid interaction; and Behavior, which captures how users choose stations, charging times, and charging durations. Existing studies have advanced each layer substantially, but the literature remains fragmented, and cross-layer interactions are often treated through simplifying assumptions. This survey develops a three-layer Planning-Scheduling-Behavior (PSB) framework to organize EV charging research according to decision horizon, actor objective, and coupling structure. We further identify a fidelity-tractability tradeoff, termed the PSB trilemma: each layer is computationally difficult in isolation, and",
-      "authors": [
-        "Peiyan Xiao",
-        "Yuheng Li",
-        "Ayan Mukhopadhyay",
-        "Sai Krishna Ghanta",
-        "Sabur Baidya",
-        "Yanhai Xiong"
-      ],
-      "link": "https://arxiv.org/abs/2605.21665v1",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "电动汽车充电系统的规划、调度和行为研究",
-      "contribution_zh": "提出了一种三重困境框架",
-      "value_zh": "电动汽车充电系统优化",
-      "keywords": [
-        "电动汽车充电系统",
-        "规划",
-        "调度"
-      ],
-      "score": 9
-    },
-    {
-      "id": "2605.14416v1",
-      "title": "A Unified Knowledge Embedded Reinforcement Learning-based Framework for Generalized Capacitated Vehicle Routing Problems",
-      "summary": "The Capacitated Vehicle Routing Problem (CVRP) is a fundamental NP-hard problem with broad applications in logistics and transportation. Real-world CVRPs often involve diverse objectives and complex constraints, such as time windows or backhaul requirements, motivating the development of a unified solution framework. Recent reinforcement learning (RL) approaches have shown promise in combinatorial optimization, yet they rely on end-to-end learning and lack explicit problem-solving knowledge, limiting solution quality. In this paper, we propose a knowledge-embedded framework inspired by the Route-First Cluster-Second heuristics. It incorporates knowledge at two levels: (1) decomposing CVRPs into the route-first and cluster-second subproblems, and (2) leveraging dynamic programming to solve the second subproblem, whose results guide the RL-based constructive solver to solve the first problem. To mitigate partial observability caused by problem decomposition, we introduce a unified histor",
-      "authors": [
-        "Wen Wang",
-        "Xiangchen Wu",
-        "Liang Wang",
-        "Hao Hu",
-        "Xianping Tao"
-      ],
-      "link": "https://arxiv.org/abs/2605.14416v1",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "一种统一的基于强化学习的通用容量车辆路由问题框架",
-      "contribution_zh": "提出了一种统一的强化学习框架解决车辆路由问题",
-      "value_zh": "适用于物流和交通管理",
-      "keywords": [
-        "车辆路由问题",
-        "强化学习",
-        "通用框架"
-      ],
-      "score": 9
-    },
-    {
-      "id": "2605.14559v1",
-      "title": "PyCSP3-Scheduling: A Scheduling Extension for PyCSP3",
-      "summary": "PyCSP$^3$ provides a productive way to build constraint models for solving combinatorial constrained problems and export them to XCSP$^3$, preserving a complete separation between modeling and solving. However, it lacks native support for scheduling abstractions such as interval variables, sequence variables, and resource functions. As a result, scheduling models must be encoded with low-level integer variables and manual channeling constraints, even though PyCSP$^3$ already provides global constraints like NoOverlap and Cumulative on integer arrays. We present PyCSP$^3$ Scheduling, a library that adds scheduling abstractions to PyCSP$^3$ through 53 dedicated constraints and 27 expressions, and compiles them down to standard PyCSP$^3$/XCSP$^3$ constraints, maintaining the modeling/solving separation that underpins the PyCSP$^3$ ecosystem. On 261 paired instances across 17 model families (5 runs each), both formulations produce identical objectives on all 72 doubly-proved optimal pairs ",
-      "authors": [
-        "Sohaib Afifi"
-      ],
-      "link": "https://arxiv.org/abs/2605.14559v1",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "PyCSP3-Scheduling：PyCSP3的调度扩展",
-      "contribution_zh": "提出了一种调度扩展方法用于PyCSP3",
-      "value_zh": "适用于调度和约束编程",
-      "keywords": [
-        "PyCSP3",
-        "调度",
-        "约束编程"
-      ],
-      "score": 8
-    },
-    {
-      "id": "2605.14624v2",
-      "title": "An Amortized Efficiency Threshold for Comparing Neural and Heuristic Solvers in Combinatorial Optimization",
-      "summary": "A common critique of neural combinatorial-optimization solvers is that they are less energy-efficient than CPU metaheuristics, given the operational energy cost of training them on GPUs. This paper examines the inferential step from \"training is expensive\" to \"neural solvers are net-inefficient\", which is where the critique actually goes wrong. Training the network costs a large fixed amount of GPU energy; running the metaheuristic costs a small amount of CPU energy on every instance, repeated as long as the solver is deployed. The two are not commensurable until a deployment volume is fixed. We define the Amortized Efficiency Threshold (AET) as the deployment volume above which a neural solver breaks even with a heuristic baseline in total energy or carbon, under an explicit constraint on solution quality. We show that the cumulative-energy ratio between the two solvers tends to a constant strictly below one whenever the network wins per instance, and that this limit does not depend o",
-      "authors": [
-        "Sohaib Afifi"
-      ],
-      "link": "https://arxiv.org/abs/2605.14624v2",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "比较神经和启发式求解器在组合优化中的耗能效率",
-      "contribution_zh": "提出了一种方法比较神经和启发式求解器的耗能效率",
-      "value_zh": "适用于组合优化和人工智能",
-      "keywords": [
-        "组合优化",
-        "神经网络",
-        "耗能效率"
-      ],
-      "score": 7
-    },
-    {
-      "id": "2605.14662v1",
-      "title": "Scalable Solution of the Stochastic Multi-path Traveling Salesman Problem via Neural Networks",
-      "summary": "The multi-path Traveling Salesman Problem with stochastic travel costs arises in hybrid vehicle routing applications designed for Smart City and City Logistics, where multiple paths exist between each pair of locations. Travel times along these paths are typically affected by real-time traffic conditions and therefore modeled as stochastic. The objective of the problem is to determine a Hamiltonian tour that minimizes the expected total travel cost under uncertainty. In this work, we adopt a two-stage stochastic programming formulation. In the first stage, a predefined route specifying the sequence of locations to be visited is determined, while taking into consideration a second-stage recourse problem that selects the optimal path from the feasible set of alternative paths for each pair of locations, once real-time traffic conditions are realized. To reduce the computational burden imposed by the large number of scenarios required to capture travel time uncertainty, the innovation of ",
-      "authors": [
-        "Xiaochen Chou",
-        "Ludovica Di Marco",
-        "Enza Messina"
-      ],
-      "link": "https://arxiv.org/abs/2605.14662v1",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "通过神经网络可扩展地解决随机多路径旅行商问题",
-      "contribution_zh": "提出了一种神经网络方法解决随机多路径旅行商问题",
-      "value_zh": "适用于物流和交通管理",
-      "keywords": [
-        "旅行商问题",
-        "神经网络",
-        "随机优化"
-      ],
-      "score": 9
-    },
-    {
-      "id": "2605.14741v1",
-      "title": "Addressing Terminal Constraints in Data-Driven Demand Response Scheduling",
-      "summary": "Electrified chemical processes are incentivized by exposure to time-varying electricity markets to operate flexibly, but participating in demand response schemes can require satisfying terminal constraints over long horizons. Specifically, terminal constraints may be required when computing optimal schedules in order to preserve dynamic stability. Model-based optimization methods are computationally costly, and data-driven scheduling via reinforcement learning (RL) faces severe credit-assignment challenges. We integrate Goal-Space Planning (GSP) with Deep Deterministic Policy Gradient (DDPG), using learned temporally abstract models over discrete subgoals to propagate value across extended horizons. Using a simulated air separation benchmark, we demonstrate the proposed approach improves sample efficiency over standard DDPG while satisfying terminal storage constraints, mitigating myopic control behavior.",
-      "authors": [
-        "Maximilian Bloor",
-        "Martha White",
-        "Ehecatl Antonio del Rio Chanona",
-        "Calvin Tsay"
-      ],
-      "link": "https://arxiv.org/abs/2605.14741v1",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "解决数据驱动的需求响应调度中的终端约束",
-      "contribution_zh": "提出了一种方法解决电力市场中的终端约束问题",
-      "value_zh": "适用于电力市场和能源管理",
-      "keywords": [
-        "需求响应",
-        "终端约束",
-        "调度"
-      ],
-      "score": 8
-    },
-    {
-      "id": "2605.14840v1",
-      "title": "In-Context Learning for Data-Driven Censored Inventory Control",
-      "summary": "We study inventory control with decision-dependent censoring, focusing on the censored or repeated newsvendor (R-NV), where each order quantity determines whether demand is fully observed or censored by sales. Existing approaches based on parametric Thompson sampling (TS) can be brittle under prior mismatch, while offline imputation methods need not transfer to online learning. Motivated by the predictive view of decision making, we combine these ideas by taking oracle actions on learned completions of latent demand. We propose in-context generative posterior sampling (ICGPS), which uses modern generative models that are meta-trained offline and deployed online by in-context autoregressive generation. Theoretically, we show that the Bayesian regret of ICGPS with a learned completion kernel is bounded by the Bayesian regret of a TS benchmark with the ideal completion kernel plus a deployment penalty scaling as $\\sqrt{T}$ times the square root of the completion mismatch. This yields a pl",
-      "authors": [
-        "Sohom Mukherjee",
-        "Anh-Duy Pham",
-        "Richard Pibernik",
-        "Yunbei Xu"
-      ],
-      "link": "https://arxiv.org/abs/2605.14840v1",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "上下文学习用于数据驱动的审查库存控制",
-      "contribution_zh": "提出了一种上下文学习方法解决审查库存控制问题",
-      "value_zh": "适用于库存管理和供应链优化",
-      "keywords": [
-        "库存控制",
-        "审查",
-        "上下文学习"
-      ],
-      "score": 9
-    },
-    {
-      "id": "2605.15486v1",
-      "title": "Hybrid LLM-based Intelligent Framework for Robot Task Scheduling",
-      "summary": "This study introduces intelligent frameworks that use Large Language Models (LLMs) to improve task scheduling for construction robots. The LLM is fed with key data about the desired task, such as agent action abilities, and the desired end goal to be achieved. A well-balanced allocation strategy is developed, optimizing both time efficiency and resource utilization. Our system utilizes a Natural Language Processing interface to streamline communication with construction professionals and adapt in real-time to unexpected site conditions. We concurrently use two LLM agents, specifically generator (GPT-4) and supervisor (Gemma 3/Llama 4/Mistral 7b) LLM agents to provide a more precise task schedule. We evaluate the proposed methodology using a straightforward scenario and provide metric scores to prove the efficacy of the frameworks. Our results highlight that the implementation of LLMs is crucial in construction operational tasks including robots.",
-      "authors": [
-        "Swayamjit Saha",
-        "Subhabrata Das",
-        "Haonan Duan",
-        "Xiao-Yang Liu"
-      ],
-      "link": "https://arxiv.org/abs/2605.15486v1",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "混合LLM-based智能框架",
-      "contribution_zh": "提出混合LLM-based智能框架",
-      "value_zh": "应用于机器人任务调度",
-      "keywords": [
-        "LLM",
-        "机器人任务调度",
-        "智能框架"
-      ],
-      "score": 8
-    },
-    {
-      "id": "2605.15983v1",
-      "title": "Petri Net Induced Heuristic Search for Resource Constrained Scheduling",
-      "summary": "We formulate the Resource-Constrained Project Scheduling Problem (RCPSP) as optimal search over the reachability graph of a Timed Transition Petri Net with Resources, using relative-delay tokens so that scheduling decisions correspond to transition firings in the induced state space. We solve the resulting problem with $A^*$ guided by a heuristic that combines Critical Path and resource-based lower bounds, and prove that it is consistent under our token-based time semantics. Experiments on the PSPLIB benchmarks show that the approach outperforms strong exact Mixed-Integer Linear Programming (MIP) baselines (SCIP, CBC) in both success rate and solve time. Per-instance analysis shows that heuristic search and MIP degrade along independent axes, resource tightness for $A^*$ and formulation size for MIP, with resource strength mediating which solver benefits from scale.",
-      "authors": [
-        "Ido Lublin",
-        "Dor Atzmon",
-        "Izack Cohen"
-      ],
-      "link": "https://arxiv.org/abs/2605.15983v1",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "Petri网诱导的启发式搜索",
-      "contribution_zh": "提出Petri网诱导的启发式搜索算法",
-      "value_zh": "应用于资源约束调度",
-      "keywords": [
-        "Petri网",
-        "启发式搜索",
-        "资源约束调度"
-      ],
-      "score": 9
-    },
-    {
-      "id": "2605.17539v2",
-      "title": "Memory-Guided Tree Search with Cross-Branch Knowledge Transfer for LLM Solver Synthesis",
-      "summary": "Combinatorial optimization (CO) underlies decision-making from logistics to chip design, where infeasible solutions are operationally unusable and small quality gains translate into substantial economic value. Recent work uses large language models (LLMs) to automate solver synthesis: generating executable solver programs from natural-language specifications. However, existing tree-search and evolutionary agents refine candidate trajectories in parallel without explicit knowledge transfer, reintroducing the same constraint violations and converging on similar algorithm families. We introduce MEMOIR, a memory-guided tree-search framework with a two-level memory hierarchy: branch-local memory preserves execution-grounded refinement details within a branch as it iterates on a single algorithmic design, while global memory stores compressed algorithmic and failure-mode summaries across branches. A reflection step at branch termination distills these summaries, enabling cross-branch transfe",
-      "authors": [
-        "Fatemeh Haji",
-        "Javier Delarosa Quiros",
-        "Peyman Najafirad"
-      ],
-      "link": "https://arxiv.org/abs/2605.17539v2",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "记忆引导树搜索",
-      "contribution_zh": "提出记忆引导树搜索算法",
-      "value_zh": "应用于组合优化",
-      "keywords": [
-        "树搜索",
-        "组合优化",
-        "记忆引导"
-      ],
-      "score": 8
-    },
-    {
-      "id": "2605.17982v2",
-      "title": "A Benders Decomposition Approach for the k-Defensive Domination Problem",
-      "summary": "The k-defensive domination problem is a powerful modeling tool for strategic decision-making in network security and disaster/emergency management, where multiple nodes may be simultaneously under attack. Despite its practical relevance, the problem has been poorly studied, largely due to its high computational difficulty. This study investigates the application of Benders decomposition to the k-defensive domination problem, aiming to improve computational efficiency over standard integer programming formulations. Several cut generation strategies, including a combinatorial approach and the simultaneous addition of multiple cuts, are proposed. Theoretical results on the strength of feasibility cuts are presented. In addition, two novel enhancement strategies are proposed: a clique-cover-based heuristic, the first feasible solution method in the literature for this problem, achieving up to 98% improvement over the trivial upper bound, and an initial cut generation heuristic that in some",
-      "authors": [
-        "Bilge Varol",
-        "Tınaz Ekim",
-        "Kübra Tanınmış"
-      ],
-      "link": "https://arxiv.org/abs/2605.17982v2",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "Benders分解方法用于k-防御性支配问题",
-      "contribution_zh": "提出Benders分解方法",
-      "value_zh": "应用于网络安全和紧急管理",
-      "keywords": [
-        "Benders分解",
-        "网络安全",
-        "紧急管理"
-      ],
-      "score": 9
-    },
-    {
-      "id": "2605.18374v1",
-      "title": "Beyond Inference-Time Search: Reinforcement Learning Synthesizes Reusable Solvers",
-      "summary": "Large language models (LLMs) typically approach combinatorial optimization as an inference-time procedure, solving each instance separately through sampling, search, or repeated prompting. We ask whether reinforcement learning can instead shift part of this reasoning cost into the weights of a code LLM, so that the model synthesizes a reusable solver for an entire problem family. We study this question on Synergistic Dependency Selection (SDS), a controlled variant of constrained Quadratic Knapsack designed to expose a specific failure mode: local signals and strict feasibility constraints make greedy heuristics attractive but unreliable. Under identical scaffolding, Best-of-64 base-model sampling saturates at an approximately 28.7% gap to the global Virtual Best Solver (VBS); code audits show that the base model often retrieves Simulated Annealing templates but misimplements the Metropolis acceptance rule. We fine-tune Qwen2.5-Coder-14B-Instruct with Group Relative Policy Optimization",
-      "authors": [
-        "Soheyl Massoudi",
-        "Gabriel Apaza",
-        "Milad Habibi",
-        "Mark Fuge"
-      ],
-      "link": "https://arxiv.org/abs/2605.18374v1",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "超越推理时间搜索",
-      "contribution_zh": "提出强化学习合成可复用求解器",
-      "value_zh": "应用于组合优化",
-      "keywords": [
-        "强化学习",
-        "组合优化",
-        "求解器合成"
-      ],
-      "score": 8
-    },
-    {
-      "id": "2605.18393v1",
-      "title": "Quantum Model for CVRPTW",
-      "summary": "This paper proposes a quantum algorithm for the capacitated vehicle routing problem with time windows (CVRPTW) based on Grover Search framework. This problem is often faced by Postal services in the context of package delivery or other time-sensitive operations. We provide an implementation on gate based quantum computer of a model inspired by classical route first, cluster second technique. The quantum paradigm allows to overcome suboptimality inherent property of this decomposition. In the current NISQ (Noisy Intermediate-Scale Quantum) era, the most important limitation is the number of available qubits which makes time windows and capacity constraints hard to tackle. We introduce a qubit-efficient split-inspired modeling which adds only a linear number of decision qubits to standard quantum formulations for Traveling Salesman Problem (TSP).",
-      "authors": [
-        "Imran Meghazi",
-        "Éric Bourreau"
-      ],
-      "link": "https://arxiv.org/abs/2605.18393v1",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "量子模型用于CVRPTW",
-      "contribution_zh": "提出基于Grover Search的量子算法",
-      "value_zh": "应用于车辆路径规划",
-      "keywords": [
-        "量子计算",
-        "车辆路径规划",
-        "CVRPTW"
-      ],
-      "score": 9
-    },
-    {
-      "id": "2605.18454v1",
-      "title": "Scheduling That Speaks: An Interpretable Programmatic Reinforcement Learning Framework",
-      "summary": "Deep reinforcement learning (DRL) has recently emerged as a promising approach to solve combinatorial optimization problems such as job shop scheduling. However, the policies learned by DRL are typically represented by deep neural networks (DNNs), whose opaque neural architectures and non-interpretable policy decisions can lead to critical trust and usability concerns for human decision makers. In addition, the computational requirements of DNNs can further hinder practical deployment in resource constrained environments. In this work, we propose ProRL, a novel interpretable programmatic reinforcement learning framework that achieves high-performance scheduling with human-readable and editable programmatic policies (i.e., programs). We first introduce a domain-specific language for scheduling (DSL-S) to represent scheduling strategies as structured programs. ProRL then explores the program space defined by DSL-S using local search to identify incomplete programs, which are subsequently",
-      "authors": [
-        "Chengpeng Hu",
-        "Yingqian Zhang",
-        "Hendrik Baier"
-      ],
-      "link": "https://arxiv.org/abs/2605.18454v1",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "可解释的程序化强化学习框架",
-      "contribution_zh": "提出可解释的强化学习框架",
-      "value_zh": "应用于调度优化",
-      "keywords": [
-        "强化学习",
-        "调度优化",
-        "可解释性"
-      ],
-      "score": 9
-    },
-    {
-      "id": "2605.18692v1",
-      "title": "Democratizing Large-Scale Re-Optimization with LLM-Guided Model Patches",
-      "summary": "Optimization models developed by operations research (OR) experts are often deployed as decision-support systems in industrial settings. However, real-world environments are dynamic, with evolving business rules, previously overlooked constraints, and unforeseen perturbations. In such contexts, end users must rapidly re-optimize models to recover feasible and implementable solutions. This paper introduces an agentic re-optimization framework in which a large language model (LLM) acts as an OR expert, dynamically supporting end users through natural-language interaction. The LLM translates user prompts into structured updates of the underlying optimization model, selects suitable re-optimization techniques from an optimization toolbox, and solves the resulting instance to return implementable solutions. The toolbox leverages primal information, including historical solutions, valid inequalities, solver configurations, and metaheuristics, to accelerate re-optimization while preserving so",
-      "authors": [
-        "Tinghan Ye",
-        "Arnaud Deza",
-        "Ved Mohan",
-        "El Mehdi Er Raqabi",
-        "Pascal Van Hentenryck"
-      ],
-      "link": "https://arxiv.org/abs/2605.18692v1",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "民主化大规模重新优化：LLM引导模型修复",
-      "contribution_zh": "提出LLM引导模型修复方法",
-      "value_zh": "解决重新优化问题",
-      "keywords": [
-        "重新优化",
-        "LLM引导"
-      ],
-      "score": 8
-    },
-    {
-      "id": "2605.19119v1",
-      "title": "GOAL: Graph-based Objective-Aligned Diffusion Solvers for Dynamic Multi-Objective Optimization",
-      "summary": "Existing neural combinatorial optimization solvers frame solution search as imitation of optimal decisions, inherently limiting their utility to single-objective minimization and static constraints. We propose GOAL, a conditioned diffusion solver over relational graph representations that enables controllable decision generations by conditioning on human-specified objectives. We introduce a heterogeneous graph encoding in which distinct edge types, corresponding to different classes of constraints, define the message passing structure of the graph neural network, which allows information to propagate selectively according to the ontology of each constraint. GOAL is instantiated and evaluated on three canonical scheduling benchmarks of various constraint complexity: the Flow Shop Problem (FSP), the Job Shop Scheduling Problem (JSP), and the Flexible Job Shop Scheduling Problem (FJSP). Generalization is demonstrated across structurally distinct constraint regimes and problem types withou",
-      "authors": [
-        "Xingyu Li"
-      ],
-      "link": "https://arxiv.org/abs/2605.19119v1",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "GOAL：基于图的目标对齐扩散求解器用于动态多目标优化",
-      "contribution_zh": "提出GOAL扩散求解器",
-      "value_zh": "解决动态多目标优化问题",
-      "keywords": [
-        "图优化",
-        "扩散求解器"
-      ],
-      "score": 9
-    },
-    {
-      "id": "2605.19671v1",
-      "title": "Transforming Constraint Programs to Input for Local Search",
-      "summary": "Applying local search algorithms to combinatorial optimization problems is not an easy feat. Typically, human intervention is required to compile the constraints to input data for some metaheuristic algorithm. In this paper, we establish a link between symmetry properties of constraint optimization problems and local search neighborhoods, and we use this link to automatically generate neighborhoods from a constraint specification in the context of the IDP system. We evaluate the obtained neighborhoods for six classical optimization problems. The resulting observations support the viability of this technique.",
-      "authors": [
-        "Jo Devriendt",
-        "Patrick De Causmaecker",
-        "Marc Denecker"
-      ],
-      "link": "https://arxiv.org/abs/2605.19671v1",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "将约束程序转换为局部搜索输入",
-      "contribution_zh": "提出将约束程序转换为局部搜索输入的方法",
-      "value_zh": "解决组合优化问题",
-      "keywords": [
-        "约束程序",
-        "局部搜索"
-      ],
-      "score": 8
-    },
-    {
-      "id": "2605.19721v1",
-      "title": "Projecting Latent RL Actions: Towards Generalizable and Scalable Graph Combinatorial Optimization",
-      "summary": "Graph combinatorial optimization (GCO) has attracted growing interest, as many NP-hard problems naturally admit graph formulations, yet their combinatorial explosion renders exact methods computationally intractable. Recent advances in Reinforcement Learning (RL) combined with Graph Neural Networks (GNNs) have significantly improved learning-based GCO solvers. However, existing approaches face limitations in both generalization across diverse graph instances and computational scalability as action spaces grow. To address both challenges, we introduce projection agents, a novel RL-GCO approach that operates directly in a continuous GNN-based action embedding space, predicting a desired latent action in a single forward pass and subsequently decoding it into a valid discrete action. Additionally, we enable fair comparison across RL methods through a shared embedding space for both observations and actions. Across diverse benchmarks, our approach achieves up to 16.2x faster inference and ",
-      "authors": [
-        "Franco Terranova",
-        "Guillermo Bernardez",
-        "Albert Cabellos-Aparicio",
-        "Nina Miolane",
-        "Abdelkader Lahmadi"
-      ],
-      "link": "https://arxiv.org/abs/2605.19721v1",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "潜在强化学习行动投影：通向图组合优化的普遍化和扩展",
-      "contribution_zh": "提出潜在强化学习行动投影方法",
-      "value_zh": "解决图组合优化问题",
-      "keywords": [
-        "图组合优化",
-        "潜在强化学习"
-      ],
-      "score": 9
-    },
-    {
-      "id": "2605.19760v1",
-      "title": "Heuristic approaches for solving a bilevel optimistic scheduling problem on parallel machines",
-      "summary": "This work addresses the uniform parallel machine scheduling problem within an optimistic bilevel optimization framework. The leader seeks to minimize the weighted number of tardy jobs, while the follower aims to minimize the total completion time across a set of uniform machines. The hierarchical decision-making process of the bilevel problem makes designing effective heuristics challenging. To tackle this, we exploit a property of the follower that enables the construction of optimal schedules. From this property, we derive an effective branching scheme that simultaneously accounts for both leader and follower decisions. This branching scheme allows us to design a Recovering Beam Search (RBS), which represents a significant contribution from a bilevel perspective. Then we propose a Multi-Start Local Search (MSLS) algorithm based on an innovative scheme that couples the RBS and a Local Search (LS). To the best of our knowledge, while hybridizing beam search with local search is known i",
-      "authors": [
-        "Quentin Schau",
-        "Federico Della Croce",
-        "Olivier Ploton",
-        "Vincent t'Kindt"
-      ],
-      "link": "https://arxiv.org/abs/2605.19760v1",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "并行机器调度的启发式方法",
-      "contribution_zh": "提出解决并行机器调度问题的启发式方法",
-      "value_zh": "解决并行机器调度问题",
-      "keywords": [
-        "并行机器调度",
-        "启发式方法"
-      ],
-      "score": 9
-    },
-    {
-      "id": "2605.19975v1",
-      "title": "Learning with Foresight: Enhancing Neural Routing Policy via Multi-Node Lookahead Prediction",
-      "summary": "Neural policies have shown promise in solving vehicle routing problems due to their reduced reliance on handcrafted heuristics. However, current training paradigms suffer from a fundamental limitation: they primarily focus on next-node prediction for solution construction, resulting in myopic decision-making that undermines long-horizon planning capacity. To this end, we introduce Multi-node Lookahead Prediction (MnLP), a novel training strategy that extends the supervised learning paradigm to predict multiple future nodes simultaneously. We incorporate causal and discardable MnLP modules that operate exclusively during training, facilitating models to anticipate multi-step decisions while preserving inference-time efficiency. By incorporating multi-depth auxiliary supervision into the loss function, MnLP equips neural policies with the ability of long-range contextual understanding. Experimentally, MnLP outperforms existing training methods, improving the generalization capability of ",
-      "authors": [
-        "Xia Jiang",
-        "Yaoxin Wu",
-        "Yew-Soon Ong",
-        "Yingqian Zhang"
-      ],
-      "link": "https://arxiv.org/abs/2605.19975v1",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "预见式学习：通过多节点预测增强神经路由策略",
-      "contribution_zh": "提出多节点预测增强神经路由策略",
-      "value_zh": "解决车辆路由问题",
-      "keywords": [
-        "神经路由",
-        "多节点预测",
-        "车辆路由"
-      ],
-      "score": 9
-    },
-    {
-      "id": "2605.20074v1",
-      "title": "Towards Distillation Guarantees under Algorithmic Alignment for Combinatorial Optimization",
-      "summary": "Distillation transfers knowledge from a large model trained on broad data to a smaller, more efficient model suitable for deployment. In structured prediction settings, prior knowledge about the task can guide the choice of a target architecture that is algorithmically aligned with the underlying problem. Building on recent learning-theoretic analyses of decision-tree (DT) distillation (Boix-Adsera, 2024), we study when distillation succeeds for combinatorial optimization tasks. We focus on the case where the target model is a graph neural network whose architecture is aligned with a dynamic programming (DP) algorithm for the task. Assuming that the source model is sufficiently rich, formalized through the linear representation hypothesis (LRH) (Elhage et al., 2022; Park et al., 2024), we show that the distillation problem can be solved efficiently in the complexity parameters of the DP transition function, represented as a DT. Our results provide a rigorous sufficient condition for su",
-      "authors": [
-        "Thien Le",
-        "Melanie Weber"
-      ],
-      "link": "https://arxiv.org/abs/2605.20074v1",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "在算法对齐下提炼保证用于组合优化",
-      "contribution_zh": "提出了算法对齐下的提炼保证",
-      "value_zh": "模型压缩优化",
-      "keywords": [
-        "算法对齐",
-        "提炼保证",
-        "组合优化"
-      ],
-      "score": 6
-    },
-    {
-      "id": "2605.20387v1",
-      "title": "An iterative Constraint Programming approach to integrate maximum workload constraints in preemptive jobshop scheduling",
-      "summary": "Optimizing schedules in real-world settings often requires considering workload constraints, specially for human resources, to ensure regulatory compliance, impose rest periods, or level the workload over the working horizon. This paper focuses on tackling this family of constraints in the context of preemptive jobshop scheduling, as preemption is particularly relevant when human resources are involved (allowing personnel to flexibly switch between tasks). Preemption also offers theoretical insights as a relaxation of non-preemptive problems. The main contribution of this paper is a Constraint Programming approach designed to handle effectively maximum workload constraints in a preemptive setting, without decomposing activities into unit-duration tasks (which may be computationally prohibitive). Since workload constraints introduce significant additional complexity, we further propose a method that iteratively introduces the workload constraints into the problem, along with tailored he",
-      "authors": [
-        "Tanguy Terrien",
-        "Cyrille Briand"
-      ],
-      "link": "https://arxiv.org/abs/2605.20387v1",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "一种迭代约束规划方法：将最大工作量约束集成到抢占式作业车间调度",
-      "contribution_zh": "提出了一种迭代约束规划方法",
-      "value_zh": "工业制造业调度优化",
-      "keywords": [
-        "迭代约束规划",
-        "抢占式作业车间调度"
-      ],
-      "score": 9
-    },
-    {
-      "id": "2605.20618v1",
-      "title": "COAgents: Multi-Agent Framework to Learn and Navigate Routing Problems Search Space",
-      "summary": "Although Vehicle Routing Problems (VRP) are essential to many real-world systems, they remain computationally intractable at scale due to their combinatorial complexity. Traditional heuristics rely on handcrafted rules for local improvements and occasional \\textit{jumps} to escape local minima, but often struggle to generalize across diverse instances. We introduce \\textbf{COAgents}, a cooperative multi-agent framework that models the search process as a graph: nodes represent solutions, and edges correspond to either local refinements or large perturbations for diversification (i.e., jumps). A \\textit{Partial Search Graph} (PSG) is dynamically constructed during search, enabling COAgents to train a Node Selection Agent and a Move Selection Agent to guide intensification, and a Jump Agent to trigger well-timed explorations of new regions. Unlike end-to-end learning approaches, COAgents cleanly separates problem-agnostic search control from compact domain-specific encoding, facilitating",
-      "authors": [
-        "Oleksandr Yakovenko",
-        "Mahdi Mostajabdaveh",
-        "Cheikh Ahmed",
-        "Abdullah Ali Sivas",
-        "Xiaorui Li",
-        "Zirui Zhou",
-        "Mao Kun"
-      ],
-      "link": "https://arxiv.org/abs/2605.20618v1",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "COAgents：多代理框架用于学习和导航路由问题搜索空间",
-      "contribution_zh": "提出了一种协作多代理框架",
-      "value_zh": "车辆路由问题优化",
-      "keywords": [
-        "多代理",
-        "路由问题",
-        "搜索空间"
-      ],
-      "score": 9
-    },
-    {
-      "id": "2605.20849v1",
-      "title": "Large Language Models for Operations Research: A Comprehensive Survey",
-      "summary": "Operations Research (OR) serves as a core decision-support methodology for complex systems, with significant applications across mathematics, management science, and computer science. Traditional approaches heavily rely on expert knowledge and often struggle to efficiently solve large-scale and multi-constraint problems. The rapid advancement of Large Language Models (LLMs) in recent years has offered a novel research paradigm to address these challenges. This paper presents a systematic survey of Large Language Models for Operations Research (LLM4OR). We begin by introducing the definition of OR problems and the fundamental principles of LLMs. We then focus on analyzing the roles of LLMs in OR, specifically covering such as model formulation, algorithm design, and solution verification. In addition, we discuss practical applications in representative scenarios and summarize benchmark datasets in this field. Finally, we outline the key challenges and provide perspectives on future rese",
-      "authors": [
-        "Xianchao Xiu",
-        "Jianhao Li",
-        "Jun Fan",
-        "Wanquan Liu"
-      ],
-      "link": "https://arxiv.org/abs/2605.20849v1",
-      "source": "arxiv",
-      "date": "2026-05-24",
-      "title_zh": "大规模语言模型在运筹学中的应用",
-      "contribution_zh": "综述了大规模语言模型在运筹学中的应用",
-      "value_zh": "运筹学决策支持",
-      "keywords": [
-        "大规模语言模型",
-        "运筹学"
       ],
       "score": 10
     }
