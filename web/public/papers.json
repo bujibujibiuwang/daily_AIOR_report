@@ -1,6 +1,30 @@
 {
-  "updated": "2026-06-24",
+  "updated": "2026-06-25",
   "papers": [
+    {
+      "id": "2606.25362v1",
+      "title": "Learning Optimization Proxies for Sequential Contextual Stochastic Programs: An Order Fulfillment Application",
+      "summary": "Sequential contextual stochastic programs model real-time decision systems in which each time epoch commits to an action under uncertainty whose consequences propagate into future decisions. In many practical contexts, these programs require obtaining solutions rapidly as new information becomes available. These problems can be represented through scenario approximations to be solved by off-the-shelf optimization solvers, which achieve high decision quality offline but typically run in seconds to minutes per instance, falling short of the sub-second responses that peak periods of planning require. This paper develops a learning-based optimization proxy: a scenario-embedded neural network trained offline on solver-generated labels, paired online with a decoder that enforces feasibility, replacing the per-epoch solve with a single forward pass. The framework is specialized to omnichannel order fulfillment, where each arriving order requires a sub-second assignment of products to distribution centers and carrier services under stochastic delivery times and future demand. A two-stage contextual stochastic program is introduced to formulate this problem, and its contextual sample average approximation (C-SAA) supplies the offline labels, while a composite training loss combines label imitation, a constraint-violation penalty, and self-supervised cost alignment. In a calibrated simulator built from JD.com transactional records, a detailed computational study is provided. The proxy reduces decision latency by roughly 2800x relative to the online finite-sample C-SAA reference and improves over it by 3.3% in realized fulfillment cost. Relative to established fulfillment policies, the proxy lowers total realized cost by at least 10.7% and roughly halves the late-delivery rate.",
+      "authors": [
+        "Tinghan Ye",
+        "Shuaicheng Tong",
+        "Changkun Guan",
+        "Beste Basciftci",
+        "Pascal Van Hentenryck"
+      ],
+      "link": "https://arxiv.org/abs/2606.25362v1",
+      "source": "arxiv",
+      "date": "2026-06-25",
+      "title_zh": "学习优化代理用于顺序背景随机程序：订单履行应用",
+      "contribution_zh": "提出优化代理学习方法",
+      "value_zh": "应用于订单履行决策",
+      "keywords": [
+        "顺序背景随机程序",
+        "优化代理",
+        "订单履行"
+      ],
+      "score": 9
+    },
     {
       "id": "2606.23978v1",
       "title": "Offline Reinforcement Learning for Warehouse SLAM Throughput Control",
