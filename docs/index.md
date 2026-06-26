@@ -1,7 +1,19 @@
 ---
 layout: default
 ---
-2026-06-25
+2026-06-26
+
+
+### 仓库优化的上下文感知优化管道综合
+- **英文标题**: Context-Aware Synthesis of Optimization Pipelines for Warehouse Optimization
+- **来源**: 📄 arXiv  ⭐ 9/10
+- **作者**: Janik Bischoff, Anne Meyer, Uta Mohring
+- **核心贡献**: 提出了一种上下文感知的优化管道综合方法
+- **实践价值**: 应用于手工拣货仓库的订单履行优化
+- **OR 技术关键词**: 仓库优化, 优化管道综合, 手工拣货仓库
+- **论文链接**: https://arxiv.org/abs/2606.26852v1
+---
+## 📅 2026-06-25
 
 
 ### 学习优化代理用于顺序背景随机程序：订单履行应用
@@ -206,8 +218,5 @@ layout: default
 
 今日无新增 OR 相关研究
 ## 📅 2026-05-27
-
-今日无新增 OR 相关研究
-## 📅 2026-05-26
 
 今日无新增 OR 相关研究

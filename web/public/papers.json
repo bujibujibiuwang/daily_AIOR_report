@@ -1,6 +1,34 @@
 {
-  "updated": "2026-06-25",
+  "updated": "2026-06-26",
   "papers": [
+    {
+      "id": "2606.26852v1",
+      "title": "Context-Aware Synthesis of Optimization Pipelines for Warehouse Optimization",
+      "summary": "Order fulfillment in manual picker-to-goods warehouses involves interconnected decisions such as item assignment, order batching, and picker routing. While integrated models capture interactions between these decisions, practical warehouse systems often require decomposed approaches due to organizational boundaries, differing responsibilities, or limited data availability. Existing studies primarily evaluate algorithms for isolated subproblems or fixed subproblem combinations for specific warehouse settings, but lack a general mechanism to determine applicable algorithm configurations, compose them into valid solution pipelines, and assess their performance.   With Context-Aware Synthesis of Optimization Pipelines (CASOP), we propose a framework for constructing and evaluating context-specific optimization pipelines and apply these to order fulfillment. The framework comprises: (1) a modular repository of algorithms for common order fulfillment problems; (2) semantic data and algorithm cards to describe warehouse context and algorithm requirements; (3) a taxonomy that structures order fulfillment problems into relevant subproblems; (4) a pipeline synthesizer that identifies applicable algorithms for a given warehouse context and composes all valid optimization pipelines; and (5) a pipeline evaluator that assesses all resulting pipelines. We demonstrate the framework on 7 benchmark instance sets covering four problem classes, resulting in 1,063,044 valid pipelines. The framework supports researchers and practitioners in designing, automatically synthesizing, and selecting valid, high-performing algorithmic pipelines for warehouse operations. The software is open-source and available at https://github.com/kit-dsm/ware_ops_pipes and https://github.com/kit-dsm/ware_ops_algos.   Keywords: Warehouse optimization, Algorithm selection, Pipeline synthesis, Order fulfillment",
+      "authors": [
+        "Janik Bischoff",
+        "Anne Meyer",
+        "Uta Mohring",
+        "Fabian Dunke",
+        "Maximilian Barlang",
+        "Özge Nur Subas",
+        "Hadi Kutabi",
+        "Stefan Nickel",
+        "Kai Furmans"
+      ],
+      "link": "https://arxiv.org/abs/2606.26852v1",
+      "source": "arxiv",
+      "date": "2026-06-26",
+      "title_zh": "仓库优化的上下文感知优化管道综合",
+      "contribution_zh": "提出了一种上下文感知的优化管道综合方法",
+      "value_zh": "应用于手工拣货仓库的订单履行优化",
+      "keywords": [
+        "仓库优化",
+        "优化管道综合",
+        "手工拣货仓库"
+      ],
+      "score": 9
+    },
     {
       "id": "2606.25362v1",
       "title": "Learning Optimization Proxies for Sequential Contextual Stochastic Programs: An Order Fulfillment Application",
