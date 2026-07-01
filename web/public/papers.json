@@ -1,6 +1,32 @@
 {
-  "updated": "2026-06-30",
+  "updated": "2026-07-01",
   "papers": [
+    {
+      "id": "2606.29366v1",
+      "title": "Solver-Verified Formulation Generation and Selection for Multi-Warehouse Inventory Allocation Using Large Language Models",
+      "summary": "Balance-oriented multi-warehouse inventory allocation is a recurring decision problem in large-scale e-commerce supply chains, in which a fixed replenishment quantity is distributed across warehouses to balance post-allocation inventory coverage while accounting for demand forecasts and heterogeneous allocation constraints. In practice, allocation requirements are often scenario-dependent and expressed in semi-structured or natural-language form rather than as ready-to-solve operations research (OR) formulations. We propose an OR-guided Large Language Model (LLM) for Allocation (ORLA) that uses solver feedback to generate, verify, and select OR formulations. ORLA integrates automatic \"Problem-Model-Code (PMC)\" generation, learning-based formulation selection, and feasibility restoration. We develop three complementary mixed-integer programming formulation families based on deviation minimization, soft band compliance, and knapsack-inspired allocation, together with solver-ready mixed-integer linear programming reformulations, modular constraint extensions, and a penalty-based relaxation mechanism for infeasible cases. The LLM component generates candidate formulations and executable solver code from textual or semi-structured specifications, while the solver provides verification signals for executability, feasibility, and solution quality. To address instance heterogeneity, ORLA estimates the expected quality of candidate formulations, selects promising candidates, and combines their outputs through score-aware aggregation. Experimental results on 29 production evaluation batches from JD.com show that the best single OR formulation improves allocation accuracy by 3.4 percentage points over the incumbent approach, while the full ORLA framework achieves a 4.5 percentage-point overall improvement and improves allocation accuracy in 26 of the 29 evaluation batches.",
+      "authors": [
+        "Jintao Xu",
+        "Yingzheng Ma",
+        "Jiong Dong",
+        "Yongzhi Qi",
+        "Jianshen Zhang",
+        "Dongyang Geng",
+        "Anni Zhang"
+      ],
+      "link": "https://arxiv.org/abs/2606.29366v1",
+      "source": "arxiv",
+      "date": "2026-07-01",
+      "title_zh": "使用大型语言模型的多仓库库存分配求解器验证公式生成和选择",
+      "contribution_zh": "提出使用语言模型生成和选择公式",
+      "value_zh": "应用于电子商务供应链的多仓库库存分配",
+      "keywords": [
+        "大型语言模型",
+        "多仓库库存分配",
+        "供应链优化"
+      ],
+      "score": 9
+    },
     {
       "id": "2606.26852v1",
       "title": "Context-Aware Synthesis of Optimization Pipelines for Warehouse Optimization",

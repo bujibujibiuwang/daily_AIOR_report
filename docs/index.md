@@ -1,7 +1,19 @@
 ---
 layout: default
 ---
-2026-06-30
+2026-07-01
+
+
+### 使用大型语言模型的多仓库库存分配求解器验证公式生成和选择
+- **英文标题**: Solver-Verified Formulation Generation and Selection for Multi-Warehouse Inventory Allocation Using Large Language Models
+- **来源**: 📄 arXiv  ⭐ 9/10
+- **作者**: Jintao Xu, Yingzheng Ma, Jiong Dong
+- **核心贡献**: 提出使用语言模型生成和选择公式
+- **实践价值**: 应用于电子商务供应链的多仓库库存分配
+- **OR 技术关键词**: 大型语言模型, 多仓库库存分配, 供应链优化
+- **论文链接**: https://arxiv.org/abs/2606.29366v1
+---
+## 📅 2026-06-30
 
 今日无新增 OR 相关研究
 ## 📅 2026-06-29
@@ -215,8 +227,5 @@ layout: default
 
 今日无新增 OR 相关研究
 ## 📅 2026-06-01
-
-今日无新增 OR 相关研究
-## 📅 2026-05-31
 
 今日无新增 OR 相关研究
