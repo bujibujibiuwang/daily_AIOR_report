@@ -1,6 +1,25 @@
 {
-  "updated": "2026-07-06",
+  "updated": "2026-07-07",
   "papers": [
+    {
+      "id": "crossref:10.1287/mnsc.2023.03157",
+      "title": "Deep Neural Newsvendor",
+      "abstract": "We consider a data-driven newsvendor problem, where one has access to past demand data and the associated feature information. We solve the problem by estimating the target conditional quantile function using a deep neural network (DNN). The remarkable representational power of DNNs allows our framework to incorporate or approximate various extant data-driven models. We provide theoretical guarantees in terms of excess risk bounds for the DNN solution characterized by the network structure and sample size in a nonasymptotic manner, which justify the applicability of DNNs in relevant contexts. Specifically, the convergence rate of the excess risk bound with respect to the sample size increases in the smoothness of the target quantile function but decreases in the dimension of feature variables. This rate can be further accelerated when the target function possesses a composite structure. In particular, our theoretical framework can be extended to accommodate data-dependent scenarios, where the data-generating process could be time-dependent but not necessarily identical over time. Building on our theoretical results, we provide further managerial insights and practical guidance through simulation studies. Finally, we apply the DNN method to a real-world data set obtained from a food supermarket. Our numerical experiments demonstrate that (1) the DNN method consistently outperforms alternatives across a wide range of cost parameters, and (2) it exhibits good performance when the sample size is either very large or relatively limited. \n                   This paper was accepted by Jeannette Song, operations management. \n                   Funding: This work was supported by the Natural Sciences and Engineering Research Council of Canada [Grant RGPIN-2021-04295]; the National Natural Science Foundation of China [Project: Data-Driven Operations Analytics Methods]; the Fundamental Research Funds for the Central Universities, Peking University; the General Research Fund of the Hong Kong Research Grants Council [Grant 15305523]; and the Research Fund of the Hong Kong Polytechnic University [Grant P0048718]. \n                   Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2023.03157 .",
+      "url": "https://doi.org/10.1287/mnsc.2023.03157",
+      "source": "OR-Journal",
+      "journal": "Management Science",
+      "publishedAt": "",
+      "date": "2026-07-07",
+      "title_zh": "深度神经新svendor",
+      "contribution_zh": "提出深度神经网络解决新svendor问题",
+      "value_zh": "应用于库存控制和补货决策",
+      "keywords": [
+        "深度学习",
+        "新svendor",
+        "库存控制"
+      ],
+      "score": 10
+    },
     {
       "id": "2606.29366v1",
       "title": "Solver-Verified Formulation Generation and Selection for Multi-Warehouse Inventory Allocation Using Large Language Models",
@@ -306,27 +325,6 @@
         "分层预测"
       ],
       "score": 8
-    },
-    {
-      "id": "2606.06201v1",
-      "title": "Learning to replenish: A hybrid deep reinforcement learning for dynamic inventory management in the pharmaceutical supply chains",
-      "summary": "Pharmaceutical supply chains (PSCs) struggle with inventory management (IM) due to unpredictable demand patterns and variable lead times associated with restocking. This complexity is further compounded by the finite shelf lives of pharmaceutical products, which necessitate a delicate balance between adequate stock and minimal waste. These intertwined factors create a complex optimization problem that requires sophisticated inventory strategies to ensure both product availability and PSC efficiency. This study aims to develop an optimal inventory replenishment policy for pharmaceutical products that can handle the stochasticity arising from uncertain demand and variable PSC conditions. The objective is to maximize the profitability of the PSC while maintaining a high patient service level. We formulate the problem as a Markov decision process and propose a deep reinforcement learning (DRL) approach, specifically, a hybrid asynchronous advantage actor critic distributed proximal policy ",
-      "authors": [
-        "Amandeep Kaur",
-        "Gyan Prakash"
-      ],
-      "link": "https://arxiv.org/abs/2606.06201v1",
-      "source": "arxiv",
-      "date": "2026-06-06",
-      "title_zh": "学习补货：药品供应链 动态库存管理混合深度强化学习",
-      "contribution_zh": "提出混合深度强化学习用于动态库存管理",
-      "value_zh": "优化药品供应链库存，平衡库存和减少浪费",
-      "keywords": [
-        "强化学习",
-        "库存管理",
-        "药品供应链"
-      ],
-      "score": 10
     }
   ]
 }

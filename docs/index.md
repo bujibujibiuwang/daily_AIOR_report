@@ -1,7 +1,18 @@
 ---
 layout: default
 ---
-2026-07-06
+2026-07-07
+
+
+### 深度神经新svendor
+- **英文标题**: Deep Neural Newsvendor
+- **来源**: OR-Journal  ⭐ 10/10
+- **核心贡献**: 提出深度神经网络解决新svendor问题
+- **实践价值**: 应用于库存控制和补货决策
+- **OR 技术关键词**: 深度学习, 新svendor, 库存控制
+- **论文链接**: https://doi.org/10.1287/mnsc.2023.03157
+---
+## 📅 2026-07-06
 
 今日无新增 OR 相关研究
 ## 📅 2026-07-05
@@ -214,15 +225,3 @@ layout: default
 ## 📅 2026-06-07
 
 今日无新增 OR 相关研究
-## 📅 2026-06-06
-
-
-### 学习补货：药品供应链 动态库存管理混合深度强化学习
-- **英文标题**: Learning to replenish: A hybrid deep reinforcement learning for dynamic inventory management in the pharmaceutical supply chains
-- **来源**: 📄 arXiv  ⭐ 10/10
-- **作者**: Amandeep Kaur, Gyan Prakash
-- **核心贡献**: 提出混合深度强化学习用于动态库存管理
-- **实践价值**: 优化药品供应链库存，平衡库存和减少浪费
-- **OR 技术关键词**: 强化学习, 库存管理, 药品供应链
-- **论文链接**: https://arxiv.org/abs/2606.06201v1
----
