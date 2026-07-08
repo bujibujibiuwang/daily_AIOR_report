@@ -1,7 +1,29 @@
 ---
 layout: default
 ---
-2026-07-07
+2026-07-08
+
+
+### 动态订单履约运营的策略分解框架
+- **英文标题**: A Policy Decomposition Framework for Dynamic Order Fulfillment Operations
+- **来源**: 📄 arXiv  ⭐ 9/10
+- **作者**: Gal Neria, Michal Tzur, Marlin W. Ulmer
+- **核心贡献**: 提出动态订单履约策略分解框架
+- **实践价值**: 提高供应链订单履约效率
+- **OR 技术关键词**: 订单履约, 动态运营, 策略分解
+- **论文链接**: https://arxiv.org/abs/2607.04056v1
+---
+
+### 下一代赞助搜索：基于库存感知RAG的完美查询生成
+- **英文标题**: Next-Gen Sponsored Search: Crafting the Perfect Query with Inventory-Aware RAG (InvAwr-RAG) Based GenAI
+- **来源**: 📄 arXiv  ⭐ 8/10
+- **作者**: Md Omar Faruk Rokon, Weizhi Du, Zhaodong Wang
+- **核心贡献**: 提出基于库存感知RAG的GenAI查询生成方法
+- **实践价值**: 提高电商赞助搜索 revenue
+- **OR 技术关键词**: 赞助搜索, 库存感知, RAG, GenAI
+- **论文链接**: https://arxiv.org/abs/2607.03880v1
+---
+## 📅 2026-07-07
 
 
 ### 深度神经新svendor
@@ -222,6 +244,3 @@ layout: default
 - **OR 技术关键词**: 城市轨道交通, 需求预测, 分层预测
 - **论文链接**: https://arxiv.org/abs/2606.07044v1
 ---
-## 📅 2026-06-07
-
-今日无新增 OR 相关研究
