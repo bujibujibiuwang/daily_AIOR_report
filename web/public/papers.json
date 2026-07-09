@@ -1,6 +1,26 @@
 {
-  "updated": "2026-07-08",
+  "updated": "2026-07-09",
   "papers": [
+    {
+      "id": "2607.06614v1",
+      "title": "STAGformer: A Spatio-temporal Agent Graph Transformer for Micro Mobility Demand Forecasting",
+      "summary": "Accurate station-level demand forecasting is essential for the efficient operation of bike-sharing systems, yet it remains challenging due to complex spatio-temporal dependencies and the large scale of urban networks. This paper presents STAGformer, a Spatio-Temporal Agent Graph Transformer that achieves efficient global modeling with linear computational complexity. The model introduces a two-step agent attention mechanism, where a small set of learnable spatial and temporal agent tokens first aggregate global information and then broadcast it back to individual stations and time steps, effectively capturing long-range interactions while reducing the quadratic cost of standard self-attention to O(NT). STAGformer integrates four core modules: a spatio-temporal encoder that fuses dynamic node features with external contextual factors (weather, time, points of interest), a graph propagation module for spatial neighbor aggregation, a temporal convolution module for local pattern extraction, and the agent attention module for global dependency modeling. Extensive experiments on two real-world datasets -- NYC Citi-Bike and Chicago Divvy-Bike -- demonstrate that STAGformer consistently outperforms state-of-the-art baselines across multiple prediction horizons, achieving significant improvements in both RMSE and MAE. Ablation studies validate the contribution of each component, with the agent attention mechanism proving critical for modeling global spatio-temporal dependencies.",
+      "authors": [
+        "Ye Zihao"
+      ],
+      "link": "https://arxiv.org/abs/2607.06614v1",
+      "source": "arxiv",
+      "date": "2026-07-09",
+      "title_zh": "STAGformer：用于微观移动需求预测的时空代理图转换器",
+      "contribution_zh": "提出一种时空代理图转换器模型",
+      "value_zh": "预测共享单车系统的需求",
+      "keywords": [
+        "时空预测",
+        "图转换器",
+        "共享单车"
+      ],
+      "score": 8
+    },
     {
       "id": "2607.04056v1",
       "title": "A Policy Decomposition Framework for Dynamic Order Fulfillment Operations",
@@ -346,29 +366,6 @@
         "贪婪履约",
         "库存分配",
         "供应链管理"
-      ],
-      "score": 8
-    },
-    {
-      "id": "2606.07044v1",
-      "title": "Hierarchical Forecast Reconciliation for Urban Rail Transit Demand Prediction under Operational Disruptions",
-      "summary": "Accurate and coherent passenger demand forecasting is essential for Urban Rail Transit (URT) operations. Passenger demand has a hierarchical structure in which origin-destination (OD) flows aggregate to station-level inflows and outflows through conservation constraints. In practice, station-level and OD-level forecasts are often generated independently, producing incoherent predictions that violate these constraints and introduce inconsistencies into operational decision-making. Such issues become more severe during disruptions, when forecasting reliability is most critical. This paper presents the first hierarchical forecast reconciliation framework for joint station-level and OD-level URT demand prediction. A neural Fully Connected Reconciler (FCR) learns a non-linear mapping from incoherent base forecasts to coherent hierarchical predictions while guaranteeing exact structural consistency by construction. The method is benchmarked against OLS, WLS, and Minimum Trace (MinT) variants",
-      "authors": [
-        "Dang Viet Anh Nguyen",
-        "Alma Fazlagic",
-        "Kristine Pryds Loft",
-        "Filipe Rodrigues"
-      ],
-      "link": "https://arxiv.org/abs/2606.07044v1",
-      "source": "arxiv",
-      "date": "2026-06-08",
-      "title_zh": "城市轨道交通需求预测中的分层预测协调",
-      "contribution_zh": "提出分层预测协调方法",
-      "value_zh": "应用于城市轨道交通需求预测",
-      "keywords": [
-        "城市轨道交通",
-        "需求预测",
-        "分层预测"
       ],
       "score": 8
     }

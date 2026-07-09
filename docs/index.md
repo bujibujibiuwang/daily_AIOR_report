@@ -1,7 +1,19 @@
 ---
 layout: default
 ---
-2026-07-08
+2026-07-09
+
+
+### STAGformer：用于微观移动需求预测的时空代理图转换器
+- **英文标题**: STAGformer: A Spatio-temporal Agent Graph Transformer for Micro Mobility Demand Forecasting
+- **来源**: 📄 arXiv  ⭐ 8/10
+- **作者**: Ye Zihao
+- **核心贡献**: 提出一种时空代理图转换器模型
+- **实践价值**: 预测共享单车系统的需求
+- **OR 技术关键词**: 时空预测, 图转换器, 共享单车
+- **论文链接**: https://arxiv.org/abs/2607.06614v1
+---
+## 📅 2026-07-08
 
 
 ### 动态订单履约运营的策略分解框架
@@ -228,19 +240,4 @@ layout: default
 - **实践价值**: 库存分配优化
 - **OR 技术关键词**: 贪婪履约, 库存分配, 供应链管理
 - **论文链接**: https://doi.org/10.1287/opre.2024.0994
----
-## 📅 2026-06-08
-
-今日无新增 OR 相关研究
-## 📅 2026-06-08
-
-
-### 城市轨道交通需求预测中的分层预测协调
-- **英文标题**: Hierarchical Forecast Reconciliation for Urban Rail Transit Demand Prediction under Operational Disruptions
-- **来源**: 📄 arXiv  ⭐ 8/10
-- **作者**: Dang Viet Anh Nguyen, Alma Fazlagic, Kristine Pryds Loft
-- **核心贡献**: 提出分层预测协调方法
-- **实践价值**: 应用于城市轨道交通需求预测
-- **OR 技术关键词**: 城市轨道交通, 需求预测, 分层预测
-- **论文链接**: https://arxiv.org/abs/2606.07044v1
 ---
