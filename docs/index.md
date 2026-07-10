@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-07-09
+2026-07-10
+
+今日无新增 OR 相关研究
+## 📅 2026-07-09
 
 
 ### STAGformer：用于微观移动需求预测的时空代理图转换器
@@ -209,35 +212,4 @@ layout: default
 - **实践价值**: 供应链抗风险能力
 - **OR 技术关键词**: 大语言模型, 强化学习, 供应链世界模型
 - **论文链接**: https://arxiv.org/abs/2606.10359v1
----
-## 📅 2026-06-09
-
-
-### 集成深度学习需求预测与多目标优化的循环咖啡供应链
-- **英文标题**: Integrating Deep Learning Demand Forecasting with Multi-Objective Optimization for Circular Coffee Supply Chains: A Data-Driven Framework for Cost, Emissions, and Freshness Management
-- **来源**: 📄 arXiv  ⭐ 10/10
-- **作者**: Gerçek Budak, Faraz Gholamzadeh Gharehgheshlaghi, Melika Barjesteh Vaezi
-- **核心贡献**: 深度学习预测需求
-- **实践价值**: 优化咖啡供应链成本、排放和新鲜度管理
-- **OR 技术关键词**: 深度学习, 需求预测, 多目标优化, 供应链管理
-- **论文链接**: https://arxiv.org/abs/2606.08314v1
----
-
-### 基于Transformer的供应链金融信用评分
-- **英文标题**: TRUST-SCF: Transformer-based Risk Understanding and Scoring for Transactional Supply Chain Finance
-- **来源**: 📄 arXiv  ⭐ 9/10
-- **作者**: Mohammadamin Davoodabadi, Amirabbas Shakeri
-- **核心贡献**: Transformer模型评估信用风险
-- **实践价值**: 提升供应链金融信用评估精度
-- **OR 技术关键词**: Transformer, 信用评分, 供应链金融
-- **论文链接**: https://arxiv.org/abs/2606.08140v1
----
-
-### 贪婪履约策略下的库存分配
-- **英文标题**: Inventory Allocation Under the Greedy Fulfillment Policy: The (Potential) Perils of the Hindsight Approach
-- **来源**: OR-Journal  ⭐ 8/10
-- **核心贡献**: 研究贪婪履约政策的潜在问题
-- **实践价值**: 库存分配优化
-- **OR 技术关键词**: 贪婪履约, 库存分配, 供应链管理
-- **论文链接**: https://doi.org/10.1287/opre.2024.0994
 ---

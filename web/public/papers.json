@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09",
+  "updated": "2026-07-10",
   "papers": [
     {
       "id": "2607.06614v1",
@@ -304,70 +304,6 @@
         "供应链世界模型"
       ],
       "score": 9
-    },
-    {
-      "id": "2606.08314v1",
-      "title": "Integrating Deep Learning Demand Forecasting with Multi-Objective Optimization for Circular Coffee Supply Chains: A Data-Driven Framework for Cost, Emissions, and Freshness Management",
-      "summary": "The coffee supply chain is one of the most complex agri-food networks, marked by geographically dispersed production, multi-tier coordination, and high sensitivity to quality and freshness. While sustainability and digitalization have gained attention, demand forecasting, optimization, and traceability are often treated separately. This study presents a two-phase integrated framework. First, a hybrid CNN-LSTM model is used for demand forecasting. On the public Coffee Chain Sales dataset with chronological 70/15/15 splitting, the model achieves MAE of 22.87 and R^2 of 0.90, outperforming the best deep learning benchmark by ~12% and classical methods by over 30%. In the second phase, the forecasted demand feeds a tri-objective mixed-integer linear programming (MILP) model that jointly minimizes cost, minimizes carbon emissions, and maximizes product freshness in a multi-period, multimodal, closed-loop supply chain with circular recovery. Freshness is modeled via exponential decay based on inventory age. Using the epsilon-constraint method, 25 Pareto solutions are obtained. Sensitivity and policy analyses show that balanced sustainability policies can reduce emissions by 22.4% with only a 9.9% cost increase while maintaining near-optimal freshness.   Keywords: Coffee supply chain; Deep learning; Demand forecasting; Multi-objective optimization; Circular economy; CNN-LSTM; Mixed-integer linear programming.",
-      "authors": [
-        "Gerçek Budak",
-        "Faraz Gholamzadeh Gharehgheshlaghi",
-        "Melika Barjesteh Vaezi",
-        "Ahmad Gholizadeh Lonbar"
-      ],
-      "link": "https://arxiv.org/abs/2606.08314v1",
-      "source": "arxiv",
-      "date": "2026-06-09",
-      "title_zh": "集成深度学习需求预测与多目标优化的循环咖啡供应链",
-      "contribution_zh": "深度学习预测需求",
-      "value_zh": "优化咖啡供应链成本、排放和新鲜度管理",
-      "keywords": [
-        "深度学习",
-        "需求预测",
-        "多目标优化",
-        "供应链管理"
-      ],
-      "score": 10
-    },
-    {
-      "id": "2606.08140v1",
-      "title": "TRUST-SCF: Transformer-based Risk Understanding and Scoring for Transactional Supply Chain Finance",
-      "summary": "Supply Chain Finance (SCF) and LendTech platforms need credit scoring systems that respond to evolving transaction behavior, repayment delays, and active exposure. We propose TRUST-SCF, a transformer-based framework for transaction-level risk prediction and dynamic credit scoring. Each user history is represented as a sequence of transaction tokens containing utilization, repayment delay and transaction position. The main contributions are: (1) a financially aligned attention bias that combines utilization similarity and recency, enabling the model to compare repayment behavior under comparable exposure conditions; (2) continuous repayment-delay prediction in a log-transformed target space, reducing the influence of extreme delays while improving sensitivity to short-delay behavior and (3) a label-efficient credit-scoring pipeline in which the final credit score is not trained using any explicit external credit-score label, but is instead derived from predicted delay, potential risk over simulated utilization, actual unpaid exposure, and nonlinear calibration. Experiments on real transaction data from more than 300,000 transactions show that TRUST-SCF improves delay prediction over sequential baselines and produces scores that are strongly associated with future repayment behavior. These results suggest that TRUST-SCF is a practical framework for adaptive credit scoring and transaction-level risk mitigation in SCF and LendTech environments.",
-      "authors": [
-        "Mohammadamin Davoodabadi",
-        "Amirabbas Shakeri"
-      ],
-      "link": "https://arxiv.org/abs/2606.08140v1",
-      "source": "arxiv",
-      "date": "2026-06-09",
-      "title_zh": "基于Transformer的供应链金融信用评分",
-      "contribution_zh": "Transformer模型评估信用风险",
-      "value_zh": "提升供应链金融信用评估精度",
-      "keywords": [
-        "Transformer",
-        "信用评分",
-        "供应链金融"
-      ],
-      "score": 9
-    },
-    {
-      "id": "crossref:10.1287/opre.2024.0994",
-      "title": "Inventory Allocation Under the Greedy Fulfillment Policy: The (Potential) Perils of the Hindsight Approach",
-      "abstract": "Will Hindsight Approach Work Well for Multi-Location Inventory Allocation? \n                   Online retailers often decide where to place inventory before knowing which customers will arrive and in what order. A common solution is the hindsight or stochastic programming approach: allocate inventory as if future demand were known, then fulfill orders using a simple greedy rule, shipping from the cheapest available warehouse. In “Inventory Allocation under the Greedy Fulfillment Policy: The (Potential) Perils of the Hindsight Approach,” Jasin, Liu, and Zhao show that this widely used method can be deceptively optimistic. The hindsight solution is equivalent to optimizing greedy fulfillment for the most favorable arrival sequence, rather than the sequence that unfolds. The authors characterize when this optimism is harmless—identical ordering costs, no warehouse capacity constraints, and independent demands—and show that violating any of these conditions can make the hindsight allocation arbitrarily worse than the true optimum under greedy fulfillment. Their results caution retailers to evaluate allocation heuristics against the fulfillment policy actually used.",
-      "url": "https://doi.org/10.1287/opre.2024.0994",
-      "source": "OR-Journal",
-      "journal": "Operations Research",
-      "publishedAt": "",
-      "date": "2026-06-09",
-      "title_zh": "贪婪履约策略下的库存分配",
-      "contribution_zh": "研究贪婪履约政策的潜在问题",
-      "value_zh": "库存分配优化",
-      "keywords": [
-        "贪婪履约",
-        "库存分配",
-        "供应链管理"
-      ],
-      "score": 8
     }
   ]
 }
