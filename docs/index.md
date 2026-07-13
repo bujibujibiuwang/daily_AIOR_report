@@ -1,7 +1,19 @@
 ---
 layout: default
 ---
-2026-07-12
+2026-07-13
+
+
+### Eluna：智能仓库运营系统
+- **英文标题**: Eluna: An Agentic LLM System for Automating Warehouse Operations with Reasoning and Task Execution
+- **来源**: 📄 arXiv  ⭐ 9/10
+- **作者**: Ning Liu, Kalle Kujanpää, Zhaoxuan Zhu
+- **核心贡献**: 智能体LLM系统
+- **实践价值**: 仓库运营自动化
+- **OR 技术关键词**: 智能仓库, LLM, 自动化
+- **论文链接**: https://arxiv.org/abs/2607.08960v1
+---
+## 📅 2026-07-12
 
 今日无新增 OR 相关研究
 ## 📅 2026-07-11
@@ -199,8 +211,5 @@ layout: default
 
 今日无新增 OR 相关研究
 ## 📅 2026-06-13
-
-今日无新增 OR 相关研究
-## 📅 2026-06-12
 
 今日无新增 OR 相关研究
