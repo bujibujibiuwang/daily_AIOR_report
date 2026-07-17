@@ -1,7 +1,19 @@
 ---
 layout: default
 ---
-2026-07-16
+2026-07-17
+
+
+### 零售demand预测的稳定正则化
+- **英文标题**: Accuracy-Preserving Stability Regularization for Large-Scale Retail Demand Forecasting
+- **来源**: 📄 arXiv  ⭐ 9/10
+- **作者**: Jize Li, Jiani He, Dishu Yang
+- **核心贡献**: 提出训练时惩罚
+- **实践价值**: 增强零售补货和运输计划
+- **OR 技术关键词**: 零售, 需求预测, 稳定正则化
+- **论文链接**: https://arxiv.org/abs/2607.13331v1
+---
+## 📅 2026-07-16
 
 今日无新增 OR 相关研究
 ## 📅 2026-07-15
@@ -210,6 +222,3 @@ layout: default
 - **OR 技术关键词**: AI供应链, 3D可视化, 许可合规
 - **论文链接**: https://arxiv.org/abs/2606.16292v1
 ---
-## 📅 2026-06-16
-
-今日无新增 OR 相关研究

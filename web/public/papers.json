@@ -1,6 +1,31 @@
 {
-  "updated": "2026-07-16",
+  "updated": "2026-07-17",
   "papers": [
+    {
+      "id": "2607.13331v1",
+      "title": "Accuracy-Preserving Stability Regularization for Large-Scale Retail Demand Forecasting",
+      "summary": "Retail demand forecasts are reused across replenishment, capacity, labor, and transportation planning cycles. Point-error objectives do not constrain abrupt movement between adjacent forecasts, while post-hoc smoothing acts only after model fitting. We ask whether a training-time penalty on consecutive within-series movement can improve horizontal forecast-path stability without materially changing point accuracy. The penalty is evaluated in a temporal-structured pipeline combining recent-demand embeddings with calendar, price, hierarchy, item, and store features. On selected M5 demand series at 1000, 3000, and 4000-series scales, the stability-aware hybrid model improves Forecast Stability Score over XGBoost by 6.91%, 6.66%, and 7.68%, respectively, while RMSE changes remain within 0.72% across three random seeds. Post-hoc exponential smoothing attains lower raw movement but incurs a larger RMSE cost; training-time regularization preserves more point accuracy and performs favorably under normalized stability. These findings extend forecast evaluation from point-error minimization toward an accuracy-stability trade-off perspective for operational retail forecasting.",
+      "authors": [
+        "Jize Li",
+        "Jiani He",
+        "Dishu Yang",
+        "Dingyan Shang",
+        "Jingjing Liu",
+        "Shiqi Huang"
+      ],
+      "link": "https://arxiv.org/abs/2607.13331v1",
+      "source": "arxiv",
+      "date": "2026-07-17",
+      "title_zh": "零售demand预测的稳定正则化",
+      "contribution_zh": "提出训练时惩罚",
+      "value_zh": "增强零售补货和运输计划",
+      "keywords": [
+        "零售",
+        "需求预测",
+        "稳定正则化"
+      ],
+      "score": 9
+    },
     {
       "id": "2607.08960v1",
       "title": "Eluna: An Agentic LLM System for Automating Warehouse Operations with Reasoning and Task Execution",
