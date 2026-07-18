@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-07-17
+2026-07-18
+
+今日无新增 OR 相关研究
+## 📅 2026-07-17
 
 
 ### 零售demand预测的稳定正则化
@@ -210,15 +213,3 @@ layout: default
 ## 📅 2026-06-18
 
 今日无新增 OR 相关研究
-## 📅 2026-06-17
-
-
-### AI 供应链星系：3D 可视化分析用于许可合规
-- **英文标题**: AI Supply Chain Galaxy: 3D Visual Analytics for License Compliance
-- **来源**: 📄 arXiv  ⭐ 9/10
-- **作者**: Weiru Han, Xuetao Shi, Wenyi He
-- **核心贡献**: 提出AISCG系统用于模型来源和合规审计
-- **实践价值**: 应用于AI模型许可和供应链依赖性网络分析
-- **OR 技术关键词**: AI供应链, 3D可视化, 许可合规
-- **论文链接**: https://arxiv.org/abs/2606.16292v1
----
