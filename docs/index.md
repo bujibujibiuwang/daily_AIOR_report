@@ -1,7 +1,49 @@
 ---
 layout: default
 ---
-2026-07-21
+2026-07-22
+
+
+### 供应链规划中供应商交货时间的普遍估计
+- **英文标题**: Censoring-Aware In-Context Learning for Generalized Supplier Lead Time Estimation in Supply Chain Planning
+- **来源**: 📄 arXiv  ⭐ 9/10
+- **作者**: Christopher Wang, Sebastien Ouellet, Behrouz Haji Soleimani
+- **核心贡献**: 考虑审查时序列的上下文学习
+- **实践价值**: 供应链库存优化和风险管理
+- **OR 技术关键词**: 供应链规划, 供应商交货时间, 上下文学习
+- **论文链接**: https://arxiv.org/abs/2607.18530v1
+---
+
+### 图神经网络在供应链优化中的应用
+- **英文标题**: On the Potential of Graph Neural Networks as Metamodels for Supply Chain Optimization: Dataset, Architectures, and Directions
+- **来源**: 📄 arXiv  ⭐ 8/10
+- **作者**: Tushar Lone, Neha Karanjkar
+- **核心贡献**: 图神经网络作为元模型
+- **实践价值**: 供应链优化和决策
+- **OR 技术关键词**: 图神经网络, 供应链优化, 元模型
+- **论文链接**: https://arxiv.org/abs/2607.16769v1
+---
+
+### 零售需求预测的预测-更正循环
+- **英文标题**: A Predict-then-Correct Loop Based on Few-Shot Continuous Contextual Bandit for Demand Forecasting
+- **来源**: 📄 arXiv  ⭐ 8/10
+- **作者**: Zhiwei Lei, Benedict Jun Ma, Ilya Jackson
+- **核心贡献**: 少样本连续上下文多臂带回归
+- **实践价值**: 零售需求预测
+- **OR 技术关键词**: 零售需求预测, 少样本学习, 上下文多臂带
+- **论文链接**: https://arxiv.org/abs/2607.16354v1
+---
+
+### 纸业供应链规划的端到端优化
+- **英文标题**: End-to-End Supply Chain Planning in the Paper Industry Via Column Generation and Benders Decomposition
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Changkun Guan, Amira Hijazi, Pascal Van Hentenryck
+- **核心贡献**: 列生成和Benders分解
+- **实践价值**: 纸业供应链优化
+- **OR 技术关键词**: 供应链规划, 纸业, 列生成
+- **论文链接**: https://arxiv.org/abs/2607.16618v1
+---
+## 📅 2026-07-21
 
 今日无新增 OR 相关研究
 ## 📅 2026-07-20
@@ -208,8 +250,5 @@ layout: default
 - **论文链接**: https://arxiv.org/abs/2606.20918v1
 ---
 ## 📅 2026-06-22
-
-今日无新增 OR 相关研究
-## 📅 2026-06-21
 
 今日无新增 OR 相关研究

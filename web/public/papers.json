@@ -1,6 +1,94 @@
 {
-  "updated": "2026-07-21",
+  "updated": "2026-07-22",
   "papers": [
+    {
+      "id": "2607.18530v1",
+      "title": "Censoring-Aware In-Context Learning for Generalized Supplier Lead Time Estimation in Supply Chain Planning",
+      "summary": "Supplier lead time forecasting is a central input to material requirements planning, inventory optimization, and supply chain risk management. However, many industrial lead time datasets are naturally right-censored: at the time forecasts are required, some orders have not yet arrived. Standard regression and classification approaches discard this information, while conventional survival models require task-specific modeling. We propose LeadTime-ICL (LT-ICL), a censoring-aware in-context learning model for probabilistic lead time forecasting. LT-ICL combines a transformer backbone with a conditional normalizing-flow head, producing a full predictive distribution over lead times. The model is pretrained on synthetic right-censored lead time tasks, enabling in-context adaptation to new industrial datasets without task-specific parameter updates. We provide theoretical support for this formulation by showing that excess CRPS is bounded by prior misspecification and amortized approximation errors, providing clear direction for improving forecasting performance. We evaluate LT-ICL on 24 proprietary supply-chain datasets spanning seven industries. LT-ICL achieves the lowest point-forecasting error on 15 of the 24 datasets, and the lowest probabilistic forecasting error on 14 datasets, yielding the best average rank across both. These results support right-censored probabilistic forecasting as a practical formulation for supplier lead time prediction and demonstrate that pretrained in-context models can provide accurate, low-adaptation-cost forecasting for industrial planning systems.",
+      "authors": [
+        "Christopher Wang",
+        "Sebastien Ouellet",
+        "Behrouz Haji Soleimani",
+        "Ali Etemad"
+      ],
+      "link": "https://arxiv.org/abs/2607.18530v1",
+      "source": "arxiv",
+      "date": "2026-07-22",
+      "title_zh": "供应链规划中供应商交货时间的普遍估计",
+      "contribution_zh": "考虑审查时序列的上下文学习",
+      "value_zh": "供应链库存优化和风险管理",
+      "keywords": [
+        "供应链规划",
+        "供应商交货时间",
+        "上下文学习"
+      ],
+      "score": 9
+    },
+    {
+      "id": "2607.16769v1",
+      "title": "On the Potential of Graph Neural Networks as Metamodels for Supply Chain Optimization: Dataset, Architectures, and Directions",
+      "summary": "Graph Neural Networks (GNNs) have emerged as a powerful, differentiable class of learning models for graph-structured systems. Their ability to generalize across topologies opens the prospect of a surrogate for combined structural and parametric optimization, which classical metamodels cannot offer. Supply chains are a natural target, yet the use of GNN surrogates for supply chain problems is largely unexplored. This paper lays the foundation, presents initial steps, and discusses key research directions. As a foundation, we formulate the problem and create a large public training dataset of programmatically generated supply chain graphs with input parameters and steady-state performance metrics obtained using our SupplyNetPy simulation library. As initial steps, we explore GNN architectures that work well as surrogates for node- and network-level predictions, and analyze their accuracy-compute trade-off against simulation. Most importantly, we outline the exciting directions this opens, namely gradient-based optimization over topology, fast design-space exploration, and sensitivity analysis.",
+      "authors": [
+        "Tushar Lone",
+        "Neha Karanjkar"
+      ],
+      "link": "https://arxiv.org/abs/2607.16769v1",
+      "source": "arxiv",
+      "date": "2026-07-22",
+      "title_zh": "图神经网络在供应链优化中的应用",
+      "contribution_zh": "图神经网络作为元模型",
+      "value_zh": "供应链优化和决策",
+      "keywords": [
+        "图神经网络",
+        "供应链优化",
+        "元模型"
+      ],
+      "score": 8
+    },
+    {
+      "id": "2607.16618v1",
+      "title": "End-to-End Supply Chain Planning in the Paper Industry Via Column Generation and Benders Decomposition",
+      "summary": "Problem definition: The paper studies an integrated end-to-end planning problem in large-scale paper manufacturing, where production scheduling, trimming decisions, vehicle loading, and multi-period fulfillment of make-to-order and make-to-stock demand must be coordinated over time. In practice, these decisions are often optimized sequentially, leading to material waste, inefficient transportation, and degraded service levels. Solving the fully integrated problem at industrial scale remains computationally challenging due to its combinatorial structure. Methodology/results: A key structural feature of the problem is that downstream fulfillment decisions depend on upstream production and logistics choices only through aggregate supply availability over time. By exploiting this structure, the paper develops an exact mathematical formulation and proposes a two-phase hybrid framework (BDCG-DP) that integrates column generation (CG) using exact dynamic-programming (DP) for supply-side decisions with Benders decomposition (BD) for downstream fulfillment. Computational experiments on proprietary instances from a major North American paper manufacturer show that BDCG-DP lowers total costs by 24.4% compared to a traditional CG-DP on challenging eight-week planning problems. Median runtime for four-week planning problems decreases from over five hours using CG-DP to under one hour using BDCG-DP. Managerial implications: This paper provides the first exact model that integrates production, trimming, load planning, and multi-period fulfillment at an industrial scale. The proposed approach returns integer-feasible plans within 2.3 to 6 hours for the most complex planning problems, enabling planners to access high-quality implementable schedules within hours, a capability that was previously unavailable in practice.",
+      "authors": [
+        "Changkun Guan",
+        "Amira Hijazi",
+        "Pascal Van Hentenryck"
+      ],
+      "link": "https://arxiv.org/abs/2607.16618v1",
+      "source": "arxiv",
+      "date": "2026-07-22",
+      "title_zh": "纸业供应链规划的端到端优化",
+      "contribution_zh": "列生成和Benders分解",
+      "value_zh": "纸业供应链优化",
+      "keywords": [
+        "供应链规划",
+        "纸业",
+        "列生成"
+      ],
+      "score": 6
+    },
+    {
+      "id": "2607.16354v1",
+      "title": "A Predict-then-Correct Loop Based on Few-Shot Continuous Contextual Bandit for Demand Forecasting",
+      "summary": "Retail demand forecasting remains difficult when demand shifts faster than static forecasting models can be retrained, especially in early demand cycles where newly observed labels are sparse. To address this, this study aims to improve adaptive retail forecasting by proposing a predict-then-correct (PtC) framework that retains a first-stage machine learning (ML) forecast and applies a few-shot continuous contextual bandit correction policy with similar-SKUs augmentation and top-p masked updating. Across Walmart retail data and an exclusive beverage dataset, PtC delivers statistically significant reductions in MAPE, MAE, and RMSE across stable & high volume, stable & low volume, and erratic & intermittent demand patterns, improves average RMSE by 9.52% over the ML-only baseline in the ablation study, and yields lower inventory costs than base-stock, proximal policy optimization, and soft actor-critic policies under the tested lead-time settings. These findings show that online forecast correction can bridge offline demand learning and real-time retail decision-making by adapting to sparse feedback without fully retraining the base forecasting model.",
+      "authors": [
+        "Zhiwei Lei",
+        "Benedict Jun Ma",
+        "Ilya Jackson"
+      ],
+      "link": "https://arxiv.org/abs/2607.16354v1",
+      "source": "arxiv",
+      "date": "2026-07-22",
+      "title_zh": "零售需求预测的预测-更正循环",
+      "contribution_zh": "少样本连续上下文多臂带回归",
+      "value_zh": "零售需求预测",
+      "keywords": [
+        "零售需求预测",
+        "少样本学习",
+        "上下文多臂带"
+      ],
+      "score": 8
+    },
     {
       "id": "2607.13331v1",
       "title": "Accuracy-Preserving Stability Regularization for Large-Scale Retail Demand Forecasting",
