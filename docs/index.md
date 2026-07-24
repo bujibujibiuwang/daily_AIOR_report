@@ -1,7 +1,19 @@
 ---
 layout: default
 ---
-2026-07-23
+2026-07-24
+
+
+### SPORD：一种用于供应链规划的模拟-提出-或-丢弃方法
+- **英文标题**: SPORD: A Simulation-Propose-then-OR-Dispose Approach for Supply Chain Planning
+- **来源**: 📄 arXiv  ⭐ 9/10
+- **作者**: Jiayin He, Yutong Pan, Sen Yang
+- **核心贡献**: 提出模拟-提出-或-丢弃方法
+- **实践价值**: 用于电子商务公司的供应链规划
+- **OR 技术关键词**: 供应链规划, 模拟, 优化
+- **论文链接**: https://arxiv.org/abs/2607.21354v1
+---
+## 📅 2026-07-23
 
 今日无新增 OR 相关研究
 ## 📅 2026-07-22
@@ -239,16 +251,4 @@ layout: default
 - **实践价值**: 提高仓库分拣器的运营效率
 - **OR 技术关键词**: 贝叶斯上下文多臂带动机算法, 仓库分拣器, 优化
 - **论文链接**: https://arxiv.org/abs/2606.23977v1
----
-## 📅 2026-06-23
-
-
-### 短期电力需求预测
-- **英文标题**: Short-Term Electricity Demand Forecasting for New England Using a Hybrid Transformer-XGBoost Framework with Weather, Calendar, and COVID-19 Indicators
-- **来源**: 📄 arXiv  ⭐ 7/10
-- **作者**: Reza Ghanavati, Behrooz Mosallaei
-- **核心贡献**: Transformer-XGBoost混合框架
-- **实践价值**: 电力系统运营和能源市场规划
-- **OR 技术关键词**: 电力需求预测, Transformer, XGBoost, 时间序列预测
-- **论文链接**: https://arxiv.org/abs/2606.20918v1
 ---
