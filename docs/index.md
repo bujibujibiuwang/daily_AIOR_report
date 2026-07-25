@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-07-24
+2026-07-25
+
+今日无新增 OR 相关研究
+## 📅 2026-07-24
 
 
 ### SPORD：一种用于供应链规划的模拟-提出-或-丢弃方法
@@ -219,36 +222,4 @@ layout: default
 - **实践价值**: 应用于订单履行决策
 - **OR 技术关键词**: 顺序背景随机程序, 优化代理, 订单履行
 - **论文链接**: https://arxiv.org/abs/2606.25362v1
----
-## 📅 2026-06-24
-
-
-### 仓库SLAM吞吐量控制的离线强化学习
-- **英文标题**: Offline Reinforcement Learning for Warehouse SLAM Throughput Control
-- **来源**: 📄 arXiv  ⭐ 9/10
-- **作者**: Tina Dongxu Li, Mouhacine Benosman, Rajat Kumar
-- **核心贡献**: 使用离线强化学习优化SLAM吞吐量控制
-- **实践价值**: 提高仓库运营效率和降低系统拥堵
-- **OR 技术关键词**: 强化学习, SLAM, 仓库管理
-- **论文链接**: https://arxiv.org/abs/2606.23978v1
----
-
-### 通过进化的元强化学习用于多目标组合供应链优化
-- **英文标题**: Meta-Reinforcement Learning via Evolution for Multi-Objective Combinatorial Supply Chain Optimisation
-- **来源**: 📄 arXiv  ⭐ 9/10
-- **作者**: Rifny Rachman, Bahrul Ilmi Nasution, Josh Tingey
-- **核心贡献**: 提出元强化学习通过进化解决多目标组合优化问题
-- **实践价值**: 提高供应链多目标优化的效率
-- **OR 技术关键词**: 元强化学习, 进化算法, 多目标优化, 供应链
-- **论文链接**: https://arxiv.org/abs/2606.22146v1
----
-
-### 贝叶斯上下文多臂带动机算法在仓库分拣器优化中的比较研究
-- **英文标题**: A Comparative Study of Bayesian Contextual Bandits for Real-Time Warehouse Sorter Optimization
-- **来源**: 📄 arXiv  ⭐ 8/10
-- **作者**: Tina Dongxu Li, Mouhacine Benosman, Ken Meszaros
-- **核心贡献**: 使用贝叶斯上下文多臂带动机算法优化分拣器控制
-- **实践价值**: 提高仓库分拣器的运营效率
-- **OR 技术关键词**: 贝叶斯上下文多臂带动机算法, 仓库分拣器, 优化
-- **论文链接**: https://arxiv.org/abs/2606.23977v1
 ---
