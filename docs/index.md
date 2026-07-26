@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-07-25
+2026-07-26
+
+今日无新增 OR 相关研究
+## 📅 2026-07-25
 
 今日无新增 OR 相关研究
 ## 📅 2026-07-24
@@ -210,16 +213,4 @@ layout: default
 - **实践价值**: 应用于手工拣货仓库的订单履行优化
 - **OR 技术关键词**: 仓库优化, 优化管道综合, 手工拣货仓库
 - **论文链接**: https://arxiv.org/abs/2606.26852v1
----
-## 📅 2026-06-25
-
-
-### 学习优化代理用于顺序背景随机程序：订单履行应用
-- **英文标题**: Learning Optimization Proxies for Sequential Contextual Stochastic Programs: An Order Fulfillment Application
-- **来源**: 📄 arXiv  ⭐ 9/10
-- **作者**: Tinghan Ye, Shuaicheng Tong, Changkun Guan
-- **核心贡献**: 提出优化代理学习方法
-- **实践价值**: 应用于订单履行决策
-- **OR 技术关键词**: 顺序背景随机程序, 优化代理, 订单履行
-- **论文链接**: https://arxiv.org/abs/2606.25362v1
 ---
