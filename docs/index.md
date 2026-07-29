@@ -1,7 +1,19 @@
 ---
 layout: default
 ---
-2026-07-28
+2026-07-29
+
+
+### 基于核调制运算符的上下文去卷积用于方差稳定需求感知
+- **英文标题**: Contextual Deconvolution for Variance-Stable Demand Sensing: Kernel-Modulated Operators in Promotional Retail
+- **来源**: 📄 arXiv  ⭐ 10/10
+- **作者**: Mohammad Forouhesh
+- **核心贡献**: 提出上下文去卷积算法
+- **实践价值**: 需求预测优化
+- **OR 技术关键词**: 需求预测, 去卷积, 核调制运算符
+- **论文链接**: https://arxiv.org/abs/2607.25664v1
+---
+## 📅 2026-07-28
 
 今日无新增 OR 相关研究
 ## 📅 2026-07-27
@@ -200,8 +212,5 @@ layout: default
 
 今日无新增 OR 相关研究
 ## 📅 2026-06-29
-
-今日无新增 OR 相关研究
-## 📅 2026-06-28
 
 今日无新增 OR 相关研究
