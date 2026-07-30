@@ -1,7 +1,19 @@
 ---
 layout: default
 ---
-2026-07-29
+2026-07-30
+
+
+### 大语言模型用于多仓库库存分配运筹学公式选择
+- **英文标题**: Large Language Model for Operations Research Formulation Selection in Multi-Warehouse Inventory Allocation
+- **来源**: 📄 arXiv  ⭐ 9/10
+- **作者**: Jintao Xu, Yingzheng Ma, Jiong Dong
+- **核心贡献**: 利用大语言模型选择最佳的运筹学公式
+- **实践价值**: 提高多仓库库存分配的效率
+- **OR 技术关键词**: 大语言模型, 运筹学, 多仓库库存分配
+- **论文链接**: https://arxiv.org/abs/2607.25956v1
+---
+## 📅 2026-07-29
 
 
 ### 基于核调制运算符的上下文去卷积用于方差稳定需求感知
@@ -209,8 +221,5 @@ layout: default
 - **论文链接**: https://arxiv.org/abs/2606.29366v1
 ---
 ## 📅 2026-06-30
-
-今日无新增 OR 相关研究
-## 📅 2026-06-29
 
 今日无新增 OR 相关研究
