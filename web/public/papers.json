@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-06",
+  "updated": "2026-08-07",
   "papers": [
     {
       "id": "2608.02343v1",
@@ -306,25 +306,6 @@
         "GenAI"
       ],
       "score": 8
-    },
-    {
-      "id": "crossref:10.1287/mnsc.2023.03157",
-      "title": "Deep Neural Newsvendor",
-      "abstract": "We consider a data-driven newsvendor problem, where one has access to past demand data and the associated feature information. We solve the problem by estimating the target conditional quantile function using a deep neural network (DNN). The remarkable representational power of DNNs allows our framework to incorporate or approximate various extant data-driven models. We provide theoretical guarantees in terms of excess risk bounds for the DNN solution characterized by the network structure and sample size in a nonasymptotic manner, which justify the applicability of DNNs in relevant contexts. Specifically, the convergence rate of the excess risk bound with respect to the sample size increases in the smoothness of the target quantile function but decreases in the dimension of feature variables. This rate can be further accelerated when the target function possesses a composite structure. In particular, our theoretical framework can be extended to accommodate data-dependent scenarios, where the data-generating process could be time-dependent but not necessarily identical over time. Building on our theoretical results, we provide further managerial insights and practical guidance through simulation studies. Finally, we apply the DNN method to a real-world data set obtained from a food supermarket. Our numerical experiments demonstrate that (1) the DNN method consistently outperforms alternatives across a wide range of cost parameters, and (2) it exhibits good performance when the sample size is either very large or relatively limited. \n                   This paper was accepted by Jeannette Song, operations management. \n                   Funding: This work was supported by the Natural Sciences and Engineering Research Council of Canada [Grant RGPIN-2021-04295]; the National Natural Science Foundation of China [Project: Data-Driven Operations Analytics Methods]; the Fundamental Research Funds for the Central Universities, Peking University; the General Research Fund of the Hong Kong Research Grants Council [Grant 15305523]; and the Research Fund of the Hong Kong Polytechnic University [Grant P0048718]. \n                   Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2023.03157 .",
-      "url": "https://doi.org/10.1287/mnsc.2023.03157",
-      "source": "OR-Journal",
-      "journal": "Management Science",
-      "publishedAt": "",
-      "date": "2026-07-07",
-      "title_zh": "深度神经新svendor",
-      "contribution_zh": "提出深度神经网络解决新svendor问题",
-      "value_zh": "应用于库存控制和补货决策",
-      "keywords": [
-        "深度学习",
-        "新svendor",
-        "库存控制"
-      ],
-      "score": 10
     }
   ]
 }
