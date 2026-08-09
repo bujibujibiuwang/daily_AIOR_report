@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-08-08
+2026-08-09
+
+今日无新增 OR 相关研究
+## 📅 2026-08-08
 
 今日无新增 OR 相关研究
 ## 📅 2026-08-07
@@ -184,15 +187,3 @@ layout: default
 ## 📅 2026-07-10
 
 今日无新增 OR 相关研究
-## 📅 2026-07-09
-
-
-### STAGformer：用于微观移动需求预测的时空代理图转换器
-- **英文标题**: STAGformer: A Spatio-temporal Agent Graph Transformer for Micro Mobility Demand Forecasting
-- **来源**: 📄 arXiv  ⭐ 8/10
-- **作者**: Ye Zihao
-- **核心贡献**: 提出一种时空代理图转换器模型
-- **实践价值**: 预测共享单车系统的需求
-- **OR 技术关键词**: 时空预测, 图转换器, 共享单车
-- **论文链接**: https://arxiv.org/abs/2607.06614v1
----
