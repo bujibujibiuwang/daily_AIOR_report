@@ -1,7 +1,19 @@
 ---
 layout: default
 ---
-2026-08-10
+2026-08-11
+
+
+### 气候风险实时评估
+- **英文标题**: Real-Time Climate Risk Assessment for Supply Chain Resilience: A Data-Driven Nowcasting Framework for Colombian Agriculture
+- **来源**: 📄 arXiv  ⭐ 9/10
+- **作者**: Hernan J. Silva-Sosa
+- **核心贡献**: 数据驱动的现在casting
+- **实践价值**: 增强供应链韧性
+- **OR 技术关键词**: 气候风险, 供应链韧性, 数据驱动
+- **论文链接**: https://arxiv.org/abs/2608.09846v1
+---
+## 📅 2026-08-10
 
 今日无新增 OR 相关研究
 ## 📅 2026-08-09
@@ -182,8 +194,5 @@ layout: default
 - **论文链接**: https://arxiv.org/abs/2607.08960v1
 ---
 ## 📅 2026-07-12
-
-今日无新增 OR 相关研究
-## 📅 2026-07-11
 
 今日无新增 OR 相关研究
