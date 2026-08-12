@@ -1,6 +1,27 @@
 {
-  "updated": "2026-08-11",
+  "updated": "2026-08-12",
   "papers": [
+    {
+      "id": "2608.10245v1",
+      "title": "A Graph Neural Network--Guided Genetic Algorithm for Physical Internet Supply Chain Optimization under Cost Uncertainty",
+      "summary": "Inventory and distribution planning in Physical Internet networks requires coordinating factory-hub assignments, factory supply, lateral transshipment among collaborative hubs, retailer deliveries, and shortages. The problem combines discrete assignment decisions with interdependent continuous flows, while uncertain operating costs make robust planning more difficult. This study formulates deterministic and min-max regret models for a three-echelon network of factories, hubs, and retailers and develops a graph neural network-guided genetic algorithm (GNN-GA) for the assignment decisions. The GNN estimates hub-specific factory-selection probabilities that are used to construct the initial GA population and adapt mutation according to prediction uncertainty. Each previously unseen candidate assignment is evaluated by solving the remaining continuous-flow problem to LP optimality. Simulated annealing, a standard GA, and GNN-GA are compared on 15 instances using matched random seeds and fixed limits on distinct assignment evaluations. Because the evaluation budgets for test Instances 13-15 are smaller than the nominal population size, these experiments primarily assess the quality of learned initialization rather than multi-generation evolutionary search. A separate 400-evaluation experiment on exact test Instance 13 permits three complete offspring generations and a partial fourth pass, with GNN-GA outperforming GA in all 10 matched runs. Three independently generated exact-solvable instances provide a separate test of transfer. Ablation results show that learned initialization provides most of the improvement, while entropy-guided mutation has a smaller, instance-dependent effect. Per-instance solution times include GNN inference and search but exclude model training and one-time model setup.",
+      "authors": [
+        "Faezeh Ardali",
+        "Gerald M. Knapp"
+      ],
+      "link": "https://arxiv.org/abs/2608.10245v1",
+      "source": "arxiv",
+      "date": "2026-08-12",
+      "title_zh": "基于图神经网络引导的遗传算法用于物理互联网供应链优化",
+      "contribution_zh": "图神经网络引导的遗传算法",
+      "value_zh": "物理互联网供应链优化",
+      "keywords": [
+        "图神经网络",
+        "遗传算法",
+        "供应链优化"
+      ],
+      "score": 10
+    },
     {
       "id": "2608.09846v1",
       "title": "Real-Time Climate Risk Assessment for Supply Chain Resilience: A Data-Driven Nowcasting Framework for Colombian Agriculture",

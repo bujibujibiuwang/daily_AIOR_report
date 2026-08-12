@@ -1,7 +1,19 @@
 ---
 layout: default
 ---
-2026-08-11
+2026-08-12
+
+
+### 基于图神经网络引导的遗传算法用于物理互联网供应链优化
+- **英文标题**: A Graph Neural Network--Guided Genetic Algorithm for Physical Internet Supply Chain Optimization under Cost Uncertainty
+- **来源**: 📄 arXiv  ⭐ 10/10
+- **作者**: Faezeh Ardali, Gerald M. Knapp
+- **核心贡献**: 图神经网络引导的遗传算法
+- **实践价值**: 物理互联网供应链优化
+- **OR 技术关键词**: 图神经网络, 遗传算法, 供应链优化
+- **论文链接**: https://arxiv.org/abs/2608.10245v1
+---
+## 📅 2026-08-11
 
 
 ### 气候风险实时评估
@@ -193,6 +205,3 @@ layout: default
 - **OR 技术关键词**: 智能仓库, LLM, 自动化
 - **论文链接**: https://arxiv.org/abs/2607.08960v1
 ---
-## 📅 2026-07-12
-
-今日无新增 OR 相关研究
