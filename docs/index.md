@@ -1,7 +1,19 @@
 ---
 layout: default
 ---
-2026-08-13
+2026-08-14
+
+
+### 全球特征重要性在可解释和值得信赖的热需求预测中的应用
+- **英文标题**: On the global feature importance for interpretable and trustworthy heat demand forecasting
+- **来源**: 📄 arXiv  ⭐ 8/10
+- **作者**: Milan Zdravković
+- **核心贡献**: 提出ante-hoc可解释AI方法
+- **实践价值**: 用于智能化区域供暖系统的热需求预测
+- **OR 技术关键词**: 热需求预测, 可解释AI, 区域供暖系统
+- **论文链接**: https://arxiv.org/abs/2608.13039v1
+---
+## 📅 2026-08-13
 
 今日无新增 OR 相关研究
 ## 📅 2026-08-12
@@ -191,8 +203,5 @@ layout: default
 
 今日无新增 OR 相关研究
 ## 📅 2026-07-15
-
-今日无新增 OR 相关研究
-## 📅 2026-07-14
 
 今日无新增 OR 相关研究

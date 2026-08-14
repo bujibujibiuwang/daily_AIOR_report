@@ -1,6 +1,26 @@
 {
-  "updated": "2026-08-13",
+  "updated": "2026-08-14",
   "papers": [
+    {
+      "id": "2608.13039v1",
+      "title": "On the global feature importance for interpretable and trustworthy heat demand forecasting",
+      "summary": "The paper introduces the ante-hoc Explainable AI methodology to assess the global feature importance of the Machine Learning models used for heat demand forecasting in intelligent control of District Heating Systems, with motivation to facilitate their interpretability and trustworthiness, hence addressing the challenges related to adherence to communal standards, customer satisfaction and liability risks. Methodology includes use of four different approaches, namely intrinsic interpretability of Gradient Boosting method and selected post-hoc methods, namely Partial Dependence, Accumulated Local Effects and SHAP. None of the selected methods assume feature permutation or perturbations which can introduce bias due to introduction of random unrealistic values of data instances. Discussion of results is provided, including the assessment of complementarities where applicable, with specific interpretations in context of the district heating processes.",
+      "authors": [
+        "Milan Zdravković"
+      ],
+      "link": "https://arxiv.org/abs/2608.13039v1",
+      "source": "arxiv",
+      "date": "2026-08-14",
+      "title_zh": "全球特征重要性在可解释和值得信赖的热需求预测中的应用",
+      "contribution_zh": "提出ante-hoc可解释AI方法",
+      "value_zh": "用于智能化区域供暖系统的热需求预测",
+      "keywords": [
+        "热需求预测",
+        "可解释AI",
+        "区域供暖系统"
+      ],
+      "score": 8
+    },
     {
       "id": "2608.10245v1",
       "title": "A Graph Neural Network--Guided Genetic Algorithm for Physical Internet Supply Chain Optimization under Cost Uncertainty",
