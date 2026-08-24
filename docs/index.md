@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-08-23
+2026-08-24
+
+今日无新增 OR 相关研究
+## 📅 2026-08-23
 
 今日无新增 OR 相关研究
 ## 📅 2026-08-22
@@ -154,15 +157,3 @@ layout: default
 ## 📅 2026-07-25
 
 今日无新增 OR 相关研究
-## 📅 2026-07-24
-
-
-### SPORD：一种用于供应链规划的模拟-提出-或-丢弃方法
-- **英文标题**: SPORD: A Simulation-Propose-then-OR-Dispose Approach for Supply Chain Planning
-- **来源**: 📄 arXiv  ⭐ 9/10
-- **作者**: Jiayin He, Yutong Pan, Sen Yang
-- **核心贡献**: 提出模拟-提出-或-丢弃方法
-- **实践价值**: 用于电子商务公司的供应链规划
-- **OR 技术关键词**: 供应链规划, 模拟, 优化
-- **论文链接**: https://arxiv.org/abs/2607.21354v1
----
