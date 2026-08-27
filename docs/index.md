@@ -1,7 +1,30 @@
 ---
 layout: default
 ---
-2026-08-26
+2026-08-27
+
+
+### CEDAR: Controlled and Event-Driven Demand Forecasting via Residual Decomposition
+- **英文标题**: CEDAR: Controlled and Event-Driven Demand Forecasting via Residual Decomposition
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Junjie Meng, Ranxu Zhang, Zi-an Zhang
+- **论文链接**: https://arxiv.org/abs/2608.25871v1
+---
+
+### The Shadow Price of Intelligence: Quality Degradation in LLM Inference as a Supply Chain Problem
+- **英文标题**: The Shadow Price of Intelligence: Quality Degradation in LLM Inference as a Supply Chain Problem
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Elioth Sanabria
+- **论文链接**: https://arxiv.org/abs/2608.23986v1
+---
+
+### An Agentic Approach for Active Data Collection, Travel Behavior Modeling, and Weather-Sensitive Demand Prediction
+- **英文标题**: An Agentic Approach for Active Data Collection, Travel Behavior Modeling, and Weather-Sensitive Demand Prediction
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Narges Ahmadi, Yubo Jiao, Jônatas Augusto Manzolli
+- **论文链接**: https://arxiv.org/abs/2608.20320v1
+---
+## 📅 2026-08-26
 
 今日无新增 OR 相关研究
 ## 📅 2026-08-25
@@ -152,8 +175,5 @@ layout: default
 - **论文链接**: https://arxiv.org/abs/2607.25664v1
 ---
 ## 📅 2026-07-28
-
-今日无新增 OR 相关研究
-## 📅 2026-07-27
 
 今日无新增 OR 相关研究
