@@ -1,7 +1,16 @@
 ---
 layout: default
 ---
-2026-08-27
+2026-08-28
+
+
+### Toward Equitable Low-Carbon Mobility: Fairness-Aware Demand Prediction for Expanding Bike-Sharing Systems
+- **英文标题**: Toward Equitable Low-Carbon Mobility: Fairness-Aware Demand Prediction for Expanding Bike-Sharing Systems
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Man Luo, Yixuan Zhao
+- **论文链接**: https://arxiv.org/abs/2608.26451v1
+---
+## 📅 2026-08-27
 
 
 ### CEDAR: Controlled and Event-Driven Demand Forecasting via Residual Decomposition
@@ -174,6 +183,3 @@ layout: default
 - **OR 技术关键词**: 需求预测, 去卷积, 核调制运算符
 - **论文链接**: https://arxiv.org/abs/2607.25664v1
 ---
-## 📅 2026-07-28
-
-今日无新增 OR 相关研究
