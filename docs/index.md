@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-09-01
+2026-09-02
+
+今日无新增 OR 相关研究
+## 📅 2026-09-01
 
 
 ### The Shadow Price of Intelligence: Quality Degradation in LLM Inference as a Supply Chain Problem
@@ -166,8 +169,5 @@ layout: default
 
 今日无新增 OR 相关研究
 ## 📅 2026-08-03
-
-今日无新增 OR 相关研究
-## 📅 2026-08-02
 
 今日无新增 OR 相关研究
