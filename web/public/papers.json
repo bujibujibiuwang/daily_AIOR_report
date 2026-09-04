@@ -1,6 +1,27 @@
 {
-  "updated": "2026-09-03",
+  "updated": "2026-09-04",
   "papers": [
+    {
+      "id": "2609.03860v1",
+      "title": "Adapting to Evolving Requirements: Agentic AI for Retail Supply Chain Operations",
+      "summary": "Retail supply chain operations rely on coupled decision modules that must adapt as requirements evolve. LLMs offer a natural-language interface for this task, but existing methods primarily focus on individual optimization models. Extending them to heterogeneous decision pipelines is challenging because a requirement may admit multiple intervention paths with different downstream effects. We formulate requirement-driven adaptation as the joint selection of an intervention route and an admissible module-level change, and propose a graph-constrained agentic framework in which domain agents expose admissible reformulation interfaces and a central processor searches over bounded intervention paths. Candidates are validated and compared using downstream KPIs. In collaboration with a large retail partner, we evaluate 100 warehouse requirements elicited from practitioner interviews, with GPT, Qwen, and DeepSeek as base LLMs. Relative to direct LLM reformulation, our framework improves correctness and end-to-end success across all three models, raising end-to-end success from 72--76% to 79--83%.",
+      "authors": [
+        "Lei Zheng",
+        "Liping Yang",
+        "Zihao Li",
+        "Guodong Lyu",
+        "Chaik Ming Koh",
+        "Chung-Piaw Teo"
+      ],
+      "link": "https://arxiv.org/abs/2609.03860v1",
+      "source": "arxiv",
+      "date": "2026-09-04",
+      "title_zh": "Adapting to Evolving Requirements: Agentic AI for Retail Supply Chain Operations",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
     {
       "id": "2608.23986v2",
       "title": "The Shadow Price of Intelligence: Quality Degradation in LLM Inference as a Supply Chain Problem",

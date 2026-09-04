@@ -1,7 +1,16 @@
 ---
 layout: default
 ---
-2026-09-03
+2026-09-04
+
+
+### Adapting to Evolving Requirements: Agentic AI for Retail Supply Chain Operations
+- **英文标题**: Adapting to Evolving Requirements: Agentic AI for Retail Supply Chain Operations
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Lei Zheng, Liping Yang, Zihao Li
+- **论文链接**: https://arxiv.org/abs/2609.03860v1
+---
+## 📅 2026-09-03
 
 今日无新增 OR 相关研究
 ## 📅 2026-09-02
@@ -168,6 +177,3 @@ layout: default
 - **OR 技术关键词**: 深度强化学习, 可微分投影, 库存管理
 - **论文链接**: https://arxiv.org/abs/2608.02343v1
 ---
-## 📅 2026-08-04
-
-今日无新增 OR 相关研究
