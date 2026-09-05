@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-09-04
+2026-09-05
+
+今日无新增 OR 相关研究
+## 📅 2026-09-04
 
 
 ### Adapting to Evolving Requirements: Agentic AI for Retail Supply Chain Operations
@@ -165,15 +168,3 @@ layout: default
 ## 📅 2026-08-06
 
 今日无新增 OR 相关研究
-## 📅 2026-08-05
-
-
-### 使用可微分投影学习可行的库存策略
-- **英文标题**: Hard Constraints, Smooth Gradients: Learning Feasible Inventory Policies via Differentiable Projection
-- **来源**: 📄 arXiv  ⭐ 9/10
-- **作者**: Patrick Helm, Jan-Niklas Doerr, Joren Gijsbrechts
-- **核心贡献**: 提出了可微分投影方法学习可行的库存政策
-- **实践价值**: 用于库存控制和优化的供应链应用
-- **OR 技术关键词**: 深度强化学习, 可微分投影, 库存管理
-- **论文链接**: https://arxiv.org/abs/2608.02343v1
----

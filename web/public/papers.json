@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04",
+  "updated": "2026-09-05",
   "papers": [
     {
       "id": "2609.03860v1",
@@ -195,29 +195,6 @@
         "气候风险",
         "供应链韧性",
         "数据驱动"
-      ],
-      "score": 9
-    },
-    {
-      "id": "2608.02343v1",
-      "title": "Hard Constraints, Smooth Gradients: Learning Feasible Inventory Policies via Differentiable Projection",
-      "summary": "Many operational problems are constrained sequential decision processes with large, combinatorial action spaces and interdependent feasibility constraints. Mixed-integer linear programs (MILPs) handle such constraints flexibly but scale poorly in stochastic environments. Deep reinforcement learning (DRL) promises scalable decision rules, but existing methods either penalize constraints rather than enforce them, or rely on feasibility mechanisms that break down once constraints interact. We bridge this gap by embedding a differentiable convex optimization module inside the policy: a neural network proposes continuous action targets, a quadratic program projects them onto the relaxed feasible set, and a dual-informed integer mapping restores integrality while preserving feasibility. Given a differentiable simulator, the policy trains end to end from sampled trajectories using pathwise gradients, while handling hard constraints with similar flexibility to MILPs. We show that our feasibility enforcement has bounded error relative to an exact integer projection and ensures the entire feasible action space is reachable. We apply the method to multi-echelon production-inventory planning under shared resource and material constraints. Our policy attains an average optimality gap below 1% on small instances. It further outperforms state-of-the-art echelon base-stock policies by up to 9.75% and a rolling-horizon multi-stage stochastic program by at least 7.7% in larger networks. On an industry-scale case study from ASML, it reduces average cost by up to 3.22% relative to the best-known benchmark policy. The savings are largest where planning is hardest: in tightly capacitated systems with high demand variability. More broadly, our work shows that DRL can deliver economically significant savings in sequential decision problems with interdependent hard constraints, which are widespread in practice.",
-      "authors": [
-        "Patrick Helm",
-        "Jan-Niklas Doerr",
-        "Joren Gijsbrechts",
-        "Stefan Minner"
-      ],
-      "link": "https://arxiv.org/abs/2608.02343v1",
-      "source": "arxiv",
-      "date": "2026-08-05",
-      "title_zh": "使用可微分投影学习可行的库存策略",
-      "contribution_zh": "提出了可微分投影方法学习可行的库存政策",
-      "value_zh": "用于库存控制和优化的供应链应用",
-      "keywords": [
-        "深度强化学习",
-        "可微分投影",
-        "库存管理"
       ],
       "score": 9
     }
