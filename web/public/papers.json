@@ -1,6 +1,22 @@
 {
-  "updated": "2026-09-06",
+  "updated": "2026-09-07",
   "papers": [
+    {
+      "id": "2609.04345v1",
+      "title": "A Constraint-Aware Generative Framework for Synthetic Origin-Destination Demand in Logistics Networks",
+      "summary": "Large-scale logistics networks require synthetic data generation capabilities to support scenario-based planning under novel conditions-such as network reconfiguration and demand shocks. Existing approaches, which rely primarily on historical observations, lack the ability to generate demand patterns that adapt to changes in network topology while respecting operational constraints. We propose a constraint-aware conditional generative framework for synthetic origin-destination demand generation in hierarchical logistics networks. The framework models demand as a conditional distribution over destinations given each origin, enabling topology-aware synthesis that is both topologically realistic and operationally feasible. Operational guidance is incorporated directly into the generative objective via differentiable constraints, while a flexible conditioning mechanism supports various operational contexts and adaptation to evolving network configurations. We instantiate the proposed framework based on a conditional generative model. Experimental validation on industrial real fulfillment and transportation network demonstrates 16% improvement over graph neural network baselines, 87% operational compliance, and efficient cold-start adaptation, enabling applications in capacity planning, network design evaluation, and routing optimization.",
+      "authors": [
+        "Leian Chen"
+      ],
+      "link": "https://arxiv.org/abs/2609.04345v1",
+      "source": "arxiv",
+      "date": "2026-09-07",
+      "title_zh": "A Constraint-Aware Generative Framework for Synthetic Origin-Destination Demand in Logistics Networks",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
     {
       "id": "2609.03860v1",
       "title": "Adapting to Evolving Requirements: Agentic AI for Retail Supply Chain Operations",

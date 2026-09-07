@@ -1,7 +1,16 @@
 ---
 layout: default
 ---
-2026-09-06
+2026-09-07
+
+
+### A Constraint-Aware Generative Framework for Synthetic Origin-Destination Demand in Logistics Networks
+- **英文标题**: A Constraint-Aware Generative Framework for Synthetic Origin-Destination Demand in Logistics Networks
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Leian Chen
+- **论文链接**: https://arxiv.org/abs/2609.04345v1
+---
+## 📅 2026-09-06
 
 今日无新增 OR 相关研究
 ## 📅 2026-09-05
@@ -163,8 +172,5 @@ layout: default
 
 今日无新增 OR 相关研究
 ## 📅 2026-08-08
-
-今日无新增 OR 相关研究
-## 📅 2026-08-07
 
 今日无新增 OR 相关研究
