@@ -1,7 +1,37 @@
 ---
 layout: default
 ---
-2026-09-08
+2026-09-09
+
+
+### Artificial Intelligence-Assisted Digital Inventory of Cultural Heritage & Traditional Knowledge: Case for Indonesian Open Digital Library of Culture
+- **英文标题**: Artificial Intelligence-Assisted Digital Inventory of Cultural Heritage & Traditional Knowledge: Case for Indonesian Open Digital Library of Culture
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Hokky Situngkir
+- **论文链接**: https://arxiv.org/abs/2609.08105v1
+---
+
+### Automated Design of Inventory Policy with Large Language Models: An Exploratory Study
+- **英文标题**: Automated Design of Inventory Policy with Large Language Models: An Exploratory Study
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Fenghua Yang, Preet Baxi, Yi Zhang
+- **论文链接**: https://arxiv.org/abs/2609.08071v1
+---
+
+### VEX-Bench: Benchmarking LLM Agents for Assessing Exploitability of Software Supply Chain Vulnerabilities
+- **英文标题**: VEX-Bench: Benchmarking LLM Agents for Assessing Exploitability of Software Supply Chain Vulnerabilities
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Jiahao Shi, Edward Tsien, Yifeng Di
+- **论文链接**: https://arxiv.org/abs/2609.08040v1
+---
+
+### TD-STGT: A Spatio-Temporal Graph Transformer for Mobile Traffic Demand Forecasting
+- **英文标题**: TD-STGT: A Spatio-Temporal Graph Transformer for Mobile Traffic Demand Forecasting
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Mohamad Alkadamani, Halim Yanikomeroglu
+- **论文链接**: https://arxiv.org/abs/2609.06636v1
+---
+## 📅 2026-09-08
 
 今日无新增 OR 相关研究
 ## 📅 2026-09-07
@@ -169,8 +199,5 @@ layout: default
 - **论文链接**: https://arxiv.org/abs/2608.09846v1
 ---
 ## 📅 2026-08-10
-
-今日无新增 OR 相关研究
-## 📅 2026-08-09
 
 今日无新增 OR 相关研究

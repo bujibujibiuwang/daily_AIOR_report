@@ -1,6 +1,89 @@
 {
-  "updated": "2026-09-08",
+  "updated": "2026-09-09",
   "papers": [
+    {
+      "id": "2609.08105v1",
+      "title": "Artificial Intelligence-Assisted Digital Inventory of Cultural Heritage & Traditional Knowledge: Case for Indonesian Open Digital Library of Culture",
+      "summary": "The Indonesian Digital Library of Culture (Perpustakaan Digital Budaya Indonesia, PDBI; budaya-indonesia.org) is a participatory platform that has collected tens of thousands of entries on Nusantara cultural heritage through public contribution since 2007. Manual contribution faces three structural barriers: coverage (knowledge is scattered across languages and sites), integrity (open sources mix authentic documentation with noise), and completeness (subjects are recorded but their data remain shallow). This paper presents a methodological framework for autonomous, AI-based harvesting of cultural knowledge from the open web, designed to expand corpus coverage while intensifying per-entry data depth. The methodology is organised as a five-stage economic funnel: focused crawling, multilingual extraction and canonicalisation, vector encoding with blocking, agentic decision-making, and idempotent publication, under the principle of deterministic orchestration, agentic decisions. Each stage is formalised: funnel economics and optimal filter ordering; crawl-frontier dynamics as a subcritical branching process that explains the necessity of recurrent re-seeding; fact-level novelty via a containment measure; Bayesian multi-source evidence fusion with elevated publication thresholds for sacred categories; exactly-once effects via idempotent upserts and the transactional outbox; sliding-window inference budgeting with a reservation protocol; statistical quality auditing; and seed selection as submodular coverage maximisation. The framework retains four high-value human roles: curator of direction, escalation approver, quality auditor, and guardian of meaning, while machine autonomy is raised in stages. Ethical, legal, and cultural-sensitivity implications are discussed, including the architectural guarantee that the machine never overwrites human contributions.",
+      "authors": [
+        "Hokky Situngkir"
+      ],
+      "link": "https://arxiv.org/abs/2609.08105v1",
+      "source": "arxiv",
+      "date": "2026-09-09",
+      "title_zh": "Artificial Intelligence-Assisted Digital Inventory of Cultural Heritage & Traditional Knowledge: Case for Indonesian Open Digital Library of Culture",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
+    {
+      "id": "2609.08071v1",
+      "title": "Automated Design of Inventory Policy with Large Language Models: An Exploratory Study",
+      "summary": "Firms making inventory decisions have access to operational data, optimization tools, and large language models (LLMs). Typically, data characterize the operating environment, optimization selects parameters within a prespecified inventory policy class, and LLMs support coding and decision analysis. We develop an integrated framework that combines these resources to automate inventory policy design. Given demand data, the framework iteratively uses an LLM to generate parameterized policy classes and an external solver to optimize its parameters within each class. Across 30 lost-sales inventory instances, the mean cost reduction relative to optimized base-stock benchmarks increases from 17.5% after one generation to 30.0% after ten generations. Parameter optimization is central to this performance: an LLM-only variant performs substantially worse, whereas optimization-guided feedback improves policy quality, accelerates search, and directs the LLM toward better policy classes rather than merely better parameter values within a fixed class. The strongest discovered policies are also interpretable: they combine recognizable inventory-control motifs, including capped orders, discounted or weighted pipeline inventory, and threshold-based replenishment logic. The search thereby produces new policy-class functional forms that, to our knowledge, have not previously been studied in the lost-sales inventory literature. These functional forms are not specified ex ante but emerge from the search process. Moreover, after their parameters are re-optimized, three discovered policy classes achieve average cost reductions of 21.75% to 22.60% across 10,064 new inventory instances. Overall, the results show that data-driven parameter optimization can guide LLM-based search over a broad space of inventory policy classes and identify high-performing, interpretable, and transferable decision rules.",
+      "authors": [
+        "Fenghua Yang",
+        "Preet Baxi",
+        "Yi Zhang",
+        "Stefanus Jasin",
+        "Yanzhe Lei",
+        "Mo Liu",
+        "Parshan Pakiman"
+      ],
+      "link": "https://arxiv.org/abs/2609.08071v1",
+      "source": "arxiv",
+      "date": "2026-09-09",
+      "title_zh": "Automated Design of Inventory Policy with Large Language Models: An Exploratory Study",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
+    {
+      "id": "2609.08040v1",
+      "title": "VEX-Bench: Benchmarking LLM Agents for Assessing Exploitability of Software Supply Chain Vulnerabilities",
+      "summary": "The software supply chain has become an increasingly exposed attack surface because of its reliance on intricate yet fragile dependencies. Existing defenses such as GitHub Dependabot often raise many false alerts because their coarse-grained matching cannot determine whether a vulnerable dependency is actually exploitable. Security analysts typically spend substantial time assessing vulnerability exploitability case by case. Recent LLM agents have emerged as promising candidates for this task given their advanced capabilities in coding and cybersecurity, yet no existing benchmark evaluates them on it. Prior benchmarks target zero-day settings, where agents detect and exploit previously unknown vulnerabilities. In contrast, software supply chain security focuses on how known vulnerabilities in upstream dependencies affect downstream projects. This requires agents to reason across repositories and determine whether an upstream vulnerability is exploitable in the downstream project. To address this gap, we introduce VEX-Bench, the first benchmark for evaluating LLM agents' ability to assess the exploitability of software supply chain vulnerabilities. It contains 75 real-world cases mined from GitHub and labeled by security experts, covering Python, Java, and Go. We evaluate nine models across three agent harnesses. While GPT-5.5 and Claude Opus 4.6 reach approximately 80% F1 on binary vulnerability-status classification, only GPT-5.5 surpasses 70% macro-F1 on fine-grained justification classification. This gap highlights the challenge of moving beyond binary exploitability assessment to identifying fine-grained exploitability reasons. Code and data: https://github.com/steven1518/vex-bench",
+      "authors": [
+        "Jiahao Shi",
+        "Edward Tsien",
+        "Yifeng Di",
+        "Hongjiao Zhang",
+        "Yuan Tang",
+        "Ronit Dey",
+        "Ilona Shishov",
+        "Gal Netanel",
+        "Zvi Grinberg",
+        "Vladimir Belousov",
+        "Bat-Zion Rotman",
+        "Ilan Pinto",
+        "Tianyi Zhang"
+      ],
+      "link": "https://arxiv.org/abs/2609.08040v1",
+      "source": "arxiv",
+      "date": "2026-09-09",
+      "title_zh": "VEX-Bench: Benchmarking LLM Agents for Assessing Exploitability of Software Supply Chain Vulnerabilities",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
+    {
+      "id": "2609.06636v1",
+      "title": "TD-STGT: A Spatio-Temporal Graph Transformer for Mobile Traffic Demand Forecasting",
+      "summary": "Fine-grained mobile traffic demand forecasting is essential for long-term planning of 5G and future 6G networks, including radio upgrades, site densification, backhaul expansion, and spectrum activation. This paper proposes the Traffic Demand Spatio-Temporal Graph Transformer (TD-STGT), a graph neural forecasting framework for predicting changes in wireless mobile traffic demand across fine geographic grids. The framework uses a population-scaled demand proxy developed from crowdsourced mobile measurements and daytime population information. Experiments across five Canadian metropolitan regions show that TD-STGT achieves the best performance in forecasting grid-level demand changes, reaching a $ΔR^2$ of 0.462 and reducing $Δ$RMSE by 5.7\\% relative to the strongest baseline. The proposed model provides a practical tool for identifying areas with increasing demand pressure and prioritizing future mobile-network capacity upgrades.",
+      "authors": [
+        "Mohamad Alkadamani",
+        "Halim Yanikomeroglu"
+      ],
+      "link": "https://arxiv.org/abs/2609.06636v1",
+      "source": "arxiv",
+      "date": "2026-09-09",
+      "title_zh": "TD-STGT: A Spatio-Temporal Graph Transformer for Mobile Traffic Demand Forecasting",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
     {
       "id": "2609.04345v1",
       "title": "A Constraint-Aware Generative Framework for Synthetic Origin-Destination Demand in Logistics Networks",
