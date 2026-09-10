@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-09-09
+2026-09-10
+
+今日无新增 OR 相关研究
+## 📅 2026-09-09
 
 
 ### Artificial Intelligence-Assisted Digital Inventory of Cultural Heritage & Traditional Knowledge: Case for Indonesian Open Digital Library of Culture
@@ -198,6 +201,3 @@ layout: default
 - **OR 技术关键词**: 气候风险, 供应链韧性, 数据驱动
 - **论文链接**: https://arxiv.org/abs/2608.09846v1
 ---
-## 📅 2026-08-10
-
-今日无新增 OR 相关研究
