@@ -1,6 +1,23 @@
 {
-  "updated": "2026-09-10",
+  "updated": "2026-09-11",
   "papers": [
+    {
+      "id": "2609.11817v1",
+      "title": "Constrained Deep Inventory Management Using Forward-Backward SDEs",
+      "summary": "We study multi-product replenishment subject to aggregate operating limits imposed pathwise in place of expectation. On-hand and in-transit inventory, warehouse capacity and an emission allowance define a safe set, and the resulting multi-product lost-sales problem is posed as a safe stochastic optimal control problem. The Hamilton--Jacobi--Bellman (HJB) equation is represented as a system of forward--backward stochastic differential equations (FBSDEs) and solved by learning the value function and its gradient, with a quadratic program derived by control barrier function (CBF) is solved at each decision epoch. Because purchase orders enter the in-transit pipeline only, the in-transit constraints have relative degree one while the on-hand constraints have relative degree two. We extend the stochastic high-relative-degree construction of (Clark, 2021) from a single barrier to four coupled aggregate constraints of mixed relative degree, and we establish its initial-condition requirement by design.",
+      "authors": [
+        "Keunwoo Lim",
+        "Michael Bloem"
+      ],
+      "link": "https://arxiv.org/abs/2609.11817v1",
+      "source": "arxiv",
+      "date": "2026-09-11",
+      "title_zh": "Constrained Deep Inventory Management Using Forward-Backward SDEs",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
     {
       "id": "2609.08105v1",
       "title": "Artificial Intelligence-Assisted Digital Inventory of Cultural Heritage & Traditional Knowledge: Case for Indonesian Open Digital Library of Culture",
@@ -276,26 +293,6 @@
         "供应链优化"
       ],
       "score": 10
-    },
-    {
-      "id": "2608.09846v1",
-      "title": "Real-Time Climate Risk Assessment for Supply Chain Resilience: A Data-Driven Nowcasting Framework for Colombian Agriculture",
-      "summary": "This paper presents a methodological framework for real-time climate risk assessment using data-driven nowcasting techniques to enhance supply chain resilience in Colombian agricultural contexts. Climate variability in Colombia, characterized by irregular rainfall, temperature fluctuations, and recurrent extreme events, has a direct impact on agricultural production and logistics, particularly for time sensitive crops. The proposed approach integrates short term climate forecasting based on historical meteorological observations with supply chain risk modeling to establish a conceptual early warning system architecture. A prototype implementation developed in a controlled computational environment demonstrates the feasibility of the framework using historical meteorological and agricultural time series derived from official statistics and reanalysis products, without reliance on satellite imagery or computer vision components. The methodology addresses the integration of climate nowcasting with supply chain decision making through explicit risk mapping, threshold-based categorization, and stakeholder-oriented risk signals. Results from synthetic and historical data experiments indicate that short term precipitation nowcasts can be translated into actionable risk indicators for agricultural supply chains, supporting anticipatory decisions related to inventory, sourcing, and transport.",
-      "authors": [
-        "Hernan J. Silva-Sosa"
-      ],
-      "link": "https://arxiv.org/abs/2608.09846v1",
-      "source": "arxiv",
-      "date": "2026-08-11",
-      "title_zh": "气候风险实时评估",
-      "contribution_zh": "数据驱动的现在casting",
-      "value_zh": "增强供应链韧性",
-      "keywords": [
-        "气候风险",
-        "供应链韧性",
-        "数据驱动"
-      ],
-      "score": 9
     }
   ]
 }

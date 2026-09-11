@@ -1,7 +1,16 @@
 ---
 layout: default
 ---
-2026-09-10
+2026-09-11
+
+
+### Constrained Deep Inventory Management Using Forward-Backward SDEs
+- **英文标题**: Constrained Deep Inventory Management Using Forward-Backward SDEs
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Keunwoo Lim, Michael Bloem
+- **论文链接**: https://arxiv.org/abs/2609.11817v1
+---
+## 📅 2026-09-10
 
 今日无新增 OR 相关研究
 ## 📅 2026-09-09
@@ -188,16 +197,4 @@ layout: default
 - **实践价值**: 物理互联网供应链优化
 - **OR 技术关键词**: 图神经网络, 遗传算法, 供应链优化
 - **论文链接**: https://arxiv.org/abs/2608.10245v1
----
-## 📅 2026-08-11
-
-
-### 气候风险实时评估
-- **英文标题**: Real-Time Climate Risk Assessment for Supply Chain Resilience: A Data-Driven Nowcasting Framework for Colombian Agriculture
-- **来源**: 📄 arXiv  ⭐ 9/10
-- **作者**: Hernan J. Silva-Sosa
-- **核心贡献**: 数据驱动的现在casting
-- **实践价值**: 增强供应链韧性
-- **OR 技术关键词**: 气候风险, 供应链韧性, 数据驱动
-- **论文链接**: https://arxiv.org/abs/2608.09846v1
 ---
