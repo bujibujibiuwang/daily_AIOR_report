@@ -1,6 +1,60 @@
 {
-  "updated": "2026-09-15",
+  "updated": "2026-09-16",
   "papers": [
+    {
+      "id": "2609.14718v1",
+      "title": "Are Gradient Boosting Models Suitable for Intermittent Demand Forecasting?",
+      "summary": "Demand forecasting is critical in modern industry, offering opportunities to reduce costs and gain competitive advantage through improved inventory management. However, forecasting becomes particularly challenging for products with intermittent demand, where demand occurs infrequently and time series contain many zero observations. Such dynamics are common across diverse sectors, such as industrial organizations, consumer goods, aviation, automotive, and electronics. Motivated by these challenges, this paper explores the potential of gradient boosting models to improve forecasting performance. We evaluate statistical, specialized, machine learning, and ensemble approaches across multiple datasets. The results show that specialized methods achieve the strongest performance among individual models, while gradient boosting on its own tends to underperform. However, combining a machine learning model with a specialized approach improves forecasting accuracy by up to 10%, demonstrating that even simple ensembles can outperform single models. Overall, the findings highlight the value of combining machine learning with domain-specific forecasting techniques for intermittent demand.",
+      "authors": [
+        "Vladislav Kislinskii",
+        "Mazhar Hameed"
+      ],
+      "link": "https://arxiv.org/abs/2609.14718v1",
+      "source": "arxiv",
+      "date": "2026-09-16",
+      "title_zh": "Are Gradient Boosting Models Suitable for Intermittent Demand Forecasting?",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
+    {
+      "id": "2609.13840v1",
+      "title": "Accuracy Is Not Service: A Decision-Aware Benchmark for Intermittent-Demand Forecasting",
+      "summary": "A contract-logistics spare-parts operator is paid on order-level service: an order counts only if every requested line is fulfilled, yet forecasters are selected based on line-level forecast accuracy. This disconnect matters when demand is intermittent and lumpy, histories are short, and lead times span months. We benchmarked 38 forecasting methods spanning classical, intermittent-demand, machine-learning, deep-learning, and pretrained foundation models. A common decision-aware protocol evaluates them on an industrial panel drawn from a live contract and two public datasets. Forecast-accuracy rank and order-service rank are negatively correlated on the industrial panel, at -0.555, across methods evaluated on 20,330 real multi-item orders. Service is more closely associated with the direction of cumulative forecast bias, including over-prediction during zero-demand periods, than with point accuracy. Examining bias in Chronos-2's instance normalization yields a training-free correction that lifts the per-material fill proxy from 77.5% to 92.0% (14.5 percentage points) at the 90% policy target and raises the complete-order fill rate from 54% to 63%. For reproducibility, we release RUF (Regenerate-Until-Fidelity), a method for generating fidelity-certified synthetic panels on which the findings reproduce. For intermittent demand, the lowest-error forecast need not deliver the highest service. Bias direction helps explain this gap, which can be reduced without retraining.",
+      "authors": [
+        "Joo Ern Chin",
+        "Shih-Fen Cheng",
+        "Aldy Gunawan"
+      ],
+      "link": "https://arxiv.org/abs/2609.13840v1",
+      "source": "arxiv",
+      "date": "2026-09-16",
+      "title_zh": "Accuracy Is Not Service: A Decision-Aware Benchmark for Intermittent-Demand Forecasting",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
+    {
+      "id": "2609.13561v1",
+      "title": "A Hybrid Agentic AI Framework for Intelligent Supply Chain Analytics",
+      "summary": "Efficient utilization of supply chain analytics for decision making remains a significant challenge for planners, as critical tasks such as database querying, key performance indicator (KPI) analysis, demand forecasting, and performance diagnosis require heterogeneous expertise spanning data engineering, operations research, and domain knowledge. In this work, we propose an agentic system for supply chain analytics that bridges the gap between business decision-making and technical expertise, where a coordinator agent interprets user intent and delegates sub-tasks to specialized agents. The system supports both exploratory analysis and deterministic workflows, enabling planners to transition between ad hoc questions and structured processes. Domain logic is encapsulated within specialist agents and prompts, yielding a scalable, modular, and auditable design and lowering the cost of functional extension through prompt-centric development. We evaluate the proposed architecture on a test environment that replicates multi-echelon inventory management operations. Results show that our multi-agent design achieves a 90\\% accuracy, which is competitive with a single agent baseline while reducing input token usage by roughly fourfold, substantially improving scalability and cost-efficiency. Furthermore, we provide case studies to demonstrate interpretable suboptimality detection and automated forecast optimization, illustrating how agentic architectures can effectively combine open-ended exploratory analysis and deterministic supply chain analytics workflows, and provide a practical pathway toward more accessible and extensible decision-support systems.",
+      "authors": [
+        "Xian Yeow Lee",
+        "Teppei Inoue",
+        "Haiyan Wang",
+        "Chetan Gupta"
+      ],
+      "link": "https://arxiv.org/abs/2609.13561v1",
+      "source": "arxiv",
+      "date": "2026-09-16",
+      "title_zh": "A Hybrid Agentic AI Framework for Intelligent Supply Chain Analytics",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
     {
       "id": "2609.11817v1",
       "title": "Constrained Deep Inventory Management Using Forward-Backward SDEs",
