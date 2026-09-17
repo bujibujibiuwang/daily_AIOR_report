@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-16",
+  "updated": "2026-09-17",
   "papers": [
     {
       "id": "2609.14718v1",
@@ -284,28 +284,6 @@
       "value_zh": "",
       "keywords": [],
       "score": 6
-    },
-    {
-      "id": "2608.14275v1",
-      "title": "Joint Inventory Placement, Assortment Personalization, and Order Fulfillment for Substitutable Products",
-      "summary": "Modern online retailers leverage networks of distributed warehouses to rapidly fulfill customer orders. We study a problem of jointly deciding (i) how to allocate inventories across warehouses in the network subject to warehouse capacity and product supply constraints, (ii) how to dynamically select personalized product assortments based on customer preferences and location, as well as real-time stock levels, and (iii) which warehouse to use to fulfill the product chosen by the customer to maximize expected profit. In our model, the firm chooses an inventory placement across warehouses at the start of the selling horizon. Customers of different types then arrive at discrete time periods over a finite time horizon according to a known distribution. When offered an assortment, each customer type chooses at most one product according to a discrete choice model. The firm then chooses a feasible warehouse from which to fulfill the chosen product, depleting its stock and earning a profit that depends on the product, customer type, and warehouse choice. We develop approximation algorithms and policies with provable theoretical guarantees and strong empirical performance. Under general probabilistic choice models, we establish asymptotically optimal approximation algorithms as warehouse capacities and product supplies scale. Under the multinomial logit (MNL) choice model, we obtain constant-factor approximation algorithms, with approximation factors ranging from 0.080 in the most general setting to 0.199 under stationarity and unlimited product supplies, which means that only warehouse capacity constraints are present. To the best of our knowledge, these results provide the first provably efficient algorithms for the joint inventory placement, assortment personalization, and order fulfillment problem.",
-      "authors": [
-        "Mikhail Fadin",
-        "Omar El Housni",
-        "Huseyin Topaloglu"
-      ],
-      "link": "https://arxiv.org/abs/2608.14275v1",
-      "source": "arxiv",
-      "date": "2026-08-17",
-      "title_zh": "关联库存放置、产品个性化和订单履约",
-      "contribution_zh": "联合优化库存和产品个性化",
-      "value_zh": "电子商务库存管理和订单履约",
-      "keywords": [
-        "库存优化",
-        "产品个性化",
-        "订单履约"
-      ],
-      "score": 10
     }
   ]
 }

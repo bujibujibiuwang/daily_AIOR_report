@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-09-16
+2026-09-17
+
+今日无新增 OR 相关研究
+## 📅 2026-09-16
 
 
 ### Are Gradient Boosting Models Suitable for Intermittent Demand Forecasting?
@@ -188,15 +191,3 @@ layout: default
 ## 📅 2026-08-18
 
 今日无新增 OR 相关研究
-## 📅 2026-08-17
-
-
-### 关联库存放置、产品个性化和订单履约
-- **英文标题**: Joint Inventory Placement, Assortment Personalization, and Order Fulfillment for Substitutable Products
-- **来源**: 📄 arXiv  ⭐ 10/10
-- **作者**: Mikhail Fadin, Omar El Housni, Huseyin Topaloglu
-- **核心贡献**: 联合优化库存和产品个性化
-- **实践价值**: 电子商务库存管理和订单履约
-- **OR 技术关键词**: 库存优化, 产品个性化, 订单履约
-- **论文链接**: https://arxiv.org/abs/2608.14275v1
----
