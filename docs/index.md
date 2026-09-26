@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-09-25
+2026-09-26
+
+今日无新增 OR 相关研究
+## 📅 2026-09-25
 
 今日无新增 OR 相关研究
 ## 📅 2026-09-24
@@ -188,6 +191,3 @@ layout: default
 - **作者**: Narges Ahmadi, Yubo Jiao, Jônatas Augusto Manzolli
 - **论文链接**: https://arxiv.org/abs/2608.20320v1
 ---
-## 📅 2026-08-26
-
-今日无新增 OR 相关研究
