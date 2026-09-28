@@ -1,7 +1,23 @@
 ---
 layout: default
 ---
-2026-09-27
+2026-09-28
+
+
+### Resource-Optimized and Energy-Aware Agentic AI Framework Anchored on Blockchain for Secure Software Supply Chains
+- **英文标题**: Resource-Optimized and Energy-Aware Agentic AI Framework Anchored on Blockchain for Secure Software Supply Chains
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Toqeer Ali Syed, Asadullah Abdullah Khan
+- **论文链接**: https://arxiv.org/abs/2609.31282v1
+---
+
+### EXAONE Demand 1.0: A Time Series Foundation Model for Demand Forecasting
+- **英文标题**: EXAONE Demand 1.0: A Time Series Foundation Model for Demand Forecasting
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Seunghan Lee, Sangjun Han, Jun Seo
+- **论文链接**: https://arxiv.org/abs/2609.30880v1
+---
+## 📅 2026-09-27
 
 今日无新增 OR 相关研究
 ## 📅 2026-09-26
@@ -162,12 +178,3 @@ layout: default
 ## 📅 2026-08-29
 
 今日无新增 OR 相关研究
-## 📅 2026-08-28
-
-
-### Toward Equitable Low-Carbon Mobility: Fairness-Aware Demand Prediction for Expanding Bike-Sharing Systems
-- **英文标题**: Toward Equitable Low-Carbon Mobility: Fairness-Aware Demand Prediction for Expanding Bike-Sharing Systems
-- **来源**: 📄 arXiv  ⭐ 6/10
-- **作者**: Man Luo, Yixuan Zhao
-- **论文链接**: https://arxiv.org/abs/2608.26451v1
----

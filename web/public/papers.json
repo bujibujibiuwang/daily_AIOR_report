@@ -1,6 +1,50 @@
 {
-  "updated": "2026-09-27",
+  "updated": "2026-09-28",
   "papers": [
+    {
+      "id": "2609.31282v1",
+      "title": "Resource-Optimized and Energy-Aware Agentic AI Framework Anchored on Blockchain for Secure Software Supply Chains",
+      "summary": "This paper proposes a blockchain-backed agentic security framework designed to safeguard the complete software development lifecycle (SDLC) while also securing the agentic AI components responsible for monitoring it. The framework coordinates a set of specialised security agents, covering source integrity, dependency and SBOM analysis, CI configura tion auditing, artifact verification, and runtime policy evaluation, each supported by a large language model (LLM) that interprets artefacts, reasons over tool outputs, and produces structured security reports. To ensure agent trustworthiness, every agent generates a cryptographically signed attestation that is recorded in a permissioned blockchain via smart contracts, including an agent registry, an immutable attestation log, and an enforceable release-policy module. Communication among agents and with blockchain nodes is secured using a consortium-operated certificate authority, ensuring authenticated and tamper-resistant interactions. A detailed use-case and sequence flow demonstrate how a source code security agent performs analysis, anchors its attestation on-chain, and triggers a verifiable allow/block deployment decision. The proposed framework of fers decentralised integrity transparent provenance, uninterrupted security assurance and a generalisable architecture to incorporate the agentic AI into the modern software supply chain security.",
+      "authors": [
+        "Toqeer Ali Syed",
+        "Asadullah Abdullah Khan"
+      ],
+      "link": "https://arxiv.org/abs/2609.31282v1",
+      "source": "arxiv",
+      "date": "2026-09-28",
+      "title_zh": "Resource-Optimized and Energy-Aware Agentic AI Framework Anchored on Blockchain for Secure Software Supply Chains",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
+    {
+      "id": "2609.30880v1",
+      "title": "EXAONE Demand 1.0: A Time Series Foundation Model for Demand Forecasting",
+      "summary": "Time series foundation models (TSFMs) are pretrained on series from diverse domains, where demand series make up only a small fraction. Demand data has properties that such corpora rarely contain: Short histories, frequent zeros, censoring by stock-outs, and exogenous events that the series does not record. To this end, we propose EXAONE Demand, built on 1) a demand-specific corpus and 2) a demand-aware adapter. For the corpus, we assemble 11.3M series and 48.4B observations from 73 sources, and a synthetic generator supplies the behaviour that open demand data under-represents. For the adapter, we attach low-rank branches to a frozen general-domain backbone, one for each of the four demand classes (smooth, intermittent, erratic, and lumpy), and a router that reads eight scale-free statistics of the input series decides how much each branch contributes. We build EXAONE Demand in two versions, one trained on real-world and synthetic demand together and one trained on the synthetic corpus alone. On 22 held-out datasets, both versions outperform 36 TSFMs, and real-world demand adds a gain over synthetic data alone.",
+      "authors": [
+        "Seunghan Lee",
+        "Sangjun Han",
+        "Jun Seo",
+        "Junhyeok Kang",
+        "Jaehoon Lee",
+        "Tae Yoon Lim",
+        "Dongwan Kang",
+        "Hwanil Choi",
+        "Minjae Kim",
+        "Sungdong Yoo",
+        "Soonyoung Lee",
+        "Wonbin Ahn"
+      ],
+      "link": "https://arxiv.org/abs/2609.30880v1",
+      "source": "arxiv",
+      "date": "2026-09-28",
+      "title_zh": "EXAONE Demand 1.0: A Time Series Foundation Model for Demand Forecasting",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
     {
       "id": "2609.14718v1",
       "title": "Are Gradient Boosting Models Suitable for Intermittent Demand Forecasting?",
@@ -203,23 +247,6 @@
       "source": "arxiv",
       "date": "2026-09-01",
       "title_zh": "The Shadow Price of Intelligence: Quality Degradation in LLM Inference as a Supply Chain Problem",
-      "contribution_zh": "",
-      "value_zh": "",
-      "keywords": [],
-      "score": 6
-    },
-    {
-      "id": "2608.26451v1",
-      "title": "Toward Equitable Low-Carbon Mobility: Fairness-Aware Demand Prediction for Expanding Bike-Sharing Systems",
-      "summary": "Bike-sharing systems are an important component of low-carbon urban mobility, but continued expansion creates challenges in both cold-start prediction and equitable resource allocation. Newly deployed stations lack historical ridership records, causing a mismatch between training and inference for graph-based models on evolving networks. Historical demand may also encode structural inequalities, as lower ridership in low-income neighborhoods can reflect limited infrastructure access rather than weak latent demand. Models trained directly on such data may therefore reinforce existing mobility disparities. We propose FairGIN, a fairness-aware graph neural network for demand prediction in expanding bike-sharing systems. FairGIN integrates three components. Expansion-Simulated Increment Training stochastically simulates network expansion during training to reduce the cold-start distribution gap. Attention-Based Knowledge Transfer combines station-adaptive temperature scaling with orthogonal embedding alignment to transfer representations from data-rich existing stations to data-sparse new stations. Fairness-Aware Optimization introduces income-stratified regularization and an equity-calibrated deployment score to support more inclusive station placement. Experiments on NYC and Seattle demonstrate that FairGIN achieves state-of-the-art predictive accuracy across diverse expansion scenarios while substantially reducing income-based disparities without compromising overall system efficiency.",
-      "authors": [
-        "Man Luo",
-        "Yixuan Zhao"
-      ],
-      "link": "https://arxiv.org/abs/2608.26451v1",
-      "source": "arxiv",
-      "date": "2026-08-28",
-      "title_zh": "Toward Equitable Low-Carbon Mobility: Fairness-Aware Demand Prediction for Expanding Bike-Sharing Systems",
       "contribution_zh": "",
       "value_zh": "",
       "keywords": [],
