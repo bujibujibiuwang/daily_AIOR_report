@@ -1,6 +1,23 @@
 {
-  "updated": "2026-09-28",
+  "updated": "2026-09-29",
   "papers": [
+    {
+      "id": "2609.32741v1",
+      "title": "Predicting the Financial Impact of Supply Chain Risk for Major AI-Related Semiconductor Firms: A Heterogeneous Graph Patch Transformer Approach",
+      "summary": "Modern semiconductor production relies on a globally distributed, multi-tier supply chain in which financial stress at one firm spreads with a delay and eventually affects the revenue, inventory, and profitability of the companies that design AI chips. Most firms see only their direct partners, and prior predictive research has mainly targeted market-based risk measures, so few tools forecast how supply chain stress will appear in reported financials. In this study, we propose a heterogeneous graph patch transformer that forecasts these quarterly changes one and two quarters ahead. Learning from a 15,186-company network over 60 quarters, the proposed model fuses quarterly fundamentals with macro-trade, event, and disaster signals through learned gates, carries risk across supplier, customer, ownership, and headquarters relations through typed, direction-specific propagation, and encodes the propagated histories with patch-based tokenization. In preliminary experiments on 116 focal semiconductor firms, the proposed model achieves the lowest error on every target at both horizons, and its profitability advantage widens at the two-quarter horizon. These forecasts can help supply chain managers and investors act before disruptions appear in reported financials.",
+      "authors": [
+        "Jianna Hur",
+        "Sagar Samtani"
+      ],
+      "link": "https://arxiv.org/abs/2609.32741v1",
+      "source": "arxiv",
+      "date": "2026-09-29",
+      "title_zh": "Predicting the Financial Impact of Supply Chain Risk for Major AI-Related Semiconductor Firms: A Heterogeneous Graph Patch Transformer Approach",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
     {
       "id": "2609.31282v1",
       "title": "Resource-Optimized and Energy-Aware Agentic AI Framework Anchored on Blockchain for Secure Software Supply Chains",

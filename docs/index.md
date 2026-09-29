@@ -1,7 +1,16 @@
 ---
 layout: default
 ---
-2026-09-28
+2026-09-29
+
+
+### Predicting the Financial Impact of Supply Chain Risk for Major AI-Related Semiconductor Firms: A Heterogeneous Graph Patch Transformer Approach
+- **英文标题**: Predicting the Financial Impact of Supply Chain Risk for Major AI-Related Semiconductor Firms: A Heterogeneous Graph Patch Transformer Approach
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Jianna Hur, Sagar Samtani
+- **论文链接**: https://arxiv.org/abs/2609.32741v1
+---
+## 📅 2026-09-28
 
 
 ### Resource-Optimized and Energy-Aware Agentic AI Framework Anchored on Blockchain for Secure Software Supply Chains
@@ -173,8 +182,5 @@ layout: default
 
 今日无新增 OR 相关研究
 ## 📅 2026-08-30
-
-今日无新增 OR 相关研究
-## 📅 2026-08-29
 
 今日无新增 OR 相关研究
