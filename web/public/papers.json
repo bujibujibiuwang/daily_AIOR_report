@@ -1,6 +1,26 @@
 {
-  "updated": "2026-09-29",
+  "updated": "2026-09-30",
   "papers": [
+    {
+      "id": "2609.34120v1",
+      "title": "Probabilistic electrical power demand forecasting with uncertainty quantification",
+      "summary": "The majority of research on electricity consumption forecasting has focused on deterministic approaches, which generate a single point estimate for each time step in the forecasting horizon. However, the increasing penetration of renewable energy sources and the growing complexity of modern smart grids have introduced greater variability and uncertainty into power-system demand and operation. Consequently, probabilistic forecasting, which quantifies the uncertainty and variability associated with future electricity demand, is becoming increasingly important for reliable power-system planning and operation. This study presents an empirical comparison of four contemporary probabilistic forecasting models for electricity consumption, highlighting their respective strengths and limitations. We have performed comparision on real-world power systems related datasets. Across all power-consumption zones, NGBoost demonstrates superior probabilistic forecasting performance, achieving the lowest MAE and RMSE while providing well-calibrated uncertainty estimates with high prediction-interval coverage and reasonably narrow intervals. These results indicate that NGBoost offers a more accurate and reliable forecasting framework than Bayesian, Monte Carlo (MC) Dropout, and Gaussian Process Regression (GPR) models for the considered electricity consumption data.",
+      "authors": [
+        "Mahesh Neupane",
+        "Pragya Dhungana",
+        "Pradip Khatri",
+        "Swechhya Baskota",
+        "Hariom Dhungana"
+      ],
+      "link": "https://arxiv.org/abs/2609.34120v1",
+      "source": "arxiv",
+      "date": "2026-09-30",
+      "title_zh": "Probabilistic electrical power demand forecasting with uncertainty quantification",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
     {
       "id": "2609.32741v1",
       "title": "Predicting the Financial Impact of Supply Chain Risk for Major AI-Related Semiconductor Firms: A Heterogeneous Graph Patch Transformer Approach",

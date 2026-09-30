@@ -1,7 +1,16 @@
 ---
 layout: default
 ---
-2026-09-29
+2026-09-30
+
+
+### Probabilistic electrical power demand forecasting with uncertainty quantification
+- **英文标题**: Probabilistic electrical power demand forecasting with uncertainty quantification
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Mahesh Neupane, Pragya Dhungana, Pradip Khatri
+- **论文链接**: https://arxiv.org/abs/2609.34120v1
+---
+## 📅 2026-09-29
 
 
 ### Predicting the Financial Impact of Supply Chain Risk for Major AI-Related Semiconductor Firms: A Heterogeneous Graph Patch Transformer Approach
@@ -179,8 +188,5 @@ layout: default
 - **论文链接**: https://arxiv.org/abs/2608.23986v2
 ---
 ## 📅 2026-08-31
-
-今日无新增 OR 相关研究
-## 📅 2026-08-30
 
 今日无新增 OR 相关研究
