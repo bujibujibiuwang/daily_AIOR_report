@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-09-30
+2026-10-01
+
+今日无新增 OR 相关研究
+## 📅 2026-09-30
 
 
 ### Probabilistic electrical power demand forecasting with uncertainty quantification
@@ -187,6 +190,3 @@ layout: default
 - **作者**: Elioth Sanabria
 - **论文链接**: https://arxiv.org/abs/2608.23986v2
 ---
-## 📅 2026-08-31
-
-今日无新增 OR 相关研究
