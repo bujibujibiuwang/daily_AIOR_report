@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-10-01
+2026-10-02
+
+今日无新增 OR 相关研究
+## 📅 2026-10-01
 
 今日无新增 OR 相关研究
 ## 📅 2026-09-30
@@ -181,12 +184,3 @@ layout: default
 ## 📅 2026-09-02
 
 今日无新增 OR 相关研究
-## 📅 2026-09-01
-
-
-### The Shadow Price of Intelligence: Quality Degradation in LLM Inference as a Supply Chain Problem
-- **英文标题**: The Shadow Price of Intelligence: Quality Degradation in LLM Inference as a Supply Chain Problem
-- **来源**: 📄 arXiv  ⭐ 6/10
-- **作者**: Elioth Sanabria
-- **论文链接**: https://arxiv.org/abs/2608.23986v2
----
