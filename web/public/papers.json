@@ -1,6 +1,24 @@
 {
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "papers": [
+    {
+      "id": "2609.40296v1",
+      "title": "Open Capacity Pooling in Agentic Supply Chains: Coordination-Directed LLM Discovery and Distributed Re-optimization",
+      "summary": "Disruptions can exhaust a supply chain network's capacity, yet outside capacity is hard to use: incumbent models are private, provider profiles are unstructured, and offers stay hidden until costly engagement. We formulate open capacity pooling, making network membership a disruption-response decision. The alternating direction method of multipliers (ADMM) coordinates incumbents without sharing models, and residual capacity gaps direct search over profiles indexed by a large language model (LLM). Verification reveals offers, reduced-cost screening admits them, and warm-started ADMM re-optimizes. The procedure is optimal if every eligible offer is revealed at exact prices, heuristic otherwise. Across 200 synthetic episodes, full-information opening recovers 24.6% of capacity-scarcity cost. With 40 contacts, coordination-directed need selection and LLM ranking capture 32.0% of this value, versus 4.7% for undirected, unranked contact. LLM reading of all profiles performs within five points of a complete structured registry and error-free extraction and finds four times as many compatible providers as keyword search among 10,000 records. What profiles omit is the exact capacity each provider's single offer covers, and requests for other capacity fail; registering offers in the same index raises captured value without a contact limit from 46.8% to 98.6%, keeping net value positive at every tested contact charge.",
+      "authors": [
+        "Yujia Xu",
+        "Walid Klibi",
+        "Benoit Montreuil"
+      ],
+      "link": "https://arxiv.org/abs/2609.40296v1",
+      "source": "arxiv",
+      "date": "2026-10-03",
+      "title_zh": "Open Capacity Pooling in Agentic Supply Chains: Coordination-Directed LLM Discovery and Distributed Re-optimization",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
     {
       "id": "2609.34120v1",
       "title": "Probabilistic electrical power demand forecasting with uncertainty quantification",
