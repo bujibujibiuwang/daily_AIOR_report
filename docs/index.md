@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-10-03
+2026-10-04
+
+今日无新增 OR 相关研究
+## 📅 2026-10-03
 
 
 ### Open Capacity Pooling in Agentic Supply Chains: Coordination-Directed LLM Discovery and Distributed Re-optimization
@@ -187,6 +190,3 @@ layout: default
 - **作者**: Lei Zheng, Liping Yang, Zihao Li
 - **论文链接**: https://arxiv.org/abs/2609.03860v1
 ---
-## 📅 2026-09-03
-
-今日无新增 OR 相关研究
