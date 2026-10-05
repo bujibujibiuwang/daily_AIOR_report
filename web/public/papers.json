@@ -1,6 +1,22 @@
 {
-  "updated": "2026-10-04",
+  "updated": "2026-10-05",
   "papers": [
+    {
+      "id": "2610.02397v1",
+      "title": "Validated Data Onboarding for AI Demand Forecasting on U.S. Building Meter Data: Design, Controlled Evaluation, and a Corrected Negative Result",
+      "summary": "Electric utilities and grid operators increasingly rely on machine-learning models to forecast next-day demand, and those models learn from meter data that is routinely defective: readings go missing, sensors freeze, buildings read zero for hours, and units change by a factor of 100. This report presents a data-onboarding pipeline that detects and repairs such defects before a model is trained, using only information available at forecast time, and a controlled experiment that measures whether the pipeline protects a 24-hour-ahead forecast. On hourly electricity data for twelve U.S. buildings from the public Building Data Genome 2 dataset (210,528 rows, 2016-2017), seeded, hash-logged defects touching 0.10% of the training period raised the error of a gradient-boosting forecaster by 86%; after detection and past-only repair the error returned to the clean-data level (mean absolute scaled error 0.760 clean, 1.415 corrupted, 0.729 repaired) while 93% of training targets were retained. At a defect prevalence calibrated to published field studies (1.6% of training rows) the unprotected forecaster's error reached 4.4 times that of a seasonal-naive rule, and the repaired forecaster again matched the clean baseline. The same pattern held for ridge regression and a random forest and across horizons of 1 to 24 hours. A first version of the pipeline over-cleaned natural data and made forecasts 25% worse; that result is retained, its cause is traced in the published artifacts, and the per-building calibration that corrects it is documented as a dated amendment. Every number is reproducible from pinned public inputs with SHA-256 verification, 84 automated tests and continuous integration.",
+      "authors": [
+        "Yixuan Liang"
+      ],
+      "link": "https://arxiv.org/abs/2610.02397v1",
+      "source": "arxiv",
+      "date": "2026-10-05",
+      "title_zh": "Validated Data Onboarding for AI Demand Forecasting on U.S. Building Meter Data: Design, Controlled Evaluation, and a Corrected Negative Result",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
     {
       "id": "2609.40296v1",
       "title": "Open Capacity Pooling in Agentic Supply Chains: Coordination-Directed LLM Discovery and Distributed Re-optimization",
@@ -265,27 +281,6 @@
       "source": "arxiv",
       "date": "2026-09-07",
       "title_zh": "A Constraint-Aware Generative Framework for Synthetic Origin-Destination Demand in Logistics Networks",
-      "contribution_zh": "",
-      "value_zh": "",
-      "keywords": [],
-      "score": 6
-    },
-    {
-      "id": "2609.03860v1",
-      "title": "Adapting to Evolving Requirements: Agentic AI for Retail Supply Chain Operations",
-      "summary": "Retail supply chain operations rely on coupled decision modules that must adapt as requirements evolve. LLMs offer a natural-language interface for this task, but existing methods primarily focus on individual optimization models. Extending them to heterogeneous decision pipelines is challenging because a requirement may admit multiple intervention paths with different downstream effects. We formulate requirement-driven adaptation as the joint selection of an intervention route and an admissible module-level change, and propose a graph-constrained agentic framework in which domain agents expose admissible reformulation interfaces and a central processor searches over bounded intervention paths. Candidates are validated and compared using downstream KPIs. In collaboration with a large retail partner, we evaluate 100 warehouse requirements elicited from practitioner interviews, with GPT, Qwen, and DeepSeek as base LLMs. Relative to direct LLM reformulation, our framework improves correctness and end-to-end success across all three models, raising end-to-end success from 72--76% to 79--83%.",
-      "authors": [
-        "Lei Zheng",
-        "Liping Yang",
-        "Zihao Li",
-        "Guodong Lyu",
-        "Chaik Ming Koh",
-        "Chung-Piaw Teo"
-      ],
-      "link": "https://arxiv.org/abs/2609.03860v1",
-      "source": "arxiv",
-      "date": "2026-09-04",
-      "title_zh": "Adapting to Evolving Requirements: Agentic AI for Retail Supply Chain Operations",
       "contribution_zh": "",
       "value_zh": "",
       "keywords": [],

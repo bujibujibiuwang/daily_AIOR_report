@@ -1,7 +1,16 @@
 ---
 layout: default
 ---
-2026-10-04
+2026-10-05
+
+
+### Validated Data Onboarding for AI Demand Forecasting on U.S. Building Meter Data: Design, Controlled Evaluation, and a Corrected Negative Result
+- **英文标题**: Validated Data Onboarding for AI Demand Forecasting on U.S. Building Meter Data: Design, Controlled Evaluation, and a Corrected Negative Result
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Yixuan Liang
+- **论文链接**: https://arxiv.org/abs/2610.02397v1
+---
+## 📅 2026-10-04
 
 今日无新增 OR 相关研究
 ## 📅 2026-10-03
@@ -181,12 +190,3 @@ layout: default
 ## 📅 2026-09-05
 
 今日无新增 OR 相关研究
-## 📅 2026-09-04
-
-
-### Adapting to Evolving Requirements: Agentic AI for Retail Supply Chain Operations
-- **英文标题**: Adapting to Evolving Requirements: Agentic AI for Retail Supply Chain Operations
-- **来源**: 📄 arXiv  ⭐ 6/10
-- **作者**: Lei Zheng, Liping Yang, Zihao Li
-- **论文链接**: https://arxiv.org/abs/2609.03860v1
----
