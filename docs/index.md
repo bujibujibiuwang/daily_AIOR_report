@@ -1,7 +1,16 @@
 ---
 layout: default
 ---
-2026-10-05
+2026-10-06
+
+
+### LLM-enhanced spatio-temporal learning for grid-level docked bike sharing demand prediction
+- **英文标题**: LLM-enhanced spatio-temporal learning for grid-level docked bike sharing demand prediction
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Xuxilu Zhang, Francesc Soriguera
+- **论文链接**: https://arxiv.org/abs/2610.03834v1
+---
+## 📅 2026-10-05
 
 
 ### Validated Data Onboarding for AI Demand Forecasting on U.S. Building Meter Data: Design, Controlled Evaluation, and a Corrected Negative Result
@@ -185,8 +194,5 @@ layout: default
 - **论文链接**: https://arxiv.org/abs/2609.04345v1
 ---
 ## 📅 2026-09-06
-
-今日无新增 OR 相关研究
-## 📅 2026-09-05
 
 今日无新增 OR 相关研究
