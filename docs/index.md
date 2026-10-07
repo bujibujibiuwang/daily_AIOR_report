@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-10-06
+2026-10-07
+
+今日无新增 OR 相关研究
+## 📅 2026-10-06
 
 
 ### LLM-enhanced spatio-temporal learning for grid-level docked bike sharing demand prediction
@@ -193,6 +196,3 @@ layout: default
 - **作者**: Leian Chen
 - **论文链接**: https://arxiv.org/abs/2609.04345v1
 ---
-## 📅 2026-09-06
-
-今日无新增 OR 相关研究
