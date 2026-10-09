@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-10-08
+2026-10-09
+
+今日无新增 OR 相关研究
+## 📅 2026-10-08
 
 今日无新增 OR 相关研究
 ## 📅 2026-10-07
@@ -187,6 +190,3 @@ layout: default
 - **作者**: Mohamad Alkadamani, Halim Yanikomeroglu
 - **论文链接**: https://arxiv.org/abs/2609.06636v1
 ---
-## 📅 2026-09-08
-
-今日无新增 OR 相关研究
