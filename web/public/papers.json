@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-11",
+  "updated": "2026-10-12",
   "papers": [
     {
       "id": "2610.03834v1",
@@ -182,23 +182,6 @@
       "source": "arxiv",
       "date": "2026-09-16",
       "title_zh": "A Hybrid Agentic AI Framework for Intelligent Supply Chain Analytics",
-      "contribution_zh": "",
-      "value_zh": "",
-      "keywords": [],
-      "score": 6
-    },
-    {
-      "id": "2609.11817v1",
-      "title": "Constrained Deep Inventory Management Using Forward-Backward SDEs",
-      "summary": "We study multi-product replenishment subject to aggregate operating limits imposed pathwise in place of expectation. On-hand and in-transit inventory, warehouse capacity and an emission allowance define a safe set, and the resulting multi-product lost-sales problem is posed as a safe stochastic optimal control problem. The Hamilton--Jacobi--Bellman (HJB) equation is represented as a system of forward--backward stochastic differential equations (FBSDEs) and solved by learning the value function and its gradient, with a quadratic program derived by control barrier function (CBF) is solved at each decision epoch. Because purchase orders enter the in-transit pipeline only, the in-transit constraints have relative degree one while the on-hand constraints have relative degree two. We extend the stochastic high-relative-degree construction of (Clark, 2021) from a single barrier to four coupled aggregate constraints of mixed relative degree, and we establish its initial-condition requirement by design.",
-      "authors": [
-        "Keunwoo Lim",
-        "Michael Bloem"
-      ],
-      "link": "https://arxiv.org/abs/2609.11817v1",
-      "source": "arxiv",
-      "date": "2026-09-11",
-      "title_zh": "Constrained Deep Inventory Management Using Forward-Backward SDEs",
       "contribution_zh": "",
       "value_zh": "",
       "keywords": [],

@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-10-11
+2026-10-12
+
+今日无新增 OR 相关研究
+## 📅 2026-10-11
 
 今日无新增 OR 相关研究
 ## 📅 2026-10-10
@@ -154,12 +157,3 @@ layout: default
 ## 📅 2026-09-12
 
 今日无新增 OR 相关研究
-## 📅 2026-09-11
-
-
-### Constrained Deep Inventory Management Using Forward-Backward SDEs
-- **英文标题**: Constrained Deep Inventory Management Using Forward-Backward SDEs
-- **来源**: 📄 arXiv  ⭐ 6/10
-- **作者**: Keunwoo Lim, Michael Bloem
-- **论文链接**: https://arxiv.org/abs/2609.11817v1
----
