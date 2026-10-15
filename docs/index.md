@@ -1,7 +1,30 @@
 ---
 layout: default
 ---
-2026-10-14
+2026-10-15
+
+
+### What You Sign Is Not What You Run: The Verifiability Gap in Quantized LLM Supply Chains
+- **英文标题**: What You Sign Is Not What You Run: The Verifiability Gap in Quantized LLM Supply Chains
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Wei-Liang Liu, Cheng-Yen Tsai
+- **论文链接**: https://arxiv.org/abs/2610.19498v1
+---
+
+### Optimal Feature-Based Newsvendor Policies under Censored Demand
+- **英文标题**: Optimal Feature-Based Newsvendor Policies under Censored Demand
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Joost van der Haar, Ilias Willems, Joachim Arts
+- **论文链接**: https://arxiv.org/abs/2610.17465v1
+---
+
+### AutoMARS: Automatic and Scalable Multi-Agent Large Language Model Framework for Supply Chain Risk Assessment
+- **英文标题**: AutoMARS: Automatic and Scalable Multi-Agent Large Language Model Framework for Supply Chain Risk Assessment
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Yinzhu Quan, Zefang Liu, Frederick Benaben
+- **论文链接**: https://arxiv.org/abs/2610.17206v1
+---
+## 📅 2026-10-14
 
 今日无新增 OR 相关研究
 ## 📅 2026-10-13
@@ -152,8 +175,5 @@ layout: default
 - **论文链接**: https://arxiv.org/abs/2609.13561v1
 ---
 ## 📅 2026-09-15
-
-今日无新增 OR 相关研究
-## 📅 2026-09-14
 
 今日无新增 OR 相关研究
