@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-10-15
+2026-10-16
+
+今日无新增 OR 相关研究
+## 📅 2026-10-15
 
 
 ### What You Sign Is Not What You Run: The Verifiability Gap in Quantized LLM Supply Chains
@@ -174,6 +177,3 @@ layout: default
 - **作者**: Xian Yeow Lee, Teppei Inoue, Haiyan Wang
 - **论文链接**: https://arxiv.org/abs/2609.13561v1
 ---
-## 📅 2026-09-15
-
-今日无新增 OR 相关研究
