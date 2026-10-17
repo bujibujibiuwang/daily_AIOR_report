@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-10-16
+2026-10-17
+
+今日无新增 OR 相关研究
+## 📅 2026-10-16
 
 今日无新增 OR 相关研究
 ## 📅 2026-10-15
@@ -154,26 +157,3 @@ layout: default
 ## 📅 2026-09-17
 
 今日无新增 OR 相关研究
-## 📅 2026-09-16
-
-
-### Are Gradient Boosting Models Suitable for Intermittent Demand Forecasting?
-- **英文标题**: Are Gradient Boosting Models Suitable for Intermittent Demand Forecasting?
-- **来源**: 📄 arXiv  ⭐ 6/10
-- **作者**: Vladislav Kislinskii, Mazhar Hameed
-- **论文链接**: https://arxiv.org/abs/2609.14718v1
----
-
-### Accuracy Is Not Service: A Decision-Aware Benchmark for Intermittent-Demand Forecasting
-- **英文标题**: Accuracy Is Not Service: A Decision-Aware Benchmark for Intermittent-Demand Forecasting
-- **来源**: 📄 arXiv  ⭐ 6/10
-- **作者**: Joo Ern Chin, Shih-Fen Cheng, Aldy Gunawan
-- **论文链接**: https://arxiv.org/abs/2609.13840v1
----
-
-### A Hybrid Agentic AI Framework for Intelligent Supply Chain Analytics
-- **英文标题**: A Hybrid Agentic AI Framework for Intelligent Supply Chain Analytics
-- **来源**: 📄 arXiv  ⭐ 6/10
-- **作者**: Xian Yeow Lee, Teppei Inoue, Haiyan Wang
-- **论文链接**: https://arxiv.org/abs/2609.13561v1
----
