@@ -1,6 +1,21 @@
 {
-  "updated": "2026-10-22",
+  "updated": "2026-10-23",
   "papers": [
+    {
+      "id": "crossref:10.1287/mnsc.2024.07419",
+      "title": "From Winning to Giving: The Effect of Gold Medals in Crowdsourcing Contests",
+      "abstract": "We examine how users respond to winning symbolic awards in online crowdsourcing contests. Our setting is a machine learning competition platform that grants symbolic medals to recognize participants’ contest achievements. Employing a regression discontinuity design, we find that gold medal winners participate less in subsequent contests but engage more in prosocial activities, evidenced by a greater volume and length of posts, as well as more substantial and frequent code contributions. In contrast, bronze and silver medals do not seem to exert a significant influence on recipients’ subsequent behaviors. Drawing on self-determination theory and the needs-as-motives hypothesis, we provide evidence that need-driven goal shifting plays an important role in driving the dual effects of gold medals—diminished contest participation but enhanced prosocial contributions. Further analyses reveal that winners with previous competition medals are more likely to favor contributing content over competing again, whereas winners with more prior contribution medals are less inclined to further increase contributions. Moreover, team winners exhibit a lower tendency than solo winners to shift their efforts from competition to contribution. We add to the symbolic awards literature by uncovering a novel goal-shifting effect induced by contest medals, where award receipt redirects user effort from the focal rewarded domain to other forms of platform engagement. \n                   This paper was accepted by D. J. Wu, information systems. \n                   Funding: Financial support from the National Natural Science Foundation of China [Grants 72032006, W2611101, and 72371192] and the “Digital-Intelligent Operations Risk Management” Innovation and Entrepreneurship Team Project of the Sanqin Talent Special Support Program in Shaanxi Province [2025STD03] is gratefully acknowledged. \n                   Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2024.07419 .",
+      "url": "https://doi.org/10.1287/mnsc.2024.07419",
+      "source": "OR-Journal",
+      "journal": "Management Science",
+      "publishedAt": "",
+      "date": "2026-10-23",
+      "title_zh": "From Winning to Giving: The Effect of Gold Medals in Crowdsourcing Contests",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
     {
       "id": "2610.19498v1",
       "title": "What You Sign Is Not What You Run: The Verifiability Gap in Quantized LLM Supply Chains",

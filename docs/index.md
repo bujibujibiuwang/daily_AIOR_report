@@ -1,7 +1,15 @@
 ---
 layout: default
 ---
-2026-10-22
+2026-10-23
+
+
+### From Winning to Giving: The Effect of Gold Medals in Crowdsourcing Contests
+- **英文标题**: From Winning to Giving: The Effect of Gold Medals in Crowdsourcing Contests
+- **来源**: OR-Journal  ⭐ 6/10
+- **论文链接**: https://doi.org/10.1287/mnsc.2024.07419
+---
+## 📅 2026-10-22
 
 今日无新增 OR 相关研究
 ## 📅 2026-10-21
@@ -152,8 +160,5 @@ layout: default
 
 今日无新增 OR 相关研究
 ## 📅 2026-09-23
-
-今日无新增 OR 相关研究
-## 📅 2026-09-22
 
 今日无新增 OR 相关研究
