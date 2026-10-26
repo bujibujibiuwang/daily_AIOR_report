@@ -1,7 +1,16 @@
 ---
 layout: default
 ---
-2026-10-25
+2026-10-26
+
+
+### A Dynamic Inventory Rationing Model for Last-Mile Delivery of Medication in Liberia's Community Health Program
+- **英文标题**: A Dynamic Inventory Rationing Model for Last-Mile Delivery of Medication in Liberia's Community Health Program
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Baris Ata, Yufan Chen, Robert Montgomery
+- **论文链接**: https://arxiv.org/abs/2610.32051v1
+---
+## 📅 2026-10-25
 
 今日无新增 OR 相关研究
 ## 📅 2026-10-24
@@ -157,8 +166,5 @@ layout: default
 
 今日无新增 OR 相关研究
 ## 📅 2026-09-26
-
-今日无新增 OR 相关研究
-## 📅 2026-09-25
 
 今日无新增 OR 相关研究

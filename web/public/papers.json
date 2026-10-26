@@ -1,6 +1,24 @@
 {
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "papers": [
+    {
+      "id": "2610.32051v1",
+      "title": "A Dynamic Inventory Rationing Model for Last-Mile Delivery of Medication in Liberia's Community Health Program",
+      "summary": "We study the dynamic allocation of scarce medications in Liberia's community health program. A central warehouse supplies a health facility and the Community Health Assistants (CHAs) it supervises. When a CHA runs out of medication, patients are referred to the facility, incurring travel costs if they complete the referral and remain untreated otherwise. Allocating inventory to CHAs allows more patients to receive treatment without traveling, while retaining inventory centrally preserves flexibility to respond to uncertain demand. The allocation problem must balance these considerations while accounting for fairness across locations. We formulate this problem as a finite-horizon stochastic control problem whose objective combines the costs of referrals and untreated patients with a demand-weighted fairness utility. Because standard dynamic programming methods are computationally intractable in this setting, we develop a continuous-time approximation that involves controlling the drift rate of a reflected Brownian motion. We then adapt the deep splitting method, using deep neural networks to approximate the value function and its gradient and compute a dynamic allocation policy. We calibrate the model using data on malaria cases among children in the Fangonda region of Lofa County, Liberia, and evaluate the proposed policy in the original discrete-time model. In the baseline setting, our policy reduces operating costs by about 6% relative to the strongest benchmark, the fairness-only policy, while retaining approximately 98% of its fairness utility. Additional experiments show that higher referral costs shift inventory toward CHAs and reduce local unmet demand, while greater demand variability increases our policy's performance over the fairness-only benchmark. Our model and computational approach provide a framework for studying similar last-mile allocation problems.",
+      "authors": [
+        "Baris Ata",
+        "Yufan Chen",
+        "Robert Montgomery"
+      ],
+      "link": "https://arxiv.org/abs/2610.32051v1",
+      "source": "arxiv",
+      "date": "2026-10-26",
+      "title_zh": "A Dynamic Inventory Rationing Model for Last-Mile Delivery of Medication in Liberia's Community Health Program",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
     {
       "id": "crossref:10.1287/mnsc.2024.07419",
       "title": "From Winning to Giving: The Effect of Gold Medals in Crowdsourcing Contests",
