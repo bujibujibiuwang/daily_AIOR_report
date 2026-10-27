@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-10-26
+2026-10-27
+
+今日无新增 OR 相关研究
+## 📅 2026-10-26
 
 
 ### A Dynamic Inventory Rationing Model for Last-Mile Delivery of Medication in Liberia's Community Health Program
@@ -163,8 +166,5 @@ layout: default
 - **论文链接**: https://arxiv.org/abs/2609.30880v1
 ---
 ## 📅 2026-09-27
-
-今日无新增 OR 相关研究
-## 📅 2026-09-26
 
 今日无新增 OR 相关研究
