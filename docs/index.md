@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-10-27
+2026-10-28
+
+今日无新增 OR 相关研究
+## 📅 2026-10-27
 
 今日无新增 OR 相关研究
 ## 📅 2026-10-26
@@ -165,6 +168,3 @@ layout: default
 - **作者**: Seunghan Lee, Sangjun Han, Jun Seo
 - **论文链接**: https://arxiv.org/abs/2609.30880v1
 ---
-## 📅 2026-09-27
-
-今日无新增 OR 相关研究
