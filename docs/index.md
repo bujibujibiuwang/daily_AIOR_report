@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-10-28
+2026-10-29
+
+今日无新增 OR 相关研究
+## 📅 2026-10-28
 
 今日无新增 OR 相关研究
 ## 📅 2026-10-27
@@ -151,20 +154,4 @@ layout: default
 - **来源**: 📄 arXiv  ⭐ 6/10
 - **作者**: Jianna Hur, Sagar Samtani
 - **论文链接**: https://arxiv.org/abs/2609.32741v1
----
-## 📅 2026-09-28
-
-
-### Resource-Optimized and Energy-Aware Agentic AI Framework Anchored on Blockchain for Secure Software Supply Chains
-- **英文标题**: Resource-Optimized and Energy-Aware Agentic AI Framework Anchored on Blockchain for Secure Software Supply Chains
-- **来源**: 📄 arXiv  ⭐ 6/10
-- **作者**: Toqeer Ali Syed, Asadullah Abdullah Khan
-- **论文链接**: https://arxiv.org/abs/2609.31282v1
----
-
-### EXAONE Demand 1.0: A Time Series Foundation Model for Demand Forecasting
-- **英文标题**: EXAONE Demand 1.0: A Time Series Foundation Model for Demand Forecasting
-- **来源**: 📄 arXiv  ⭐ 6/10
-- **作者**: Seunghan Lee, Sangjun Han, Jun Seo
-- **论文链接**: https://arxiv.org/abs/2609.30880v1
 ---
