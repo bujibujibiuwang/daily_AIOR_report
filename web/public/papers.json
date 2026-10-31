@@ -1,6 +1,64 @@
 {
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "papers": [
+    {
+      "id": "2610.40138v1",
+      "title": "A Deep Learning Framework for Quantile Demand Forecasting in E-commerce with Doubly Censored Data",
+      "summary": "In recent years, a growing number of online retail companies have embraced deep learning models for demand forecasting, leveraging their scalability in processing large-scale datasets. Accurate demand forecasts enable improved planning and allow operational flexibility to adjust sales accordingly. Moreover, quantile estimation has gained widespread application as it offers valuable uncertainty quantification, thereby enhancing the robustness of decision-making processes. However, limited research has addressed the effective quantification of uncertainty when target labels are ambiguous. In retail, actual sales can be capped by stock and boosted by temporary promotions, whereas the target is underlying demand. Such scenarios are characterized by double censoring and no deep-learning pipeline yet exists for such data. In this paper, we introduce a straightforward framework for learning quantiles from doubly-censored observations and propose a tailored evaluation metric. Our approach is supported by theoretical guarantees, and we empirically demonstrate that our metric correlates well with the oracle calibration measure. Experimental results show that our estimator surpasses existing baselines. Finally, inventory simulations and real-world applications confirm the practical utility of our method in retail operations.",
+      "authors": [
+        "Ziwen Ye",
+        "Jiawen Wei",
+        "Teng Song",
+        "Chen Chen",
+        "Guangrui Ma"
+      ],
+      "link": "https://arxiv.org/abs/2610.40138v1",
+      "source": "arxiv",
+      "date": "2026-10-31",
+      "title_zh": "A Deep Learning Framework for Quantile Demand Forecasting in E-commerce with Doubly Censored Data",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
+    {
+      "id": "2610.38101v1",
+      "title": "AI-Driven Digital Twin Framework for Warehouse Logistics Automation Optimization",
+      "summary": "In recent years, warehouse logistics optimization has increasingly focused on intelligent, data-driven systems to enhance operational efficiency. Conventional static product placement strategies are being progressively replaced by dynamic slotting approaches that can adapt to real-time variations in warehouse conditions. In this work, we present a novel framework that employs a reinforcement learning agent integrated within a FlexSim-based Digital Twin environment for real-time product placement optimization. The proposed agent continuously learns from streaming operational data, enabling it to reduce picking time while improving overall system throughput. The simulation environment models a four-zone warehouse layout with forklift-based material handling and leverages the Asset Administration Shell framework to ensure seamless interaction between the learning agent, physical asset, and the digital twin. Experimental evaluation demonstrates substantial performance gains, with the proposed approach achieving a 29.66\\% reduction in average picking time, a 35.42\\% increase in throughput, and an 18.54\\% decrease in travel distance.",
+      "authors": [
+        "Md Mahinur Alam",
+        "Kanita Jerin Tanha",
+        "Md Tanjin Alam",
+        "Shadman Sakib",
+        "Min Gyu Kim"
+      ],
+      "link": "https://arxiv.org/abs/2610.38101v1",
+      "source": "arxiv",
+      "date": "2026-10-31",
+      "title_zh": "AI-Driven Digital Twin Framework for Warehouse Logistics Automation Optimization",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
+    {
+      "id": "2610.38046v1",
+      "title": "Conformal Predictive Distributions for Contextual Order Fulfillment Optimization",
+      "summary": "Ship-to-home fulfillment requires a retailer to select a fulfillment location and carrier before the delivery time is known. These decisions often rely on static transit-time estimates, which cannot represent how delivery-time uncertainty varies across orders and fulfillment options. This paper constructs conformal predictive distributions (CPDs) using Conformal Predictive Systems (CPS) for regression and the cross Venn-Abers predictor (CVAP) for multiclass classification, and uses them in a contextual optimization model for fulfillment decisions. The model is solved by contextual sample-average approximation (C-SAA). The regret of each fulfillment decision, its expected cost above that of the best decision, is bounded by forecast error, scenario-evaluation error, and the candidate-generation gap. The forecast term depends on how well calibration residuals or class probabilities represent the current order. On more than five million proprietary order records, CVAP raises exact-day accuracy from 49.5% for the rule-based estimate to 64.1%. Paired with a decision rule that selects a quantile weighting late errors more heavily, the split CPS (SCPS) gives a point estimate that raises late-delivery detection from 3.8% to 79.4%. Residual-based CPS distributions also meet or slightly exceed nominal interval-coverage targets. In decision experiments with a JD.com simulator over six test dates, C-SAA with CVAP lowers mean total cost by 7.1% and C-SAA with the Mondrian CPS (MCPS) lowers it by 6.7%, relative to C-SAA with the original nonconformal forecast. Both cut the late-delivery rate from 5.7% to below 4.0%.",
+      "authors": [
+        "Tinghan Ye",
+        "Amira Hijazi",
+        "Pascal Van Hentenryck"
+      ],
+      "link": "https://arxiv.org/abs/2610.38046v1",
+      "source": "arxiv",
+      "date": "2026-10-31",
+      "title_zh": "Conformal Predictive Distributions for Contextual Order Fulfillment Optimization",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
     {
       "id": "2610.32051v1",
       "title": "A Dynamic Inventory Rationing Model for Last-Mile Delivery of Medication in Liberia's Community Health Program",
@@ -135,26 +193,6 @@
       "source": "arxiv",
       "date": "2026-10-03",
       "title_zh": "Open Capacity Pooling in Agentic Supply Chains: Coordination-Directed LLM Discovery and Distributed Re-optimization",
-      "contribution_zh": "",
-      "value_zh": "",
-      "keywords": [],
-      "score": 6
-    },
-    {
-      "id": "2609.34120v1",
-      "title": "Probabilistic electrical power demand forecasting with uncertainty quantification",
-      "summary": "The majority of research on electricity consumption forecasting has focused on deterministic approaches, which generate a single point estimate for each time step in the forecasting horizon. However, the increasing penetration of renewable energy sources and the growing complexity of modern smart grids have introduced greater variability and uncertainty into power-system demand and operation. Consequently, probabilistic forecasting, which quantifies the uncertainty and variability associated with future electricity demand, is becoming increasingly important for reliable power-system planning and operation. This study presents an empirical comparison of four contemporary probabilistic forecasting models for electricity consumption, highlighting their respective strengths and limitations. We have performed comparision on real-world power systems related datasets. Across all power-consumption zones, NGBoost demonstrates superior probabilistic forecasting performance, achieving the lowest MAE and RMSE while providing well-calibrated uncertainty estimates with high prediction-interval coverage and reasonably narrow intervals. These results indicate that NGBoost offers a more accurate and reliable forecasting framework than Bayesian, Monte Carlo (MC) Dropout, and Gaussian Process Regression (GPR) models for the considered electricity consumption data.",
-      "authors": [
-        "Mahesh Neupane",
-        "Pragya Dhungana",
-        "Pradip Khatri",
-        "Swechhya Baskota",
-        "Hariom Dhungana"
-      ],
-      "link": "https://arxiv.org/abs/2609.34120v1",
-      "source": "arxiv",
-      "date": "2026-09-30",
-      "title_zh": "Probabilistic electrical power demand forecasting with uncertainty quantification",
       "contribution_zh": "",
       "value_zh": "",
       "keywords": [],

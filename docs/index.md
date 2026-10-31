@@ -1,7 +1,30 @@
 ---
 layout: default
 ---
-2026-10-30
+2026-10-31
+
+
+### A Deep Learning Framework for Quantile Demand Forecasting in E-commerce with Doubly Censored Data
+- **英文标题**: A Deep Learning Framework for Quantile Demand Forecasting in E-commerce with Doubly Censored Data
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Ziwen Ye, Jiawen Wei, Teng Song
+- **论文链接**: https://arxiv.org/abs/2610.40138v1
+---
+
+### AI-Driven Digital Twin Framework for Warehouse Logistics Automation Optimization
+- **英文标题**: AI-Driven Digital Twin Framework for Warehouse Logistics Automation Optimization
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Md Mahinur Alam, Kanita Jerin Tanha, Md Tanjin Alam
+- **论文链接**: https://arxiv.org/abs/2610.38101v1
+---
+
+### Conformal Predictive Distributions for Contextual Order Fulfillment Optimization
+- **英文标题**: Conformal Predictive Distributions for Contextual Order Fulfillment Optimization
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Tinghan Ye, Amira Hijazi, Pascal Van Hentenryck
+- **论文链接**: https://arxiv.org/abs/2610.38046v1
+---
+## 📅 2026-10-30
 
 今日无新增 OR 相关研究
 ## 📅 2026-10-29
@@ -140,12 +163,3 @@ layout: default
 ## 📅 2026-10-01
 
 今日无新增 OR 相关研究
-## 📅 2026-09-30
-
-
-### Probabilistic electrical power demand forecasting with uncertainty quantification
-- **英文标题**: Probabilistic electrical power demand forecasting with uncertainty quantification
-- **来源**: 📄 arXiv  ⭐ 6/10
-- **作者**: Mahesh Neupane, Pragya Dhungana, Pradip Khatri
-- **论文链接**: https://arxiv.org/abs/2609.34120v1
----
