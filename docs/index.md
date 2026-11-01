@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-10-31
+2026-11-01
+
+今日无新增 OR 相关研究
+## 📅 2026-10-31
 
 
 ### A Deep Learning Framework for Quantile Demand Forecasting in E-commerce with Doubly Censored Data
@@ -158,8 +161,5 @@ layout: default
 - **论文链接**: https://arxiv.org/abs/2609.40296v1
 ---
 ## 📅 2026-10-02
-
-今日无新增 OR 相关研究
-## 📅 2026-10-01
 
 今日无新增 OR 相关研究
