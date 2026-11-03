@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-11-02
+2026-11-03
+
+今日无新增 OR 相关研究
+## 📅 2026-11-02
 
 今日无新增 OR 相关研究
 ## 📅 2026-11-01
@@ -154,12 +157,3 @@ layout: default
 ## 📅 2026-10-04
 
 今日无新增 OR 相关研究
-## 📅 2026-10-03
-
-
-### Open Capacity Pooling in Agentic Supply Chains: Coordination-Directed LLM Discovery and Distributed Re-optimization
-- **英文标题**: Open Capacity Pooling in Agentic Supply Chains: Coordination-Directed LLM Discovery and Distributed Re-optimization
-- **来源**: 📄 arXiv  ⭐ 6/10
-- **作者**: Yujia Xu, Walid Klibi, Benoit Montreuil
-- **论文链接**: https://arxiv.org/abs/2609.40296v1
----
