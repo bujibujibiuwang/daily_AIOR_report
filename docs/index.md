@@ -1,7 +1,16 @@
 ---
 layout: default
 ---
-2026-11-03
+2026-11-04
+
+
+### Late Autumn: LLM Agents Specialize a General Multi-Robot Planner for One Warehouse
+- **英文标题**: Late Autumn: LLM Agents Specialize a General Multi-Robot Planner for One Warehouse
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Yimin Tang, Han Zhang, Shao-Hung Chan
+- **论文链接**: https://arxiv.org/abs/2611.02391v1
+---
+## 📅 2026-11-03
 
 今日无新增 OR 相关研究
 ## 📅 2026-11-02
@@ -154,6 +163,3 @@ layout: default
 - **作者**: Yixuan Liang
 - **论文链接**: https://arxiv.org/abs/2610.02397v1
 ---
-## 📅 2026-10-04
-
-今日无新增 OR 相关研究

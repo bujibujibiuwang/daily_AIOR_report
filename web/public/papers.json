@@ -1,6 +1,27 @@
 {
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "papers": [
+    {
+      "id": "2611.02391v1",
+      "title": "Late Autumn: LLM Agents Specialize a General Multi-Robot Planner for One Warehouse",
+      "summary": "No algorithm is best on all problems, but a real warehouse is a narrow problem: its layout and processes rarely change. Operators still run one general multi-robot planner at many sites, because experts cannot tune it for each one. In this work, which we call Late Autumn, we explore whether LLM coding agents running autonomous research can specialize a general planner for one site, trading generality for throughput, much as post-training adapts a pretrained LLM to one task. We study six campaigns on a lifelong planner that combines task assignment with multi-agent path finding, on a floor modeled on an existing automated warehouse. We find that (1) the agents raise throughput by 22--60%, and the gains hold on unseen seeds; (2) they rediscover known MAPF mechanisms, such as corridor-exit priorities, local guidance, and rollouts, and independent campaigns find the same bottleneck; (3) the gains largely carry over to another layout, a larger fleet, and other service times, shrink with a smaller fleet, and mostly vanish under an outbound-heavy demand mix; and (4) each final patch (0.7k--2.4k lines) is a chain of scored commits with a median step of 27 lines, so experts can review it, and review finds problems that the score misses; some patches multiply planner compute by over 100x. LLM agents can therefore turn each site's bias into extra throughput at little engineering cost, with reviewable patches; we expect experts to shift toward designing insightful metrics and fast simulators that mirror the real problem.",
+      "authors": [
+        "Yimin Tang",
+        "Han Zhang",
+        "Shao-Hung Chan",
+        "Erdem Bıyık",
+        "Sven Koenig",
+        "Jingkai Chen"
+      ],
+      "link": "https://arxiv.org/abs/2611.02391v1",
+      "source": "arxiv",
+      "date": "2026-11-04",
+      "title_zh": "Late Autumn: LLM Agents Specialize a General Multi-Robot Planner for One Warehouse",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
     {
       "id": "2610.40138v1",
       "title": "A Deep Learning Framework for Quantile Demand Forecasting in E-commerce with Doubly Censored Data",
