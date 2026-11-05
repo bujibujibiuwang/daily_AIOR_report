@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-11-04
+2026-11-05
+
+今日无新增 OR 相关研究
+## 📅 2026-11-04
 
 
 ### Late Autumn: LLM Agents Specialize a General Multi-Robot Planner for One Warehouse
@@ -153,13 +156,4 @@ layout: default
 - **来源**: 📄 arXiv  ⭐ 6/10
 - **作者**: Xuxilu Zhang, Francesc Soriguera
 - **论文链接**: https://arxiv.org/abs/2610.03834v1
----
-## 📅 2026-10-05
-
-
-### Validated Data Onboarding for AI Demand Forecasting on U.S. Building Meter Data: Design, Controlled Evaluation, and a Corrected Negative Result
-- **英文标题**: Validated Data Onboarding for AI Demand Forecasting on U.S. Building Meter Data: Design, Controlled Evaluation, and a Corrected Negative Result
-- **来源**: 📄 arXiv  ⭐ 6/10
-- **作者**: Yixuan Liang
-- **论文链接**: https://arxiv.org/abs/2610.02397v1
 ---
