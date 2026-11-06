@@ -1,7 +1,15 @@
 ---
 layout: default
 ---
-2026-11-05
+2026-11-06
+
+
+### Sourcing with Demand Updates
+- **英文标题**: Sourcing with Demand Updates
+- **来源**: OR-Journal  ⭐ 6/10
+- **论文链接**: https://doi.org/10.1287/mnsc.2024.04692
+---
+## 📅 2026-11-05
 
 今日无新增 OR 相关研究
 ## 📅 2026-11-04
@@ -148,12 +156,3 @@ layout: default
 ## 📅 2026-10-07
 
 今日无新增 OR 相关研究
-## 📅 2026-10-06
-
-
-### LLM-enhanced spatio-temporal learning for grid-level docked bike sharing demand prediction
-- **英文标题**: LLM-enhanced spatio-temporal learning for grid-level docked bike sharing demand prediction
-- **来源**: 📄 arXiv  ⭐ 6/10
-- **作者**: Xuxilu Zhang, Francesc Soriguera
-- **论文链接**: https://arxiv.org/abs/2610.03834v1
----

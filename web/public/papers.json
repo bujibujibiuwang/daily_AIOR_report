@@ -1,6 +1,21 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "papers": [
+    {
+      "id": "crossref:10.1287/mnsc.2024.04692",
+      "title": "Sourcing with Demand Updates",
+      "abstract": "We study a two-stage newsvendor model where the initially uncertain mean demand is revealed midstream, allowing for a second, costlier order to be placed. The two-stage process is relevant to many retailers who have access to two supply options: a long-lead, low-cost option where orders need to be placed under much demand uncertainty, and a short-lead, high-cost option after a signal is revealed that updates the mean demand. We introduce a forecast evolution model that describes how the initial forecast for mean demand varies in response to the signal, which generalizes the popular additive and multiplicative martingale model of forecast evolution (MMFE). We show that the optimal first-stage order solves a simple ordinary differential equation (ODE), whereas the second-stage order is analytically available. We characterize asymptotics for the first-stage order and expected profit as the forecasted mean demand grows, and propose a simple, asymptotically optimal heuristic. We apply our study to data from a national retail chain, where we calibrate our model by maximum likelihood estimation (MLE). The comparison of several heuristic policies, as well as two benchmarks, shows the efficacy of our method. When the signal is more uncertain (e.g., for product lines with impulse- and trend-driven purchases), our heuristic with a simple adjusted critical fractile outperforms benchmarks; otherwise, the classic newsvendor solution performs well and is asymptotically optimal. We also extend the approach to distribution-free settings and capacitated systems. \n                   This paper was accepted by Jeannette Song, operations management. \n                   Funding: This work was supported by the Guangdong Key Lab of Mathematical Foundations for Artificial Intelligence [Grant 72192805], the National Natural Science Foundation of China [Grant 72401245], Imperial Business School (School Research Fund), and Shenzhen Stability Science Program 2022. \n                   Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2024.04692 .",
+      "url": "https://doi.org/10.1287/mnsc.2024.04692",
+      "source": "OR-Journal",
+      "journal": "Management Science",
+      "publishedAt": "",
+      "date": "2026-11-06",
+      "title_zh": "Sourcing with Demand Updates",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
     {
       "id": "2611.02391v1",
       "title": "Late Autumn: LLM Agents Specialize a General Multi-Robot Planner for One Warehouse",
@@ -163,23 +178,6 @@
       "source": "arxiv",
       "date": "2026-10-15",
       "title_zh": "AutoMARS: Automatic and Scalable Multi-Agent Large Language Model Framework for Supply Chain Risk Assessment",
-      "contribution_zh": "",
-      "value_zh": "",
-      "keywords": [],
-      "score": 6
-    },
-    {
-      "id": "2610.03834v1",
-      "title": "LLM-enhanced spatio-temporal learning for grid-level docked bike sharing demand prediction",
-      "summary": "Short-term bike-sharing demand forecasting is complicated by spatial-temporal non-stationarity and the practical difficulty of incorporating unstructured external text into numerical pipelines. Conventional approaches rely on historical flow sequences and fixed graph structures, thereby constraining their accuracy when anomalous social events perturb normal travel patterns. We propose a forecasting framework in which a Large Language Model (LLM) drives a semantic shockwave mechanism that converts free-form urban text, such as municipal event schedules, local news, and transit bulletins, into quantified spatial-temporal perturbation fields. The LLM extracts three physically interpretable parameters per event (intensity, spatial reach, and temporal lag), from which Gaussian decay fields are constructed and injected into a Zero-Inflated Adaptive Spatio-Temporal Graph Convolutional Network (ZI-ASTGCN). To handle the pronounced sparsity of grid-level measurements, the model couples a dual-branch output head with a multi-task zero-inflated loss that jointly trains a gating probability and a conditional flow intensity. Experiments on the operational Barcelona Bicing dataset show that ZI-ASTGCN outperforms established neural baselines, with particularly strong gains during high-demand periods, validating the utility of physics-grounded semantic signals in spatial-temporal mobility forecasting.",
-      "authors": [
-        "Xuxilu Zhang",
-        "Francesc Soriguera"
-      ],
-      "link": "https://arxiv.org/abs/2610.03834v1",
-      "source": "arxiv",
-      "date": "2026-10-06",
-      "title_zh": "LLM-enhanced spatio-temporal learning for grid-level docked bike sharing demand prediction",
       "contribution_zh": "",
       "value_zh": "",
       "keywords": [],
