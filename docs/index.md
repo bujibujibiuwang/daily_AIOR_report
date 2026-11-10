@@ -1,7 +1,16 @@
 ---
 layout: default
 ---
-2026-11-09
+2026-11-10
+
+
+### LLM-Based Feature Extraction for Multi-Criteria Inventory Classification
+- **英文标题**: LLM-Based Feature Extraction for Multi-Criteria Inventory Classification
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Humza Akhtar, Rami Pinto
+- **论文链接**: https://arxiv.org/abs/2611.08626v1
+---
+## 📅 2026-11-09
 
 今日无新增 OR 相关研究
 ## 📅 2026-11-08
@@ -151,8 +160,5 @@ layout: default
 
 今日无新增 OR 相关研究
 ## 📅 2026-10-11
-
-今日无新增 OR 相关研究
-## 📅 2026-10-10
 
 今日无新增 OR 相关研究

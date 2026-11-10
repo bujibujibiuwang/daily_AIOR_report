@@ -1,6 +1,23 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "papers": [
+    {
+      "id": "2611.08626v1",
+      "title": "LLM-Based Feature Extraction for Multi-Criteria Inventory Classification",
+      "summary": "E-commerce supply chains generate large volumes of customer feedback and operational data that remain underutilized in inventory management. Traditional inventory classification techniques such as ABC analysis rely primarily on annual dollar usage, while multi-criteria inventory classification (MCIC) methods extend this but still depend on structured quantitative data and do not utilize unstructured information available in modern supply chains. This paper proposes an LLM-based feature extraction approach that transforms unstructured sources such as customer reviews into quantitative features using vector embeddings and LLM-generated evaluation criteria. The enriched feature set is incorporated into an MCIC framework based on the Hadi-Vencheh model. Experimental results show measurable reclassification effects when customer sentiment signals are included, demonstrating that integrating unstructured data into MCIC can enhance inventory prioritization.",
+      "authors": [
+        "Humza Akhtar",
+        "Rami Pinto"
+      ],
+      "link": "https://arxiv.org/abs/2611.08626v1",
+      "source": "arxiv",
+      "date": "2026-11-10",
+      "title_zh": "LLM-Based Feature Extraction for Multi-Criteria Inventory Classification",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
     {
       "id": "crossref:10.1287/mnsc.2024.04692",
       "title": "Sourcing with Demand Updates",
