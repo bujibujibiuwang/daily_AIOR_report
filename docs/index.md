@@ -1,7 +1,23 @@
 ---
 layout: default
 ---
-2026-11-10
+2026-11-11
+
+
+### Differentiable Agent-Based Modeling for Multi-Echelon Supply Chains: Gradient-Based Optimization of Heterogeneous Policies at Scale
+- **英文标题**: Differentiable Agent-Based Modeling for Multi-Echelon Supply Chains: Gradient-Based Optimization of Heterogeneous Policies at Scale
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Bulent Soykan, Murtadha Alsayegh, Sean Mondesire
+- **论文链接**: https://arxiv.org/abs/2611.10999v1
+---
+
+### TimeHF 2.0: Multimodal, Multivariate, and Multi-Region Collaborative Forecasting for Large-Scale Retail Supply Chains
+- **英文标题**: TimeHF 2.0: Multimodal, Multivariate, and Multi-Region Collaborative Forecasting for Large-Scale Retail Supply Chains
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Zhongxuan Han, Zhengxin Shi, Kunxiu Chen
+- **论文链接**: https://arxiv.org/abs/2611.10521v1
+---
+## 📅 2026-11-10
 
 
 ### LLM-Based Feature Extraction for Multi-Criteria Inventory Classification
@@ -157,8 +173,5 @@ layout: default
 
 今日无新增 OR 相关研究
 ## 📅 2026-10-12
-
-今日无新增 OR 相关研究
-## 📅 2026-10-11
 
 今日无新增 OR 相关研究
