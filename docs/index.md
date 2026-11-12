@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-11-11
+2026-11-12
+
+今日无新增 OR 相关研究
+## 📅 2026-11-11
 
 
 ### Differentiable Agent-Based Modeling for Multi-Echelon Supply Chains: Gradient-Based Optimization of Heterogeneous Policies at Scale
@@ -170,8 +173,5 @@ layout: default
 
 今日无新增 OR 相关研究
 ## 📅 2026-10-13
-
-今日无新增 OR 相关研究
-## 📅 2026-10-12
 
 今日无新增 OR 相关研究
