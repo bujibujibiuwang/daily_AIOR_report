@@ -1,7 +1,30 @@
 ---
 layout: default
 ---
-2026-11-13
+2026-11-14
+
+
+### Reinforcement Learning for Inventory Control under Regime-Switching Demand: A Controlled Comparison of LSTM, MLP, and (s,S) Policies
+- **英文标题**: Reinforcement Learning for Inventory Control under Regime-Switching Demand: A Controlled Comparison of LSTM, MLP, and (s,S) Policies
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Alex Haines, Nathanael L. Baisa
+- **论文链接**: https://arxiv.org/abs/2611.15945v1
+---
+
+### SkinAdvisor: An AI-Driven Decision Framework for Skin Production Planning via Multi-Modal Transformer Sales Forecasting
+- **英文标题**: SkinAdvisor: An AI-Driven Decision Framework for Skin Production Planning via Multi-Modal Transformer Sales Forecasting
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Ge Fan, Kai Wang, Chaoyun Zhang
+- **论文链接**: https://arxiv.org/abs/2611.15023v1
+---
+
+### Where Should the Code Go? Locating Foundation-Model Errors in Bitemporal Inventory Simulation
+- **英文标题**: Where Should the Code Go? Locating Foundation-Model Errors in Bitemporal Inventory Simulation
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Durga Sandeep Saluru, Lanchen Song, Aditya Kumaran
+- **论文链接**: https://arxiv.org/abs/2611.14671v1
+---
+## 📅 2026-11-13
 
 今日无新增 OR 相关研究
 ## 📅 2026-11-12
@@ -172,6 +195,3 @@ layout: default
 - **作者**: Yinzhu Quan, Zefang Liu, Frederick Benaben
 - **论文链接**: https://arxiv.org/abs/2610.17206v1
 ---
-## 📅 2026-10-14
-
-今日无新增 OR 相关研究
