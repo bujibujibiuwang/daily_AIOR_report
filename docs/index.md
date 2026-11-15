@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-11-14
+2026-11-15
+
+今日无新增 OR 相关研究
+## 📅 2026-11-14
 
 
 ### Reinforcement Learning for Inventory Control under Regime-Switching Demand: A Controlled Comparison of LSTM, MLP, and (s,S) Policies
@@ -172,26 +175,3 @@ layout: default
 ## 📅 2026-10-16
 
 今日无新增 OR 相关研究
-## 📅 2026-10-15
-
-
-### What You Sign Is Not What You Run: The Verifiability Gap in Quantized LLM Supply Chains
-- **英文标题**: What You Sign Is Not What You Run: The Verifiability Gap in Quantized LLM Supply Chains
-- **来源**: 📄 arXiv  ⭐ 6/10
-- **作者**: Wei-Liang Liu, Cheng-Yen Tsai
-- **论文链接**: https://arxiv.org/abs/2610.19498v1
----
-
-### Optimal Feature-Based Newsvendor Policies under Censored Demand
-- **英文标题**: Optimal Feature-Based Newsvendor Policies under Censored Demand
-- **来源**: 📄 arXiv  ⭐ 6/10
-- **作者**: Joost van der Haar, Ilias Willems, Joachim Arts
-- **论文链接**: https://arxiv.org/abs/2610.17465v1
----
-
-### AutoMARS: Automatic and Scalable Multi-Agent Large Language Model Framework for Supply Chain Risk Assessment
-- **英文标题**: AutoMARS: Automatic and Scalable Multi-Agent Large Language Model Framework for Supply Chain Risk Assessment
-- **来源**: 📄 arXiv  ⭐ 6/10
-- **作者**: Yinzhu Quan, Zefang Liu, Frederick Benaben
-- **论文链接**: https://arxiv.org/abs/2610.17206v1
----
