@@ -1,7 +1,16 @@
 ---
 layout: default
 ---
-2026-11-17
+2026-11-18
+
+
+### Delayed Heuristic-Behavior-Target Coupling for Off-Policy Reinforcement Learning in Inventory Control
+- **英文标题**: Delayed Heuristic-Behavior-Target Coupling for Off-Policy Reinforcement Learning in Inventory Control
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Enhui Li, Yuan Cheng, Peiting Han
+- **论文链接**: https://arxiv.org/abs/2611.19917v1
+---
+## 📅 2026-11-17
 
 今日无新增 OR 相关研究
 ## 📅 2026-11-16
@@ -170,8 +179,5 @@ layout: default
 
 今日无新增 OR 相关研究
 ## 📅 2026-10-19
-
-今日无新增 OR 相关研究
-## 📅 2026-10-18
 
 今日无新增 OR 相关研究
