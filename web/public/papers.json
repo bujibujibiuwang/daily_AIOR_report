@@ -1,6 +1,25 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "papers": [
+    {
+      "id": "2611.22921v1",
+      "title": "Action-outcome coupling: a pre-investment feasibility audit for offline reinforcement learning in supply chain operations",
+      "summary": "Prescriptive analytics initiatives in logistics, such as offline reinforcement learning and next-best-action systems, are often funded before anyone verifies that the available historical logs can support an improved decision policy. We formalise this pre-investment feasibility question via action-outcome coupling: a total-effect variance index measuring how much expected outcomes change with the logged action. Coupling provides an algorithm-independent upper bound on any policy's achievable value, expressed in monetary units per decision for both single-step and discounted sequential objectives. We also analyse the asymptotic false-licensing risk of an invalid workflow: fitting a value model and evaluating the model's greedy policy on the same data. The false-licence rate is driven mainly by the number of state cells over which selection is performed, rising from the nominal test level with one cell to near certainty with a few dozen, while overlap has a smaller effect. We then propose an audit that assigns logs to four tiers of decision support, separately for fixed and contextual policies, and returns an explicit stopping rationale. On a randomised e-commerce log, the audit endorses a fixed recommendation policy, certifying gains equal to 30 per cent of the theoretical ceiling; the remaining gap reflects bound looseness under an 80-action design. Two public logistics logs fail at different checkpoints: one because the target is an accounting identity of the action, and another because, with 27 clusters, estimated coupling stays below the design's detectability threshold even though a conservative offline learner certifies an improvement in 29 of 30 seeds.",
+      "authors": [
+        "Tung Dang",
+        "The Hung Phung",
+        "Son Lam Nguyen",
+        "Tu Nguyen"
+      ],
+      "link": "https://arxiv.org/abs/2611.22921v1",
+      "source": "arxiv",
+      "date": "2026-11-19",
+      "title_zh": "Action-outcome coupling: a pre-investment feasibility audit for offline reinforcement learning in supply chain operations",
+      "contribution_zh": "",
+      "value_zh": "",
+      "keywords": [],
+      "score": 6
+    },
     {
       "id": "2611.19917v1",
       "title": "Delayed Heuristic-Behavior-Target Coupling for Off-Policy Reinforcement Learning in Inventory Control",

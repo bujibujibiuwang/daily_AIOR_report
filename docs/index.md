@@ -1,7 +1,16 @@
 ---
 layout: default
 ---
-2026-11-18
+2026-11-19
+
+
+### Action-outcome coupling: a pre-investment feasibility audit for offline reinforcement learning in supply chain operations
+- **英文标题**: Action-outcome coupling: a pre-investment feasibility audit for offline reinforcement learning in supply chain operations
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Tung Dang, The Hung Phung, Son Lam Nguyen
+- **论文链接**: https://arxiv.org/abs/2611.22921v1
+---
+## 📅 2026-11-18
 
 
 ### Delayed Heuristic-Behavior-Target Coupling for Off-Policy Reinforcement Learning in Inventory Control
@@ -176,8 +185,5 @@ layout: default
 
 今日无新增 OR 相关研究
 ## 📅 2026-10-20
-
-今日无新增 OR 相关研究
-## 📅 2026-10-19
 
 今日无新增 OR 相关研究
