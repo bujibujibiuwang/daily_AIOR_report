@@ -1,7 +1,16 @@
 ---
 layout: default
 ---
-2026-11-19
+2026-11-20
+
+
+### MANGO Arena: Same Seeds, Different Chains Evaluating LLM Agents in a Disrupted Supply Chain
+- **英文标题**: MANGO Arena: Same Seeds, Different Chains Evaluating LLM Agents in a Disrupted Supply Chain
+- **来源**: 📄 arXiv  ⭐ 6/10
+- **作者**: Sara Amar
+- **论文链接**: https://arxiv.org/abs/2611.23613v1
+---
+## 📅 2026-11-19
 
 
 ### Action-outcome coupling: a pre-investment feasibility audit for offline reinforcement learning in supply chain operations
@@ -182,8 +191,5 @@ layout: default
 
 今日无新增 OR 相关研究
 ## 📅 2026-10-21
-
-今日无新增 OR 相关研究
-## 📅 2026-10-20
 
 今日无新增 OR 相关研究
