@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-2026-11-20
+2026-11-21
+
+今日无新增 OR 相关研究
+## 📅 2026-11-20
 
 
 ### MANGO Arena: Same Seeds, Different Chains Evaluating LLM Agents in a Disrupted Supply Chain
@@ -188,8 +191,5 @@ layout: default
 - **论文链接**: https://doi.org/10.1287/mnsc.2024.07419
 ---
 ## 📅 2026-10-22
-
-今日无新增 OR 相关研究
-## 📅 2026-10-21
 
 今日无新增 OR 相关研究
